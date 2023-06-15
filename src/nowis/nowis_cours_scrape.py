@@ -31,36 +31,45 @@ from selenium.webdriver.firefox.service import Service
 #------------------------------------------------------------#
 #   BROWSER DRIVER (CHROME/TOR)                              #
 #------------------------------------------------------------#
-## chrome options ##
-#options = webdriver.ChromeOptions()
-#options.add_experimental_option("excludeSwitches", ["enable-automation"])
-#options.add_experimental_option('useAutomationExtension', False)
-#options.add_argument('--disable-blink-features=AutomationControlled')
-
-## tor options ##
-tor_browser_path = '/Applications/Tor Browser.app/Contents/MacOS/firefox' # path to browser executable
-options = Options() #  set Firefox options Tor Browser
-options.binary_location = tor_browser_path
-options.add_argument('--disable-blink-features=AutomationControlled')
-
-## tor Disable loading images ##
-profile = webdriver.FirefoxProfile()
-profile.set_preference('permissions.default.image', 2)
-tor_browser_service = Service('/Applications/Tor Browser.app/Contents/MacOS/geckodriver') # Set Browser service executable
-
-## Set / edit user-agent (reuqest header string) ##
 # default: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
-#new_ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.9999.99 Safari/537.36"
-#options.add_argument(f'user-agent={new_ua}')
+NEW_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.9999.99 Safari/537.36"
+MASK_UA = False
+CHECK_UA = True
+TOR = False
 
-## init web driver w/ options ##
-#driver = webdriver.Chrome(ChromeDriverManager().install(), options=options) # chrome browser
-driver = webdriver.Firefox(service=tor_browser_service, options=options, firefox_profile=profile) # tor w/ optinos & profile
+print(f'\n\n... running TOR: {TOR} ...')
+print(f'... masking user-agent: {MASK_UA} ...\n\n')
 
-## check current user agent ##
-user_agent = driver.execute_script("return navigator.userAgent;")
-print(f"\nCurrent User Agent:\n {user_agent}\n")
-#while True: pass # halt script
+if not TOR: # init options w/ chrome driver
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    options.add_experimental_option('useAutomationExtension', False)
+    options.add_argument('--disable-blink-features=AutomationControlled')
+    if MASK_UA: options.add_argument(f'user-agent={NEW_UA}')
+    
+    # init chrome driver
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options) # chrome browser
+    
+else: # init options w/ tor driver
+    tor_browser_path = '/Applications/Tor Browser.app/Contents/MacOS/firefox' # path to browser executable
+    options = Options() #  set Firefox options Tor Browser
+    options.binary_location = tor_browser_path
+    options.add_argument('--disable-blink-features=AutomationControlled')
+    if MASK_UA: options.add_argument(f'user-agent={NEW_UA}')
+
+    # tor Disable loading images
+    profile = webdriver.FirefoxProfile()
+    profile.set_preference('permissions.default.image', 2)
+    tor_browser_service = Service('/Applications/Tor Browser.app/Contents/MacOS/geckodriver') # Set Browser service executable
+
+    # init tor driver
+    driver = webdriver.Firefox(service=tor_browser_service, options=options, firefox_profile=profile) # tor w/ optinos & profile
+
+
+if CHECK_UA: # check current user agent
+    user_agent = driver.execute_script("return navigator.userAgent;")
+    print(f"\nCurrent User Agent:\n {user_agent}\n")
+    #while True: pass # halt script
 
 #------------------------------------------------------------#
 #   GLOBALS                                                  #
@@ -178,13 +187,8 @@ while not found_end:
         #       instead of only providing items from designated '?page=X'
         #   fix: need to remove previous pages items from links_pg_items,
         #       by comparing duplicates against 'pg_item_links_done'
-#        links_pg_items = links_pg_items[prev_pg_item_cnt:]
         links_pg_items = [item for item in links_pg_items if item not in pg_item_links_done]
         
-#        # get links to all items on this page number
-#        html = fromstring(driver.page_source)
-#        links_pg_items = html.xpath("//a[@class='product-tile-link']/@href")
-
         CURR_TIME = datetime.now().strftime("%H:%M:%S.%f")[0:-4]
         print(f'\n ... CURR_TIME: {CURR_TIME}\n')
     else:
@@ -222,7 +226,6 @@ while not found_end:
 GO_TIME_END = datetime.now().strftime("%H:%M:%S.%f")[0:-4]
 print(f'\n\nGO_TIME_START: {GO_TIME_START}')
 print(f'GO_TIME_END:   {GO_TIME_END}')
-
 
 print("\n\n.... SETTING ENDLESS LOOP TO MAINTAIN BROWSER OPEN ....\n\n")
 while True:
