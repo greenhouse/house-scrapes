@@ -6,33 +6,23 @@ cStrDivider = '#================================================================
 print('', cStrDivider, f'START _ {__filename}', cStrDivider, sep='\n')
 print(f'GO {__filename} -> starting IMPORTs and globals decleration')
 
+#------------------------------------------------------------#
+#   IMPORTS                                                  #
+#------------------------------------------------------------#
 import sys, argparse, string, ctypes, os, re
-#import urllib, urllib2, cookielib, httplib
-#import cookielib, time, base64
 import time
 from datetime import datetime
-
-''' requirements
-    ref: https://github.com/SeleniumHQ/selenium/blob/trunk/py/docs/source/index.rst
-     $ python3 -m pip install -U selenium
-'''
-
-#from os import path
-from bs4 import BeautifulSoup
 import requests
-from selenium import webdriver
-#from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-#from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
-#from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-#from selenium.webdriver.common.action_chains import ActionChains
-#from selenium.webdriver.common.by import By
+from googletrans import Translator
+from bs4 import BeautifulSoup
+from selenium import webdriver # pip install -U selenium
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-#from selenium.common.exceptions import NoSuchElementException
-#from selenium.webdriver.support.ui import Select
-from googletrans import Translator
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+    #from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+    #from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
+    #from selenium.webdriver.firefox.options import Options
 
 #------------------------------------------------------------#
 #   GLOBALS                                                  #
@@ -46,8 +36,8 @@ LST_PG_URLS = [
 ]
 
 #------------------------------------------------------------#
+#   PROCEDURAL SUPPORT                                       #
 #------------------------------------------------------------#
-
 def scrape_target_pg(page_url : str):
     ## Selenium: init webdrive ##
     print(f'\nInitializing Selenium webdrive...')
@@ -93,7 +83,7 @@ def exe_pg_scrape_loop(lst_pgs : lst, wait_sec : float):
             time.sleep(wait_sec)
 
 #------------------------------------------------------------#
-#   DEFAULT                                                  #
+#   DEFAULT SUPPORT                                          #
 #------------------------------------------------------------#
 def go_main():
     run_time_start = get_time_now()
@@ -117,9 +107,9 @@ def read_cli_args():
     print(f'\n{funcname}...')
     argCnt = len(sys.argv)
     print(' # of args: %i' % argCnt)
-    print(' arg lst: %s' % str(sys.argv))
+    print(' argv lst: %s' % str(sys.argv))
     for idx, val in enumerate(sys.argv):
-        print(' Argv[%i]: %s' % (idx,str(sys.argv[idx])))
+        print(f' argv[{idx}]: {val}')
     print(f'DONE _  read_cli_args...')
     
 if __name__ == "__main__":
