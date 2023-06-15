@@ -247,6 +247,10 @@ while not found_end:
             pg_item_links_img_none.append(link) # track item links with no image
         pg_item_links_done.append(link) # track finished item links
         
+        wait_sec = 1
+        print(f'wait sec... {wait_sec}')
+        time.sleep(wait_sec)
+        
         
     # check if this page number text triggers no more items ('Fin de liste')
     lst_pg_end_trig = html.xpath("//p[contains(text(), 'Fin de liste')]/text()")
