@@ -71,8 +71,8 @@ def filter_js_string_regex(js_string):
     return filtered_js_code
 
 # Example usage
-js_file_path = '/Users/greenhouse/devscrape/git/_scrapes/test_scrape_kobi.js'
-js_file_path_urls = '/Users/greenhouse/devscrape/git/_scrapes/test_scrape_kobi_urls.js'
+js_file_path = './test_scrape_kobi.js'
+js_file_path_urls = './test_scrape_kobi_urls.js'
 print_js_file(js_file_path_urls)
 #lst_urls = filter_js_file_regex(js_file_path)
 
