@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-__filename = 'pls_burn_scrape.py'
-__fname = 'pls_burn_scrape'
+__filename = 'test_scrape_nowis.py'
+__fname = 'test_scrape_nowis'
 cStrDividerExcept = '***************************************************************'
 cStrDivider = '#================================================================#'
 print('', cStrDivider, f'START _ {__filename}', cStrDivider, sep='\n')
