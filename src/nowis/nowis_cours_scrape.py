@@ -110,8 +110,6 @@ while True: # loop until captcha no longer found on page
         #print(f"\n** EXCEPTION ** _ element not found _ e:\n{e}\n _ e _ DONE\n")
         break
                 
-#print('end ... while 1')
-#print('start ... while 2')
 sleep_cnt = 0
 while True: # loop through until coockie accept button is auto-clicked
     try:
