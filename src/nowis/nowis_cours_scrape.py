@@ -304,24 +304,6 @@ print(f'GO_TIME_END:   {GO_TIME_END}')
 print("\n\n.... SETTING ENDLESS LOOP TO MAINTAIN BROWSER OPEN ....\n\n")
 while True:
     pass
-
-#TODO: parse...
-# "ean,ingredients,images,marque,nom,nutriscore,url,valeurs_nutritionnelles,collected_at"
-'''
-    unknown:
-        "ean,,,marque,nom,,,,"
-
-    can pull easily:
-        collected_at (date scraped?)
-        images
-        url
-        ingredients
-        valeurs_nutritionnelles
-
-    problems pulling:
-        nutriscore - not all products on the site have this
-        nutriscore - the products that do indeed have this, are in image form
-'''
     
 #    style="background-image: url("https://www.coursesu.com/dw/image/v2/BBQX_PRD/on/demandware.static/-/Sites-digitalu-master-catalog/default/dw051814d5/3256229544041_A1N1_2511315_S13.png?sw=388&sh=388&sm=fit
     
