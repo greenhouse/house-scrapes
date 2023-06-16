@@ -92,7 +92,7 @@
                     "error": null
                 }
 
-    1) POST https://visa.vfsglobal.com/afg/en/aut/login
+    1) POST https://lift-api.vfsglobal.com/user/login (GUI: https://visa.vfsglobal.com/afg/en/aut/login)
         Chrome browser inspect 'Name': 'login'
             request headers
                 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
@@ -109,7 +109,7 @@
                 Content-Type: application/json
                 response json
                 {
-                    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiSW5kaXZpZHVhbCIsInVzZXJJZCI6IjljUEU2S1FzREZwbzJoSnFaUEtObDFVSlJBdVdIdmJCRG92TU1MSjZkR1E9IiwiZW1haWwiOiJSVUZjMXFmUEZ4bmNIN09xY1BRTHMxRGE4ay9QcWVESUF5bUlsSW9ZcTBBSTJZa3AvSDBBQ3lvWWV0QU13SmF5IiwibmJmIjoxNjg2NzcyNDYwLCJleHAiOjE2ODY3Nzg0NjAsImlhdCI6MTY4Njc3MjQ2MH0.l6AOnN7AHZtZyAKXYIXuXJUwS3qaHuNSB6OpnbB1X18",
+                    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiSW5kaXZpZHVhbCIsInVzZXJJZCI6InYxL282QjN6YU1Sd1JsMzY5S2hzNG9qY0hrN1RrSjRwVFNNL1FKbmZhSFE9IiwiZW1haWwiOiJqemNrdStPcWQyeFg5YWlDWTZDT3VlMzlMOVpNdzY2Yy9kZVRXdUJqbjBSeDZqdWZ5alkzMSt5Nno4ZWZzcGJKIiwibmJmIjoxNjg2OTM3Mzc4LCJleHAiOjE2ODY5NDMzNzgsImlhdCI6MTY4NjkzNzM3OH0.9xAdQE0OYcyZZuc5Z-44uptFpvvXpbasw8LRgWCu5Do",
                     "isAuthenticated": true,
                     "nearestVACCountryCode": null,
                     "FailedAttemptCount": 0,
@@ -122,9 +122,9 @@
                     "roleName": "Individual",
                     "isUkraineScheme": false,
                     "isUkraineSchemeDocumentUpload": false,
-                    "loginUser": "housesellout@gmail.com",
+                    "loginUser": "temp37373737@gmail.com",
                     "dialCode": "1",
-                    "contactNumber": "7327660120",
+                    "contactNumber": "7329070930",
                     "remainingCount": 0,
                     "accountLockHours": 2,
                     "enableOTPAuthentication": false,
@@ -136,7 +136,7 @@
             request headers (from chrome browser inspect, after 'login')
                 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
                 Content-Type: application/json;charset=UTF-8
-                Authorize: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiSW5kaXZpZHVhbCIsInVzZXJJZCI6ImV2TXh0S0Vhb05ZVzU4TWtGZWo3dEE9PSIsImVtYWlsIjoiUlVGYzFxZlBGeG5jSDdPcWNQUUxzMURhOGsvUHFlRElBeW1JbElvWXEwQUkyWWtwL0gwQUN5b1lldEFNd0pheSIsIm5iZiI6MTY4Njc2NzUxMCwiZXhwIjoxNjg2NzczNTEwLCJpYXQiOjE2ODY3Njc1MTB9.g02GK9LQRp_oV0CfRsS_hfUowdtw2DjnTylsT6YVTRo
+                Authorize: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiSW5kaXZpZHVhbCIsInVzZXJJZCI6InYxL282QjN6YU1Sd1JsMzY5S2hzNG9qY0hrN1RrSjRwVFNNL1FKbmZhSFE9IiwiZW1haWwiOiJqemNrdStPcWQyeFg5YWlDWTZDT3VlMzlMOVpNdzY2Yy9kZVRXdUJqbjBSeDZqdWZ5alkzMSt5Nno4ZWZzcGJKIiwibmJmIjoxNjg2OTM3Mzc4LCJleHAiOjE2ODY5NDMzNzgsImlhdCI6MTY4NjkzNzM3OH0.9xAdQE0OYcyZZuc5Z-44uptFpvvXpbasw8LRgWCu5Do
                 
                 request payload (ex 1)
                 {

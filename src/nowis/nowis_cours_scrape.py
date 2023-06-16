@@ -23,6 +23,8 @@ from bs4 import BeautifulSoup # python3.7 -m pip install bs4
 
 ## chrome browser web driver ##
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+
 
 ## tor browser web driver ##
 from selenium.webdriver.firefox.options import Options
@@ -36,23 +38,35 @@ NEW_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 MASK_UA = False
 CHECK_UA = True
 
-CHROME = False
-TOR = True
+CHROME = True
+TOR = False
 FIRE = False
 SAFARI = False
 
-print(f'\n\n... running CHROME: {CHROME} ...')
-print(f'... masking user-agent: {MASK_UA} ...\n\n')
+print(f'\n\n... running ...\n _ CHROME: {CHROME}\n _ TOR: {TOR}\n _ FIRE: {FIRE}\n _ SAFARI: {SAFARI} ...')
+print(f'... user-agent ...\n _ MASK_UA: {MASK_UA}\n _ CHECK_UA: {CHECK_UA}\n ...\n\n')
 
 if CHROME: # init options w/ chrome driver
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
     options.add_argument('--disable-blink-features=AutomationControlled')
+    #options.add_argument('--remote-debugging-port=9222') # trying to use existing chrome isntance
+
     if MASK_UA: options.add_argument(f'user-agent={NEW_UA}')
+    
     
     # init chrome driver
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options) # chrome browser
+
+    # init chrome driver w/ service (receiving error about chromedriver version)
+    #driver_service = Service(ChromeDriverManager().install())
+    #driver = webdriver.Chrome(service=driver_service, options=options)
+    
+    # init chrome driver w/ custom path
+    #chromedriver_path = '/usr/local/bin/chromedriver'  # Adjust the path accordingly
+    #driver = webdriver.Chrome(executable_path=chromedriver_path, options=options)
+
     
 elif TOR: # init options w/ tor driver
     options = Options() #  set Firefox options Tor Browser
@@ -106,6 +120,7 @@ if CHECK_UA:
 #------------------------------------------------------------#
 #   GLOBALS                                                  #
 #------------------------------------------------------------#
+#ref: https://www.coursesu.com/c/charcuterie-traiteur/charcuterie/jambon-blanc?page=2
 root_uri = 'https://www.coursesu.com'
 search_uri = '/c/charcuterie-traiteur/charcuterie/jambon-blanc'
 search_uri_p = root_uri + search_uri + '?page='
@@ -229,8 +244,8 @@ while not found_end:
         print(f'    wait sec... {wait_sec}\n')
         time.sleep(wait_sec)
         
-#        print("\n\n*** BREAK POINT *** _ PAUSE EXECUTION & MAINTAIN BROWSER OPEN ....\n\n")
-#        while True: pass
+        print("\n\n*** BREAK POINT *** _ PAUSE EXECUTION & MAINTAIN BROWSER OPEN ....\n\n")
+        while True: pass
         
     # check if this page number text triggers no more items ('Fin de liste')
     lst_pg_end_trig = html.xpath("//p[contains(text(), 'Fin de liste')]/text()")
