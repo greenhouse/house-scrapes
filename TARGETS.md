@@ -13,6 +13,27 @@
         https://visa.vfsglobal.com/vnm/en/bel
 
 ### **NOTES**
+    - TODO: create video demo
+        - traversing through 'manually created accnts' C2M urls (x6)
+            manually login & get authorize tokens for each
+        - automate checking all param combos within each C2M url (x6)
+            useing '/CheckIsSlotAvailable'
+        - print each param combo / C2M result... x(y1+...+y6)
+            # success (appt avail) -> {earliestDate, error:null}
+                "error":null 
+                "earliestDate":"06/27/2023 00:00:00",
+            
+            # error (no appt avail) -> {earliestDate, error:{code, description}}
+                "earliestDate":null,
+                "description":"No slots available" # "code":1035,
+                "description":"Visacategory does not exist" # "code":1008,
+                "description":"Center does not exists." # "code":1007,
+                    
+    - TODO: get '/registration' working in easyHTTP or python (only manual click currently works)
+        then we can automate (registering) generating logins for all (244) C in C2M combos
+            ref: https://www.vfsglobal.com/en/individuals/index.html
+            search-source-code: 'Online Visa Application'
+            
     - current model / plan _ (061423.2313)
         - automate registering email logins for each C in C2M combos (/registration script)
             - required: need /registration first working in easyHTTP or python
@@ -23,8 +44,6 @@
         - required: email registration per C in C2M combos
             - single email can be used for multiple registrations
             - phone num input should be unique across all registrations
-        - TODO: get '/registration' working in easyHTTP or python
-            then we can automate (registering) generating logins for all C in C2M combos
 
     - 'login' response (among many others in screenshots)
         <div class="errorMessage c-brand-error"> Mandatory field cannot be left blank </div>
