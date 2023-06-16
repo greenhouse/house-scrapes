@@ -39,6 +39,7 @@ CHECK_UA = True
 CHROME = False
 TOR = True
 FIRE = False
+SAFARI = False
 
 print(f'\n\n... running CHROME: {CHROME} ...')
 print(f'... masking user-agent: {MASK_UA} ...\n\n')
@@ -75,6 +76,22 @@ elif FIRE: # init options w/ firefox driver
     
     # init firefox driver
     driver = webdriver.Firefox(options=options)
+
+elif SAFARI:
+    ## NOTE_061623: no Selenium 'options' for Safari (not like Chrome or Firefox/Tor does) ##
+    #options = webdriver.SafariOptions()
+    #options = Options() #  set Firefox options Tor Browser
+    #options.add_argument('--disable-blink-features=AutomationControlled')
+    #options.set_preference('permissions.default.image', 2) # disable loading images
+    #options.page_load_strategy = 'eager'  # Set the page load strategy
+    #options.add_argument('--private')  # Open Safari in private browsing mode
+    #options.add_argument('--start-fullscreen')  # Start Safari in fullscreen mode
+    #if MASK_UA: options.add_argument(f'user-agent={NEW_UA}')
+    
+    # init firefox driver
+    safari_driver_path = '/usr/bin/safaridriver'
+    driver = webdriver.Safari(executable_path=safari_driver_path)
+    #driver = webdriver.Safari(executable_path=safari_driver_path, options=options)
     
 else:
     print('\n\n*** ERROR *** _ no browser driver selected _ exiting...\n\n')
@@ -203,17 +220,17 @@ while not found_end:
         link_imgs = html_x.xpath("//picture//img/@src")
         print(f'    link_imgs cnt: {len(link_imgs)}')
         if len(link_imgs) > 0:
-            print(f"    img 0: {link_imgs[0][:75]}...")
+            print(f"    img 0: {link_imgs[0][:50]}...{link_imgs[0][-25:-1]}")
         else:
             pg_item_links_img_none.append(link) # track item links with no image
         pg_item_links_done.append(link) # track finished item links
         
         wait_sec = 1
-        #print(f'wait sec... {wait_sec}')
+        print(f'    wait sec... {wait_sec}\n')
         time.sleep(wait_sec)
         
-        print("\n\n.... PAUSE EXECUTION & MAINTAIN BROWSER OPEN ....\n\n")
-        while True: pass
+#        print("\n\n*** BREAK POINT *** _ PAUSE EXECUTION & MAINTAIN BROWSER OPEN ....\n\n")
+#        while True: pass
         
     # check if this page number text triggers no more items ('Fin de liste')
     lst_pg_end_trig = html.xpath("//p[contains(text(), 'Fin de liste')]/text()")
