@@ -66,7 +66,14 @@ if CHROME: # init options w/ chrome driver
     # init chrome driver w/ custom path
     #chromedriver_path = '/usr/local/bin/chromedriver'  # Adjust the path accordingly
     #driver = webdriver.Chrome(executable_path=chromedriver_path, options=options)
-
+    
+    '''
+    	note_061623_1700:
+            - it appears that using the regular chrome or browser allows me to use cours site just fine
+            - but using my regular GUI browser (not launching through code)
+                seems to still work just fine without a ban
+            - this leads me to believe that my IP is not actually banned
+    '''
     
 elif TOR: # init options w/ tor driver
     options = Options() #  set Firefox options Tor Browser
