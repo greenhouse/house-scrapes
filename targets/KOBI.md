@@ -1,6 +1,6 @@
-# TARGETS
+# TARGETS (KOBI)
 
-## kobi -> vfsglobal
+## kobi -> vfsglobal.com
 ### account log
     - manually created accnts (house):
         https://visa.vfsglobal.com/gbr/en/dnk
@@ -304,6 +304,3 @@
         }
     ]
 
-## nowis -> coursesu
-### <nil>
-    <nil>
