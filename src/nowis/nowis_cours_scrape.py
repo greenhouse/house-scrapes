@@ -35,12 +35,15 @@ from selenium.webdriver.firefox.service import Service
 NEW_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.9999.99 Safari/537.36"
 MASK_UA = False
 CHECK_UA = True
-TOR = True
 
-print(f'\n\n... running TOR: {TOR} ...')
+CHROME = False
+TOR = True
+FIRE = False
+
+print(f'\n\n... running CHROME: {CHROME} ...')
 print(f'... masking user-agent: {MASK_UA} ...\n\n')
 
-if not TOR: # init options w/ chrome driver
+if CHROME: # init options w/ chrome driver
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
@@ -50,24 +53,37 @@ if not TOR: # init options w/ chrome driver
     # init chrome driver
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options) # chrome browser
     
-else: # init options w/ tor driver
+elif TOR: # init options w/ tor driver
     options = Options() #  set Firefox options Tor Browser
-    #options = webdriver.FirefoxOptions()
     options.binary_location = '/Applications/Tor Browser.app/Contents/MacOS/firefox' # path to browser executable
+    #options.add_argument('--proxy-server=socks5://127.0.0.1:9050')  # attempting auto-connect to Tor on localhost port 9050
     options.add_argument('--disable-blink-features=AutomationControlled')
     options.set_preference('permissions.default.image', 2) # disable loading images
-    #options.add_argument('--proxy-server=socks5://127.0.0.1:9050')  # attempting auto-connect to Tor on localhost port 9050
     if MASK_UA: options.add_argument(f'user-agent={NEW_UA}')
-
+    
     # Set Browser service executable
     tor_browser_service = Service('/Applications/Tor Browser.app/Contents/MacOS/geckodriver')
-
+    
     # init tor driver
-    driver = webdriver.Firefox(service=tor_browser_service, options=options) # tor w/ optinos & profile
+    driver = webdriver.Firefox(service=tor_browser_service, options=options) # w/ tor browser service
+    
+elif FIRE: # init options w/ firefox driver
+    options = webdriver.FirefoxOptions()
+    options.add_argument('--disable-blink-features=AutomationControlled')
+    options.set_preference('permissions.default.image', 2) # disable loading images
+    if MASK_UA: options.add_argument(f'user-agent={NEW_UA}')
+    
+    # init firefox driver
+    driver = webdriver.Firefox(options=options)
+    
+else:
+    print('\n\n*** ERROR *** _ no browser driver selected _ exiting...\n\n')
+    exit(0)
 
-if CHECK_UA: # check current user agent
+# check current user agent
+if CHECK_UA:
     user_agent = driver.execute_script("return navigator.userAgent;")
-    print(f"\nCurrent User Agent:\n {user_agent}\n")
+    print(f"\nCurrent user-agent:\n {user_agent}\n")
     #while True: pass # halt script
 
 #------------------------------------------------------------#
@@ -81,6 +97,9 @@ sleep_cnt = 0
 
 GO_TIME_START = datetime.now().strftime("%H:%M:%S.%f")[0:-4]
 print(f'\n\nGO_TIME_START: {GO_TIME_START}\n')
+
+def get_time_now():
+    return datetime.now().strftime("%H:%M:%S.%f")[0:-4]
 
 #------------------------------------------------------------#
 #   PROCEDURAL SUPPORT                                       #
@@ -139,8 +158,47 @@ while not found_end:
         
         # get html for this item link
         driver.get(root_uri + link)
-        html_x = fromstring(driver.page_source)
-            
+        html_content = fromstring(driver.page_source)
+        
+        # translate html_content from french to english (fr -> en)
+        translator = Translator(service_urls=['translate.google.com'], to_lang='en')
+        #html_x = translator.translate(html_content, src='fr', dest='en').text
+        html_x = translator.translate(html_content, dest='en').text
+        
+        
+        ## TODO: 061523 ... left off here: need finish testing 'ingredients' & 'nutrional values' ##
+        print('    url: '+link)
+        print('    collected_at: '+get_time_now())
+
+        # get ingredients (Ingrédients)
+        #lst_h3 = html_x.xpath("//h3[contains(text(), 'Ingrédients')]/text()")
+        #lst_h3 = html_x.xpath("//h3[contains(text(), 'ingredients')]")
+        #lst_h3 = html_x.xpath("//*[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'ingredients']")
+        #lst_h3 = html_x.xpath("//h3[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'Ingrédients']")
+        lst_h3 = html_x.xpath("//h3[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'ingredients']")
+        li_parent = lst_h3[0].getparent()
+        ul_parent = li_parent.getparent()
+        lst_childs = ul_parent.getchildren()
+
+        lst_li_childs = [child for child in lst_childs if child.tag == 'li']
+        for idx, child in enumerate(lst_li_childs):
+            if child.getchildren()[0].tag == 'h3':
+                print(child.tag)
+                h3_child = child.getchildren()[0]
+                
+                # get ingredients (Ingrédients)
+                if h3_child.text_content() == 'ingredients' or h3_child.text_content() == 'Ingrédients':
+                    print(h3_child.text_content())
+                    p_child = lst_li_childs[idx+1].getchildren()[0]
+                    print('Ingredients: '+p_child.text_content())
+                
+                # get nutrional values (valeurs_nutritionnelles)
+                if h3_child.text_content() == 'nutrional values' or h3_child.text_content() == 'Valeurs nutritionnelles':
+                    print(h3_child.text_content())
+                    p_child = lst_li_childs[idx+1].getchildren()[0]
+                    print('Nutrional Values: '+p_child.text_content())
+        ## TODO: 061523: need finish testing 'ingredients' & 'nutrional values' ##
+        
         # get imge for this item
         link_imgs = html_x.xpath("//picture//img/@src")
         print(f'    link_imgs cnt: {len(link_imgs)}')
@@ -151,9 +209,11 @@ while not found_end:
         pg_item_links_done.append(link) # track finished item links
         
         wait_sec = 1
-        print(f'wait sec... {wait_sec}')
+        #print(f'wait sec... {wait_sec}')
         time.sleep(wait_sec)
         
+        print("\n\n.... PAUSE EXECUTION & MAINTAIN BROWSER OPEN ....\n\n")
+        while True: pass
         
     # check if this page number text triggers no more items ('Fin de liste')
     lst_pg_end_trig = html.xpath("//p[contains(text(), 'Fin de liste')]/text()")
