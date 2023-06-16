@@ -35,7 +35,7 @@ from selenium.webdriver.firefox.service import Service
 NEW_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.9999.99 Safari/537.36"
 MASK_UA = False
 CHECK_UA = True
-TOR = False
+TOR = True
 
 print(f'\n\n... running TOR: {TOR} ...')
 print(f'... masking user-agent: {MASK_UA} ...\n\n')
@@ -51,20 +51,19 @@ if not TOR: # init options w/ chrome driver
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options) # chrome browser
     
 else: # init options w/ tor driver
-    tor_browser_path = '/Applications/Tor Browser.app/Contents/MacOS/firefox' # path to browser executable
     options = Options() #  set Firefox options Tor Browser
-    options.binary_location = tor_browser_path
+    #options = webdriver.FirefoxOptions()
+    options.binary_location = '/Applications/Tor Browser.app/Contents/MacOS/firefox' # path to browser executable
     options.add_argument('--disable-blink-features=AutomationControlled')
+    options.set_preference('permissions.default.image', 2) # disable loading images
+    #options.add_argument('--proxy-server=socks5://127.0.0.1:9050')  # attempting auto-connect to Tor on localhost port 9050
     if MASK_UA: options.add_argument(f'user-agent={NEW_UA}')
 
-    # tor Disable loading images
-    profile = webdriver.FirefoxProfile()
-    profile.set_preference('permissions.default.image', 2)
-    tor_browser_service = Service('/Applications/Tor Browser.app/Contents/MacOS/geckodriver') # Set Browser service executable
+    # Set Browser service executable
+    tor_browser_service = Service('/Applications/Tor Browser.app/Contents/MacOS/geckodriver')
 
     # init tor driver
-    driver = webdriver.Firefox(service=tor_browser_service, options=options, firefox_profile=profile) # tor w/ optinos & profile
-
+    driver = webdriver.Firefox(service=tor_browser_service, options=options) # tor w/ optinos & profile
 
 if CHECK_UA: # check current user agent
     user_agent = driver.execute_script("return navigator.userAgent;")
