@@ -5,6 +5,7 @@ cStrDividerExcept = '***********************************************************
 cStrDivider = '#================================================================#'
 print('', cStrDivider, f'START _ {__filename}', cStrDivider, sep='\n')
 print(f'GO {__filename} -> starting IMPORTs and globals decleration')
+
 #------------------------------------------------------------#
 #   IMPORTS                                                  #
 #------------------------------------------------------------#
@@ -15,6 +16,9 @@ import time
 #------------------------------------------------------------#
 #   PROCEDURAL SUPPORT                                       #
 #------------------------------------------------------------#
+# NOTE_061623:
+#   manually login & get authorize tokens for each created acct (x6)
+
 url = 'https://lift-api.vfsglobal.com/appointment/CheckIsSlotAvailable'
 headers = {
     'Content-Type': 'application/json',
