@@ -23,8 +23,8 @@ from bs4 import BeautifulSoup # python3.7 -m pip install bs4
 
 ## chrome browser web driver ##
 from webdriver_manager.chrome import ChromeDriverManager
+#from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-
 
 ## tor browser web driver ##
 from selenium.webdriver.firefox.options import Options
@@ -54,7 +54,6 @@ if CHROME: # init options w/ chrome driver
     #options.add_argument('--remote-debugging-port=9222') # trying to use existing chrome isntance
 
     if MASK_UA: options.add_argument(f'user-agent={NEW_UA}')
-    
     
     # init chrome driver
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options) # chrome browser
