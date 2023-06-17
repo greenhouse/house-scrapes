@@ -31,8 +31,10 @@ HTML_1 = importlib.import_module('02_test_kuna_html_1')
 #------------------------------------------------------------#
 #   GLOBALS                                                  #
 #------------------------------------------------------------#
-WAIT_TIME = 20 # sec
+WAIT_TIME = 15 # sec
 #WAIT_TIME = 60 * 60 # 1 hr
+WR_HI = 5
+WR_LOW = -10
 
 LST_PG_URLS = [ # GET https://yourstory.com/search?page=1&category=Funding
     # NOTE: '?page=0' returns empty lst of results (no err pg|msg)
@@ -97,7 +99,7 @@ def exe_pg_scrape_loop(lst_pgs: list, wait_sec : float):
         print(f'\n pg scrape start: {go_time_start}\n pg scrape end:   {get_time_now()}\n    url: {pg_url}\n\n')
             
         # sleep 'wait_sec' before next url
-        r_sec = int(random.uniform(wait_sec-10, wait_sec+5))
+        r_sec = int(random.uniform(wait_sec+WR_LOW, wait_sec+WR_HI))
         wait_sleep(r_sec)
 
 #------------------------------------------------------------#
