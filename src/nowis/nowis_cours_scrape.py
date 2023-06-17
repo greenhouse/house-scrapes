@@ -67,11 +67,11 @@ if CHROME: # init options w/ chrome driver
     #driver = webdriver.Chrome(executable_path=chromedriver_path, options=options)
     
     '''
-    	note_061623_2023:
-            - it appears that launching browsers through code, leads to a 'ban' message
-            - but using my regular GUI browser (not launching through code)
-                seems to still work just fine without a ban
-            - this leads me to believe that my IP is not actually banned
+    note_061623_2023:
+        1) it appears that launching browsers through code, leads to a 'banned' message
+        2) but using my regular GUI browser (not launching through code)
+            seems to still work just fine without a ban
+        3) this leads me to believe that my IP is not actually banned
     '''
     
 elif TOR: # init options w/ tor driver
