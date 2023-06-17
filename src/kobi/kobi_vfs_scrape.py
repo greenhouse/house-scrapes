@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-__filename = 'kobi_vfsglobal_scrape.py'
-__fname = 'kobi_vfsglobal_scrape'
+__filename = 'kobi_vfs_scrape.py'
+__fname = 'kobi_vfs_scrape'
 cStrDividerExcept = '***************************************************************'
 cStrDivider = '#================================================================#'
 print('', cStrDivider, f'START _ {__filename}', cStrDivider, sep='\n')
