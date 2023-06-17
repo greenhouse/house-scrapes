@@ -19,6 +19,8 @@
     - from a few different articles in...
         https://yourstory.com/search?page=1&category=Funding
         NOTE: '?page=0' returns empty lst of results (no error msg)
+    - chatGPT test questioning (manually)
+        analyze this article and please provide JUST THE COMPANY NAME, COMPANY BASE LOCATION FOUNDERS, INVESTORS, TOTAL FUNDING RECEIVED (listed in a code block):    
 
 ### **DESIGN**
     GENERAL EXTRACTION
