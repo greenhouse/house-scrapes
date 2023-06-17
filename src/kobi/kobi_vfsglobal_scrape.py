@@ -212,14 +212,12 @@ for i in lst_vacCode:
         #TODO: ... left off here
         '''
         note_061623:
-            1) can't get native http request to work for:
+            1) can't get native http request to work for (keep getting 403 access denied):
                 POST | OPTIONS https://lift-api.vfsglobal.com/appointment/CheckIsSlotAvailable
-            2) keep getting 403 access denied
-            3) browser manual GUI works just fine
+            2) using regular GUI browser works just fine (not launching through code)
                 doesn't appear to be the IP thats blocked
-            4) maybe try new VPN on AWS
-                doesn't make much sense considering #3
-            5) maybe somehow try to start running automation 'after' manual GUI browser is already launched
+            3) maybe try new VPN on AWS (doesn't make much sense considering #2)
+            4) maybe somehow try to start running automation 'after' manual GUI browser is already launched
                 #=========================================#
                 # enable Chrome DevTools Protocol w/ browser (mac osx)
                 #=========================================#

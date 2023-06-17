@@ -69,9 +69,21 @@ if CHROME: # init options w/ chrome driver
     '''
     note_061623_2023:
         1) it appears that launching browsers through code, leads to a 'banned' message
-        2) but using my regular GUI browser (not launching through code)
-            seems to still work just fine without a ban
-        3) this leads me to believe that my IP is not actually banned
+            GET https://www.coursesu.com/c/charcuterie-traiteur/charcuterie/jambon-blanc?page=2
+        2) using regular GUI browser works just fine (not launching through code)
+            doesn't appear to be the IP thats blocked
+        3) maybe try new VPN on AWS (doesn't make much sense considering #2)
+        4) maybe somehow try to start running automation 'after' manual GUI browser is already launched
+            #=========================================#
+            # enable Chrome DevTools Protocol w/ browser (mac osx)
+            #=========================================#
+            $ /Applications/Chromium.app/Contents/MacOS/Chromium --remote-debugging-port=9222
+            $ /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --remote-debugging-port=9222
+            $ /Applications/Tor Browser.app/Contents/MacOS/firefox --remote-debugging-port=9222
+            $ /Applications/Firefox.app/Contents/MacOS/firefox-bin --remote-debugging-port=9222
+            $ /Applications/Safari.app/Contents/MacOS/Safari --remote-debugging-port=9222
+            $ /Applications/Chromium.app/Contents/MacOS/Chromium --remote-debugging-port=9222
+            $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
     '''
     
 elif TOR: # init options w/ tor driver
