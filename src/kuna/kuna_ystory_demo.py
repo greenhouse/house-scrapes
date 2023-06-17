@@ -32,7 +32,7 @@ HTML_1 = importlib.import_module('02_test_kuna_html_1')
 #   GLOBALS                                                  #
 #------------------------------------------------------------#
 WAIT_TIME = 10 # sec
-WR_HI = 5
+WR_HI = 0
 WR_LOW = -5
 
 LST_PG_URLS = [ # GET https://yourstory.com/search?page=1&category=Funding
@@ -58,12 +58,12 @@ def scrape_target_pg(driver, page_url : str):
     print('\nParsing "description" & "body"...')
     idx_start = html_content.index('"description":"')+len('"description":"')
     idx_end = html_content[idx_start:].index('"')
-    descr = html_content[idx_start:idx_start+idx_end+1]
+    descr = html_content[idx_start:idx_start+idx_end]
     print('\nDESCR:\n '+descr)
     
     idx_start = html_content.index('"articleBody":"')+len('"articleBody":"')
     idx_end = html_content[idx_start:].index('"')
-    body = html_content[idx_start:idx_start+idx_end+1]
+    body = html_content[idx_start:idx_start+idx_end]
     print('\nBODY:\n '+body)
 
     # print OG html version
