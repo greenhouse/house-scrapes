@@ -28,7 +28,7 @@
         2) scrape html from article links and search for elementst to extract
             ex: 'https://yourstory.com/2023/06/weekly-funding-roundup-june-12-16-vc-investments-rise-lenskart'
             
-    DEMO EXTRACTION: (screen-record)
+    DEMO EXTRACTION (screen-record)
         1) just use '?page=1'
         2) just scrape 4 article htmls & print elements 
         3) wait 2 sec before each html
