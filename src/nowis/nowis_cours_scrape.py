@@ -67,8 +67,8 @@ if CHROME: # init options w/ chrome driver
     #driver = webdriver.Chrome(executable_path=chromedriver_path, options=options)
     
     '''
-    	note_061623_1700:
-            - it appears that using the regular chrome or browser allows me to use cours site just fine
+    	note_061623_2023:
+            - it appears that launching browsers through code, leads to a 'ban' message
             - but using my regular GUI browser (not launching through code)
                 seems to still work just fine without a ban
             - this leads me to believe that my IP is not actually banned

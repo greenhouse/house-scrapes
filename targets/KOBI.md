@@ -13,6 +13,26 @@
         https://visa.vfsglobal.com/vnm/en/bel
 
 ### **NOTES**
+    - BLOCKER
+        1) can't get native http request to work for:
+            POST | OPTIONS https://lift-api.vfsglobal.com/appointment/CheckIsSlotAvailable
+        2) keep getting 403 access denied (local, vpn, and tor)
+        3) manual GUI browser works just fine
+            implies that the IP is not blocked
+        4) maybe try new VPN on AWS
+            doesn't make much sense considering #3
+        5) maybe somehow try to start running automation 'after' manual GUI browser is already launched
+            #=========================================#
+            # enable Chrome DevTools Protocol w/ browser (mac osx)
+            #=========================================#
+            $ /Applications/Chromium.app/Contents/MacOS/Chromium --remote-debugging-port=9222
+            $ /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --remote-debugging-port=9222
+            $ /Applications/Tor Browser.app/Contents/MacOS/firefox --remote-debugging-port=9222
+            $ /Applications/Firefox.app/Contents/MacOS/firefox-bin --remote-debugging-port=9222
+            $ /Applications/Safari.app/Contents/MacOS/Safari --remote-debugging-port=9222
+            $ /Applications/Chromium.app/Contents/MacOS/Chromium --remote-debugging-port=9222
+            $ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+                
     - TODO: create video demo
         - traversing through 'manually created accnts' C2M urls (x6)
             manually login & get authorize tokens for each
