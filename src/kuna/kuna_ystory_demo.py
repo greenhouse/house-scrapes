@@ -31,10 +31,9 @@ HTML_1 = importlib.import_module('02_test_kuna_html_1')
 #------------------------------------------------------------#
 #   GLOBALS                                                  #
 #------------------------------------------------------------#
-WAIT_TIME = 15 # sec
-#WAIT_TIME = 60 * 60 # 1 hr
+WAIT_TIME = 10 # sec
 WR_HI = 5
-WR_LOW = -10
+WR_LOW = -5
 
 LST_PG_URLS = [ # GET https://yourstory.com/search?page=1&category=Funding
     # NOTE: '?page=0' returns empty lst of results (no err pg|msg)
@@ -92,15 +91,19 @@ def init_webdriver():
     
 def exe_pg_scrape_loop(lst_pgs: list, wait_sec : float):
     driver = init_webdriver()
-    for pg_url in lst_pgs:
+    print(f'# pages to scrape: {len(lst_pgs)}')
+    for idx, pg_url in enumerate(lst_pgs):
         go_time_start = get_time_now()
-        print(f'\n pg scrape start: {go_time_start}\n    url: {pg_url}')
+        print(f'\n\npg# {idx+1}\n pg scrape start: {go_time_start}\n    url: {pg_url}')
         scrape_target_pg(driver, pg_url)
         print(f'\n pg scrape start: {go_time_start}\n pg scrape end:   {get_time_now()}\n    url: {pg_url}\n\n')
             
-        # sleep 'wait_sec' before next url
-        r_sec = int(random.uniform(wait_sec+WR_LOW, wait_sec+WR_HI))
-        wait_sleep(r_sec)
+        # if last idx: end
+        if idx == len(lst_pgs)-1: print('** NO MORE PAGES **')
+        else: # sleep 'wait_sec' before next url
+            r_sec = int(random.uniform(wait_sec+WR_LOW, wait_sec+WR_HI))
+            wait_sleep(r_sec)
+    driver.close()
 
 #------------------------------------------------------------#
 #   DEFAULT SUPPORT                                          #
@@ -123,6 +126,7 @@ def wait_sleep(wait_sec : int, b_print=True): # sleep 'wait_sec'
     for s in range(wait_sec, 0, -1):
         if b_print: print('wait ', s, sep='', end='\n')
         time.sleep(1)
+    print(f'waited... {wait_sec} sec')
         
 def get_time_now():
     return datetime.now().strftime("%H:%M:%S.%f")[0:-4]
