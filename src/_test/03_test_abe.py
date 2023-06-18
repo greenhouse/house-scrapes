@@ -1,10 +1,11 @@
 #!/usr/bin/env python
-__filename = 'test_target.py'
-__fname = 'test_target'
+__filename = 'test_abe.py'
+__fname = 'test_abge'
 cStrDividerExcept = '***************************************************************'
 cStrDivider = '#================================================================#'
 print('', cStrDivider, f'START _ {__filename}', cStrDivider, sep='\n')
 print(f'GO {__filename} -> starting IMPORTs and globals decleration')
+#ref: https://www.target.com/s?searchTerm=airpods+pro
 
 #------------------------------------------------------------#
 #   IMPORTS                                                  #
