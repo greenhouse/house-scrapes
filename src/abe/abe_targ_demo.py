@@ -37,9 +37,8 @@ WR_LOW = -5
 
 LOCAL_TEST = False
 LST_PG_URLS = [ # GET https://www.target.com/s?searchTerm=airpods+pro
-    "https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612#tabContent-tab-ShippingReturns",
-    
-#    "https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612#lnk=sametab",
+    #"https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612#tabContent-tab-ShippingReturns",
+    "https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612#lnk=sametab",
     "https://www.target.com/p/apple-airpods-max/-/A-82065675?preselect=54191105#lnk=sametab",
     "https://www.target.com/p/airpods-3rd-generation-with-lightning-charging-case/-/A-85978614#lnk=sametab",
     "https://www.target.com/p/apple-airpods-2nd-generation-with-charging-case/-/A-54191097#lnk=sametab"
