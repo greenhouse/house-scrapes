@@ -52,7 +52,7 @@ def scrape_target_pg(driver, page_url : str):
     print('\nGetting page_url content...')
     driver.get(page_url)
     html_content = driver.page_source
-    #html_content = HTML_1.TEST_HTML # from 02_test_kuna_html_1.py
+    #html_content = html.fromstring(HTML_1.TEST_HTML) # from 02_test_kuna_html_1.py
 
     # parse out article descr & body text
     print('\nParsing "description" & "body"...')
