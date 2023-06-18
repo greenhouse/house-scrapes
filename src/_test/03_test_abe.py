@@ -57,7 +57,7 @@ def scrape_target_pg(driver, page_url : str):
     
     print(f'\nGetting page_url content... (LOCAL_TEST: {LOCAL_TEST})\n')
     if not LOCAL_TEST:
-        driver.get(page_url) # gen html obj from webdriver's html src str
+#        driver.get(page_url) # gen html obj from webdriver's html src str
 #        html_cont = html.fromstring(driver.page_source)
 #        html_cont_str = driver.page_source
         
@@ -66,13 +66,18 @@ def scrape_target_pg(driver, page_url : str):
         # Explicitly wait for the presence of an element on the page
         #   note_061823: GUI tab 'Shipping & Returns', needs click
         #    in order to render 'Shipping details' & 'Return details' (scraped below)
-        driver.find_element(By.XPATH, "//a//div[contains(text(), 'Shipping & Returns')]").click()
         wait = WebDriverWait(driver, 30)  # Maximum wait time of 10 seconds
+        driver.get(page_url) # gen html obj from webdriver's html src str
+        el = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@id='tab-ShippingReturns']")))
+        el.click()
+#        wait.until(EC.element_to_be_clickable((By.XPATH, "//li//a[contains(@href, '#tabContent-tab-ShippingReturns')]"))).click()
+#        driver.find_element(By.XPATH, "//a//div[contains(text(), 'Shipping &amp; Returns')]").click()
+        
         #element = wait.until(EC.presence_of_element_located(By.CSS_SELECTOR, 'your_selector'))
 #        #xpath_find = "//div//div//div//div//div//div//div//div//div//div//div//picture//img/@src" # @src returns [Object Attr]
 #        xpath_find = "//div//div//div//div//div//div//div//div//div//div//div//picture//img" # //img returns element
 #        element = wait.until(EC.presence_of_element_located((By.XPATH, xpath_find)))
-        element = wait.until(EC.presence_of_element_located((By.XPATH, "//div//h4[contains(text(), 'Shipping details')]")))
+#        element = wait.until(EC.presence_of_element_located((By.XPATH, "//div//h4[contains(text(), 'Shipping details')]")))
         
         
         html_cont = html.fromstring(driver.page_source)
@@ -344,13 +349,15 @@ def exe_pg_scrape_loop(lst_pgs: list, wait_sec : float):
         print(f'\n\npg# {idx+1}\n pg scrape start: {go_time_start}\n    url: {pg_url}')
         scrape_target_pg(driver, pg_url)
         print(f'\n pg scrape start: {go_time_start}\n pg scrape end:   {get_time_now()}\n    url: {pg_url}\n\n')
-            
-        # if last idx: end
-        if idx == len(lst_pgs)-1: print('** NO MORE PAGES **')
-        else: # sleep 'wait_sec' before next url
+        
+        # validate more pages (sleep between pgs)
+        if idx < len(lst_pgs)-1:
             r_sec = int(random.uniform(wait_sec+WR_LOW, wait_sec+WR_HI))
             wait_sleep(r_sec)
-    driver.close()
+        else:
+            print('** NO MORE PAGES **')
+    driver.quit()
+    
 
 #------------------------------------------------------------#
 #   DEFAULT SUPPORT                                          #

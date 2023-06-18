@@ -103,7 +103,7 @@ def exe_pg_scrape_loop(lst_pgs: list, wait_sec : float):
         else: # sleep 'wait_sec' before next url
             r_sec = int(random.uniform(wait_sec+WR_LOW, wait_sec+WR_HI))
             wait_sleep(r_sec)
-    driver.close()
+    driver.quit()
 
 #------------------------------------------------------------#
 #   DEFAULT SUPPORT                                          #
