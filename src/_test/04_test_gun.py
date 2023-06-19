@@ -59,6 +59,15 @@ def scrape_target_pg(driver, page_url : str):
         html_cont_str = HTML_1.TEST_HTML
         driver.quit()
     
+    '''
+        export: source (organisation/ publisher), date, heading, body text, image, and ideally some information from the body text, i.e. if a certain country or company has been mentionend in the article
+        export: source (organisation/ publisher),
+                dt_published,
+                heading,
+                body text,
+                image,
+                body query (i.e. articel mention's country or company)
+    '''
     # print OG html version
     print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
     print('*** break point ***')
