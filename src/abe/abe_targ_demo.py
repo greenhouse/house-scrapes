@@ -34,7 +34,7 @@ HTML_2 = importlib.import_module('03_test_abe_html_2')
 WAIT_TIME = 10 # sec
 WR_HI = 0
 WR_LOW = -5
-
+AUTO_CLICK_WAIT = True
 LOCAL_TEST = False
 LST_PG_URLS = [ # GET https://www.target.com/s?searchTerm=airpods+pro
     #"https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612#tabContent-tab-ShippingReturns",
@@ -52,30 +52,37 @@ def scrape_target_pg(driver, page_url : str):
     
     print(f'\nGetting page_url content... (LOCAL_TEST: {LOCAL_TEST})\n')
     if not LOCAL_TEST:
-        # NOTE_061823: the html retrieved here is differnt than the html rendered in the GUI
-        #   this is because the htm source is rendered dynamically on user interaction
-        #   hence, can't analyze html source coming from browser,
-        #       need to analyze html source coming from here: driver.page_source
+        '''
+         NOTE_061823: the html retrieved here is differnt than the html rendered in the GUI
+           this is because the htm source is rendered dynamically on user interaction
+           hence, can't analyze html source coming from browser,
+               need to analyze html source coming from here: driver.page_source
         
-        # Need to explicitly wait for the presence of an element on the page
-        #   note_061823: GUI tab 'Shipping & Returns', needs auto-click
-        #    in order to render 'Shipping details' & 'Return details' (for scraping below)
+         Need to explicitly wait for the presence of an element on the page
+           note_061823: GUI tab 'Shipping & Returns', needs auto-click
+            in order to render 'Shipping details' & 'Return details' (for scraping below)
         
-        # Randomly receiving error for shipping & returns auto-click requirement
-        #   err -> "not clickable at point (402, 580). Other element would receive the click"
-        #   note: happens on both immediate click and when using 'WebDriverWait'
-        #   note: when using 'WebDriverWait'
-        #       same result for both 'presence_of_element_located' & 'element_to_be_clickable'
-        driver.get(page_url) # GET html page
-        print('attempting to click element w/o waiting...')
-        driver.find_element(By.XPATH, "//a[@id='tab-ShippingReturns']").click() # required for 'Shipping & Returns'
-
-        #wait = WebDriverWait(driver, 30)  # Maximum wait time of 30 sec
-        #driver.get(page_url) # GET html page
-        #print('waiting for element to be located / clickable...')
-        ##el = wait.until(EC.presence_of_element_located((By.XPATH, "//a[@id='tab-ShippingReturns']")))
-        #el = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@id='tab-ShippingReturns']")))
-        #el.click()
+         Randomly receiving error for shipping & returns auto-click requirement
+           err -> "not clickable at point (402, 580). Other element would receive the click"
+           note: happens on both 'immediate click' and when using 'WebDriverWait'
+           note: when using 'WebDriverWait'
+               same result for both 'presence_of_element_located' & 'element_to_be_clickable'
+        '''
+        # TODO: need to catch exception thrown by .click()
+        # "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a ..."
+        if not AUTO_CLICK_WAIT:
+            # auto-click w/ 'immediate click'
+            driver.get(page_url) # GET html page
+            print('attempting to click element w/o waiting...')
+            driver.find_element(By.XPATH, "//a[@id='tab-ShippingReturns']").click() # required for 'Shipping & Returns'
+        else:
+            # auto-click w/ 'WebDriverWait'
+            wait = WebDriverWait(driver, 30)  # Maximum wait time of 30 sec
+            driver.get(page_url) # GET html page
+            print('waiting for element to be located / clickable...')
+            #el = wait.until(EC.presence_of_element_located((By.XPATH, "//a[@id='tab-ShippingReturns']")))
+            el = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@id='tab-ShippingReturns']")))
+            el.click()
                 
         # gen html obj from webdriver's html src str
         html_cont = html.fromstring(driver.page_source)
