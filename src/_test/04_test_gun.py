@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-__filename = 'test_gunther.py'
-__fname = 'test_gunther'
+__filename = 'test_gun.py'
+__fname = 'test_gun'
 cStrDividerExcept = '***************************************************************'
 cStrDivider = '#================================================================#'
 print('', cStrDivider, f'START _ {__filename}', cStrDivider, sep='\n')
