@@ -26,7 +26,7 @@ from selenium.webdriver.chrome.options import Options
     #from selenium.webdriver.firefox.options import Options
 import random
 import importlib
-HTML_1 = importlib.import_module('04_test_abe_html_1')
+HTML_1 = importlib.import_module('04_test_gun_html_1')
 
 #------------------------------------------------------------#
 #   GLOBALS                                                  #
@@ -60,9 +60,9 @@ def scrape_target_pg(driver, page_url : str):
         driver.quit()
     
     # print OG html version
-    #print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
-    #print('*** break point ***')
-    #while True: pass
+    print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
+    print('*** break point ***')
+    while True: pass
 
 def init_webdriver():
     ## Selenium: init webdrive ##
