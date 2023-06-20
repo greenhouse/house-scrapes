@@ -10,6 +10,18 @@
         "Hi there. These would be a list of websites that I would like to crawl for news articles for specific keywords (e.g. illegal logging). From those articles, I want to export: source (organisation/ publisher), date, heading, body text, image, and ideally some information from the body text, i.e. if a certain country or company has been mentionend in the article"
         "that's correct. I want to search for specific keywords/ news topics"
 
+### known bugs
+    TODO: :- 04_test_gun.py initial integration attempts (not 100% yet)
+        - initial test integration for gunther demo requirements
+            scrape 4 sites that results from query: ‘illegal logging’
+        - within these 4 test sites…
+            found 2 different html content layouts to scrape from
+        - this means the current code base successfully demonstrates 
+            extracting the same exact data from 2 different 
+            rendered layouts provided by the same server side
+        - its quite possible / likely that there are more
+            TODO: should setup try/catch error handlers to log and analyze
+            
 ### demo task
     - elements to extract (target)
         search aricles (query params: '?s=xxx+yyy')
@@ -21,20 +33,43 @@
     - elements to extract, per article (gunther example)
         export: source (organisation/ publisher), date, heading, body text, image, and ideally some information from the body text, i.e. if a certain country or company has been mentionend in the article
         
-
 ### **DESIGN**
+    06.19.23 -> latest extracted key/vals (ref: 04_test_gun.py)
+        dt_pub
+        auth_name
+        auth_url
+        header
+        img_header_url
+        img_header_auth
+        body
+        lst_art_imgs
+        lst_art_img_auths
+        
+        :- example prints of scraped elements
+        print(f'{s} publish date (text) {s}:\n{dt_pub}') # dt_pub
+        print(f'{s0} author name (text) {s}:\n{auth_name}') # auth_name
+        print(f'{s0} author profile (text) {s}:\n{auth_url}') # auth_url
+        print(f'{s0} header (text) {s}:\n{header}') # header
+        print(f'{s0} header img url (text) {s}:\n{img_header_url}') # img_header_url
+        print(f'{s0} header img author (text) {s}:\n{img_header_auth}') # img_header_auth
+        if DEBUG_HIDE: print(f'{s0} body (text) {s}:\n    -> DEBUG_HIDE={DEBUG_HIDE}') # body
+        else: print(f'{s0} body (text) {s}: -> DEBUG_HIDE={DEBUG_HIDE}\n{body}') # body
+        print(f'{s0} article imgs (list text x{len(lst_art_imgs)}) {s}:\n{json.dumps(lst_art_imgs, indent=4)}') # lst_art_imgs
+        print(f'{s0} article img authors (list text x{len(lst_art_img_auths)}) {s}:\n{json.dumps(lst_art_img_auths, indent=4)}') # lst_art_img_auths
+        
     analysis
         ref: https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/
-        extract: (ref: 04_test_gun_html_1.py)
+        extract -> unique in '04_test_gun_html_1.py'
             source (organisation/ publisher) -> '© 2023 Copyright Conservation news': news.mongabay.com
-            author  -> line #251 (<div class="single-article-meta"> by)
-            dt_published -> line #251 (<div class="single-article-meta"> by)
-            heading -> line #249 (<h1>)
-            body text -> line #279 (<article id= ...>)
-            image header -> line #274 (<div class="col-lg-12" style="background: ...>)
-            article images -> line #289 (<figure id= ...><img decoding= ...>)
-            image author -> line #299 ('Banner image:')
-            body query (i.e. search article for country or company name) -> 
+            author -> <div class="single-article-meta"> by
+            dt_published -> <div class="single-article-meta"> by
+            heading -> <h1>
+            body text -> <article id= ...>
+            image header -> <div class="col-lg-12" style="background: ...>
+            article images -> <figure id= ...><img decoding= ...>
+            image author -> 'Banner image:'
+            body query (i.e. search article for country or company name) -> ?
+             
     call stack:
         > https://news.mongabay.com/?s=illegal+logging
         > https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/

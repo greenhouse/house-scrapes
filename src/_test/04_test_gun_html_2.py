@@ -1,53 +1,42 @@
 TEST_HTML = '''
-<html lang="en-US" class="no-js" style="">
+<html lang="en-US" class="no-js">
 <!--<![endif]-->
 
 <head>
     <meta charset="UTF-8">
-    <title>Indonesian campaigns getting money from illegal logging, mining, watchdog says</title>
+    <title>Chinese companies linked to illegal logging and mining in northern DRC</title>
     <link href="//www.google-analytics.com" rel="dns-prefetch">
-
-    <script async="" src="https://www.clarity.ms/s/0.7.8/clarity.js"></script>
-    <script src="https://js.hscollectedforms.net/collectedforms.js" type="text/javascript" id="CollectedForms-5981609" crossorigin="anonymous" data-leadin-portal-id="5981609" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="5981609" data-hsjs-env="prod" data-hsjs-hublet="na1"></script>
-    <script src="https://js.hs-banner.com/v2/5981609/banner.js" type="text/javascript" id="cookieBanner-5981609" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="5981609" data-hsjs-env="prod" data-hsjs-hublet="na1"></script>
-    <script src="https://js.hs-analytics.net/analytics/1687181100000/5981609.js" type="text/javascript" id="hs-analytics"></script>
-    <script async="" src="https://www.clarity.ms/tag/hghawiq8qp"></script>
-    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZHFVHJ3CMZ&amp;l=dataLayer&amp;cx=c"></script>
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5E5Q186GT&amp;l=dataLayer&amp;cx=c"></script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-12973256-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'UA-12973256-1');
-    </script>
     <link rel="shortcut icon" href="https://news.mongabay.com/wp-content/themes/mongabay_v1/img/icons/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" href="https://news.mongabay.com/wp-content/themes/mongabay_v1/img/icons/ico-s2.jpg">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://news.mongabay.com/wp-content/themes/mongabay_v1/img/icons/ico-l2.jpg">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://news.mongabay.com/wp-content/themes/mongabay_v1/img/icons/ico-s.jpg">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://news.mongabay.com/wp-content/themes/mongabay_v1/img/icons/ico-l.jpg">
-    <meta name="referrer" content="always">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Environmental science and conservation news">
-    <meta property="fb:pages" content="24436227877">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5E5Q186GT&amp;l=dataLayer&amp;cx=c"></script>
+    <script async="" src="https://www.clarity.ms/s/0.7.8/clarity.js"></script>
+    <script src="https://js.hscollectedforms.net/collectedforms.js" type="text/javascript" id="CollectedForms-5981609" crossorigin="anonymous" data-leadin-portal-id="5981609" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="5981609" data-hsjs-env="prod" data-hsjs-hublet="na1"></script>
+    <script src="https://js.hs-banner.com/v2/5981609/banner.js" type="text/javascript" id="cookieBanner-5981609" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="5981609" data-hsjs-env="prod" data-hsjs-hublet="na1"></script>
+    <script src="https://js.hs-analytics.net/analytics/1687195200000/5981609.js" type="text/javascript" id="hs-analytics"></script>
+    <script async="" src="https://www.clarity.ms/tag/hghawiq8qp"></script>
     <script>
-        var et_site_url='https://news.mongabay.com';var et_post_id='266658';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+        var et_site_url='https://news.mongabay.com';var et_post_id='256549';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
     </script>
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-    <link rel="canonical" href="https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/">
+    <link rel="canonical" href="https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/">
     <meta name="twitter:label1" content="Written by">
-    <meta name="twitter:data1" content="Philip Jacobson">
+    <meta name="twitter:data1" content="daniel">
     <meta name="twitter:label2" content="Est. reading time">
-    <meta name="twitter:data2" content="4 minutes">
+    <meta name="twitter:data2" content="18 minutes">
     <script type="application/ld+json" class="yoast-schema-graph">
-        {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/","url":"https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/","name":"Indonesian campaigns getting money from illegal logging, mining, watchdog says","isPartOf":{"@id":"https://news.mongabay.com/#website"},"primaryImageOfPage":{"@id":"https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/#primaryimage"},"image":{"@id":"https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/#primaryimage"},"thumbnailUrl":"https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/12/29135831/kalteng_0235.jpg","datePublished":"2023-03-21T15:18:08+00:00","dateModified":"2023-03-21T19:20:13+00:00","author":{"@id":"https://news.mongabay.com/#/schema/person/d5fa41edd2c3efab63662d32ba6e6dd3"},"breadcrumb":{"@id":"https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/#primaryimage","url":"https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/12/29135831/kalteng_0235.jpg","contentUrl":"https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/12/29135831/kalteng_0235.jpg","width":1200,"height":800,"caption":"Illegal logging operation in Borneo, 2013. Image by Rhett A. Butler/Mongabay."},{"@type":"BreadcrumbList","@id":"https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://news.mongabay.com/"},{"@type":"ListItem","position":2,"name":"Indonesian campaigns getting money from illegal logging, mining, watchdog says"}]},{"@type":"WebSite","@id":"https://news.mongabay.com/#website","url":"https://news.mongabay.com/","name":"Conservation news","description":"Environmental science and conservation news","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://news.mongabay.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://news.mongabay.com/#/schema/person/d5fa41edd2c3efab63662d32ba6e6dd3","name":"Philip Jacobson","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://news.mongabay.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/0eb469a3a051c0575a4c465b20d8c274?s=96&d=identicon&r=g","contentUrl":"https://secure.gravatar.com/avatar/0eb469a3a051c0575a4c465b20d8c274?s=96&d=identicon&r=g","caption":"Philip Jacobson"},"sameAs":["https://twitter.com/philjacobius"],"url":"https://news.mongabay.com/author/philip-jacobson/"}]}
+        {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/","url":"https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/","name":"Chinese companies linked to illegal logging and mining in northern DRC","isPartOf":{"@id":"https://news.mongabay.com/#website"},"primaryImageOfPage":{"@id":"https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/#primaryimage"},"image":{"@id":"https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/#primaryimage"},"thumbnailUrl":"https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31164212/fodeco_congo_logs.jpg","datePublished":"2022-05-31T17:04:26+00:00","dateModified":"2022-06-13T09:34:25+00:00","author":{"@id":"https://news.mongabay.com/#/schema/person/534773fbcc232b77200ac486f417f9ad"},"breadcrumb":{"@id":"https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/#primaryimage","url":"https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31164212/fodeco_congo_logs.jpg","contentUrl":"https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31164212/fodeco_congo_logs.jpg","width":1800,"height":1116,"caption":"Decaying log sitting at the premises of Fodeco, a Chinese-owned logging company operating in Tshopo, DRC’s largest forest province. It is not profitable for the company to ship the logs unless they manage to extract enough of them from the forest. Credit: Gloria Pallares/El País"},{"@type":"BreadcrumbList","@id":"https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://news.mongabay.com/"},{"@type":"ListItem","position":2,"name":"Chinese companies linked to illegal logging and mining in northern DRC"}]},{"@type":"WebSite","@id":"https://news.mongabay.com/#website","url":"https://news.mongabay.com/","name":"Conservation news","description":"Environmental science and conservation news","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://news.mongabay.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://news.mongabay.com/#/schema/person/534773fbcc232b77200ac486f417f9ad","name":"daniel","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://news.mongabay.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/45fa985ed5796f00027d0c30159bcca0?s=96&d=identicon&r=g","contentUrl":"https://secure.gravatar.com/avatar/45fa985ed5796f00027d0c30159bcca0?s=96&d=identicon&r=g","caption":"daniel"},"url":"https://news.mongabay.com/author/daniel/"}]}
     </script>
 
     <link rel="dns-prefetch" href="//js.hs-scripts.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <script id="monga-ready">
         window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];
     </script>
@@ -80,9 +69,9 @@ TEST_HTML = '''
     <script type="text/javascript" src="https://news.mongabay.com/wp-content/plugins/advanced-ads/public/assets/js/advanced.min.js" id="advanced-ads-advanced-js-js"></script>
     <script type="text/javascript" src="https://news.mongabay.com/wp-content/plugins/advanced-ads-pro/modules/click-fraud-protection/assets/js/cfp.min.js" id="advanced-ads-pro/cfp-js"></script>
     <link rel="https://api.w.org/" href="https://news.mongabay.com/wp-json/">
-    <link rel="alternate" type="application/json" href="https://news.mongabay.com/wp-json/wp/v2/posts/266658">
-    <link rel="alternate" type="application/json+oembed" href="https://news.mongabay.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.mongabay.com%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F">
-    <link rel="alternate" type="text/xml+oembed" href="https://news.mongabay.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.mongabay.com%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F&amp;format=xml">
+    <link rel="alternate" type="application/json" href="https://news.mongabay.com/wp-json/wp/v2/posts/256549">
+    <link rel="alternate" type="application/json+oembed" href="https://news.mongabay.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.mongabay.com%2F2022%2F05%2Fchinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc%2F">
+    <link rel="alternate" type="text/xml+oembed" href="https://news.mongabay.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.mongabay.com%2F2022%2F05%2Fchinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc%2F&amp;format=xml">
     <style type="text/css">
         .feedzy-rss-link-icon:after {
         	content: url("https://news.mongabay.com/wp-content/plugins/feedzy-rss-feeds/img/external-link.png");
@@ -207,20 +196,20 @@ TEST_HTML = '''
         			if ( 'undefined' == typeof advadsProCfp ) { advadsCfpQueue.push( adID ) } else { advadsProCfp.addElement( adID ) }
         		};
     </script>
-    <meta name="description" content="JAKARTA — Funds from illegal logging, mining and fishing are flowing into election campaigns in Indonesia, authorities have revealed. The announcement by the national anti-money-laundering watchdog, known as the PPATK, during a parliamentary hearing comes less than a year before the country is scheduled to hold legislative and presidential elections. PPATK head Ivan Yustiavandana said […]">
+    <meta name="description" content="BASOKO, Congo — In Yaliwasa, northern DRC, logs from 200-year-old hardwood trees lie rotting deep into the world’s second largest rainforest. They were cut in a hurry to be exported to global processing hubs in Asia, then redistributed to luxury markets in China and beyond. Instead, the precious wood is sprouting orange fungi and crumbles […]">
     <meta name="Tags" content="Mongabay, Mongabay Environmental News, Environmental News, Conservation News">
     <meta property="keywords" content="Mongabay, Mongabay Environmental News, Environmental News, Conservation News">
     <meta name="robots" content="index, follow">
     <link rel="publisher" href="https://plus.google.com/+Mongabay/">
     <meta property="article:publisher" content="https://www.facebook.com/mongabay/">
-    <meta property="og:title" content="Indonesian campaigns getting money from illegal logging, mining, watchdog says">
+    <meta property="og:title" content="Chinese companies linked to illegal logging and mining in northern DRC">
     <meta property="og:site_name" content="Mongabay Environmental News">
-    <meta property="og:url" content="https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/">
+    <meta property="og:url" content="https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/12/29135831/kalteng_0235-768x512.jpg">
-    <meta property="og:description" content="JAKARTA — Funds from illegal logging, mining and fishing are flowing into election campaigns in Indonesia, authorities have revealed. The announcement by the national anti-money-laundering watchdog, known as the PPATK, during a parliamentary hearing comes less than a year before the country is scheduled to hold legislative and presidential elections. PPATK head Ivan Yustiavandana said […]">
-    <meta property="article:published_time" content="2023-03-21T15:18:08+00:00">
-    <meta property="article:modified_time" content="2023-03-21T19:20:13+00:00">
+    <meta property="og:image" content="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31164212/fodeco_congo_logs-768x512.jpg">
+    <meta property="og:description" content="BASOKO, Congo — In Yaliwasa, northern DRC, logs from 200-year-old hardwood trees lie rotting deep into the world’s second largest rainforest. They were cut in a hurry to be exported to global processing hubs in Asia, then redistributed to luxury markets in China and beyond. Instead, the precious wood is sprouting orange fungi and crumbles […]">
+    <meta property="article:published_time" content="2022-05-31T17:04:26+00:00">
+    <meta property="article:modified_time" content="2022-06-13T09:34:25+00:00">
     <meta property="article:section" content="Environmental news">
     <meta property="article:tag" content="Mongabay, Mongabay Environmental News, Environmental News, Conservation News">
     <meta property="fb:admins" content="139042016164873">
@@ -228,9 +217,9 @@ TEST_HTML = '''
     <meta property="fb:app_id" content="1559969950974398">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@mongabay">
-    <meta name="twitter:title" content="Indonesian campaigns getting money from illegal logging, mining, watchdog says">
-    <meta name="twitter:description" content="JAKARTA — Funds from illegal logging, mining and fishing are flowing into election campaigns in Indonesia, authorities have revealed. The announcement by the national anti-money-laundering watchdog, known as the PPATK, during a parliamentary hearing comes less than a year before the country is scheduled to hold legislative and presidential elections. PPATK head Ivan Yustiavandana said […]">
-    <meta name="twitter:image" content="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/12/29135831/kalteng_0235-768x512.jpg">
+    <meta name="twitter:title" content="Chinese companies linked to illegal logging and mining in northern DRC">
+    <meta name="twitter:description" content="BASOKO, Congo — In Yaliwasa, northern DRC, logs from 200-year-old hardwood trees lie rotting deep into the world’s second largest rainforest. They were cut in a hurry to be exported to global processing hubs in Asia, then redistributed to luxury markets in China and beyond. Instead, the precious wood is sprouting orange fungi and crumbles […]">
+    <meta name="twitter:image" content="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31164212/fodeco_congo_logs-768x512.jpg">
     <meta name="twitter:creator" content="@Mongabay">
 
     <script type="text/javascript">
@@ -248,38 +237,35 @@ TEST_HTML = '''
     <style>
     </style>
 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-12973256-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-12973256-1');
+    </script>
     <script src="https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151602" async=""></script>
     <link href="https://api-2-0.spot.im" rel="preconnect" crossorigin="use-credentials">
     <link href="https://static-cdn.spot.im" rel="preconnect" crossorigin="use-credentials">
     <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
-    <script type="text/javascript" async="" src="//cta-service-cms2.hubspot.com/ctas/v2/public/cs/cta-loaded.js?pid=5981609&amp;pg=d7c724ca-5576-4086-bbbb-bf06cc855de2&amp;lt=1687181349088&amp;dt=1687181349091&amp;at=1687181350216&amp;ae=1&amp;sl=1&amp;an=1"></script>
 </head>
 
-<body class="post-template-default single single-post postid-266658 single-format-standard et_bloom indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says aa-prefix-monga- chrome">
+<body class="post-template-default single single-post postid-256549 single-format-aside et_bloom chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc chrome">
+    <div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 600px; width: 800px;"><img class="parallax-slider" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31164212/fodeco_congo_logs-1200x800.jpg" style="transform: translate3d(-50px, 0px, 0px); position: absolute; height: 600px; width: 900px; max-width: none;"></div>
 
     <script async="" data-id="101413169" src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101413169ns.gif" /></p></noscript><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.498039215686"></feFuncR><feFuncG type="table" tableValues="0 0.498039215686"></feFuncG><feFuncB type="table" tableValues="0 0.498039215686"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.549019607843 0.988235294118"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.717647058824 0.254901960784"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.278431372549"></feFuncG><feFuncB type="table" tableValues="0.592156862745 0.278431372549"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.647058823529"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.780392156863 1"></feFuncR><feFuncG type="table" tableValues="0 0.949019607843"></feFuncG><feFuncB type="table" tableValues="0.352941176471 0.470588235294"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.650980392157 0.403921568627"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.447058823529 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.0980392156863 1"></feFuncR><feFuncG type="table" tableValues="0 0.662745098039"></feFuncG><feFuncB type="table" tableValues="0.847058823529 0.419607843137"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg>
-
-    <div class="container">
-        <header class="header" role="banner">
-            <div id="language-bar">
-                <ul>
-                    <li><a href="https://news.mongabay.com/" data-wpel-link="internal">English</a></li>
-                    <li><a href="https://es.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">Español (Spanish)</a></li>
-                    <li><a href="https://fr.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">Français (French)</a></li>
-                    <li><a href="https://www.mongabay.co.id/" data-wpel-link="external" target="_blank" rel="external">Bahasa Indonesia (Indonesian)</a></li>
-                    <li><a href="https://brasil.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">Brasil (Portuguese)</a></li>
-                    <li><a href="https://india.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">India</a></li>
-                    <li><a href="https://hindi.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">हिंदी (Hindi)</a></li>
-                </ul>
-            </div>
-            <div class="site-identity">
-                <div class="logo"><a href="https://news.mongabay.com" data-wpel-link="internal"><svg width="410" height="75" aria-label="Mongabay"><image xlink:href="https://news.mongabay.com/wp-content/themes/mongabay_v1/img/logo/mongabay_logo_news.svg" src="https://news.mongabay.com/wp-content/themes/mongabay_v1/img/logo/mongabay_logo_news.png" width="410" height="75" alt="Mongabay"></image></svg></a></div>
-            </div>
-            <div class="main-menu">
-                <nav class="navbar hidden-md-down navbar-light" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
-                    <div id="navbarMainMenu">
-                        <ul class="navbar-nav mr-auto">
+    <header class="header fixed-top header-small" role="banner">
+        <nav class="navbar navbar-light" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+            <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse">
+<span class="navbar-toggler-icon"></span>
+</button>
+            <div class="collapse navbar-collapse" id="navbarFeaturedMenu">
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <strong>News sections</strong>
                             <li class="nav-item 1"><a href="https://rainforests.mongabay.com/" class="nav-link" data-wpel-link="external" target="_blank" rel="external">Rainforests</a></li>
                             <li class="nav-item 2"><a href="https://news.mongabay.com/list/oceans" class="nav-link" data-wpel-link="internal">Oceans</a></li>
                             <li class="nav-item 3"><a href="https://news.mongabay.com/list/wildlife" class="nav-link" data-wpel-link="internal">Animals</a></li>
@@ -287,319 +273,225 @@ TEST_HTML = '''
                             <li class="nav-item 5"><a href="https://news.mongabay.com/list/business" class="nav-link" data-wpel-link="internal">Business</a></li>
                             <li class="nav-item 6"><a href="https://news.mongabay.com/list/conservation-solutions" class="nav-link" data-wpel-link="internal">Solutions</a></li>
                             <li class="nav-item 7"><a href="https://kids.mongabay.com/" class="nav-link" data-wpel-link="external" target="_blank" rel="external">For Kids</a></li>
-                            <li class="nav-item 8"><a href="https://donate.mongabay.org/?utm_source=mongabay.com&amp;utm_medium=headerlink&amp;utm_campaign=com-header-text-link-new&amp;__hstc=92495938.c86f9fa79b1997bfe770fbab16f7287e.1687181350419.1687181350419.1687181350419.1&amp;__hssc=92495938.1.1687181350419&amp;__hsfp=2109393862" class="nav-link" data-wpel-link="external" target="_blank" rel="external">DONATE</a></li>
-                            <li class="nav-item 9"><a href="https://mongabay.org/tag/impacts/?__hstc=92495938.c86f9fa79b1997bfe770fbab16f7287e.1687181350419.1687181350419.1687181350419.1&amp;__hssc=92495938.1.1687181350419&amp;__hsfp=2109393862" class="nav-link" data-wpel-link="external" target="_blank" rel="external">Impact</a></li>
+                            <li class="nav-item 8"><a href="https://donate.mongabay.org/?utm_source=mongabay.com&amp;utm_medium=headerlink&amp;utm_campaign=com-header-text-link-new&amp;__hstc=92495938.b337defb3c02883583927b64eca4aec0.1687195251481.1687195251481.1687195251481.1&amp;__hssc=92495938.1.1687195251482&amp;__hsfp=2109393862" class="nav-link" data-wpel-link="external" target="_blank" rel="external">DONATE</a></li>
+                            <li class="nav-item 9"><a href="https://mongabay.org/tag/impacts/?__hstc=92495938.b337defb3c02883583927b64eca4aec0.1687195251481.1687195251481.1687195251481.1&amp;__hssc=92495938.1.1687195251482&amp;__hsfp=2109393862" class="nav-link" data-wpel-link="external" target="_blank" rel="external">Impact</a></li>
                             <li class="nav-item 10"><a href="https://www.mongabay.com/about/" class="nav-link" data-wpel-link="external" target="_blank" rel="external">More</a></li>
-                            <li class="menu-search">
-                                <form class="search" method="get" action="https://news.mongabay.com" role="search" data-hs-cf-bound="true">
-                                    <input class="search-input" type="search" name="s" placeholder="To search, type and hit enter.">
-                                </form>
-
+                        </ul>
+                        <ul>
+                            <strong>Language</strong>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://news.mongabay.com/" data-wpel-link="internal">English</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://es.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">Español (Spanish)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://fr.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">Français (French)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.mongabay.co.id/" data-wpel-link="external" target="_blank" rel="external">Bahasa Indonesia (Indonesian)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://brasil.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">Brasil (Portuguese)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://india.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">India</a><a class="nav-link" href="https://hindi.mongabay.com/" data-wpel-link="external" target="_blank" rel="external"> (हिंदी)</a>
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </div>
             </div>
-        </header>
+        </nav>
+        <div class="logo-small">
+            <a href="https://news.mongabay.com" data-wpel-link="internal"><svg width="120" height="26" aria-label="Mongabay"><image xlink:href="https://news.mongabay.com/wp-content/themes/mongabay_v1/img/logo/mongabay_logo_black.svg" src="https://news.mongabay.com/wp-content/themes/mongabay_v1/img/logo/mongabay_logo_black.png" width="120" height="26" alt="Mongabay"></image></svg></a>
+        </div>
+        <div class="social hidden-xs-down">
+            <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnews.mongabay.com%2F2022%2F05%2Fchinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc%2F" target="_blank" data-wpel-link="external" rel="external"><svg class="icon"><use xlink:href="#facebook"></use></svg></a><a class="twitter" href="https://twitter.com/intent/tweet?text=Chinese%20companies%20linked%20to%20illegal%20logging%20and%20mining%20in%20northern%20DRC&amp;url=https%3A%2F%2Fnews.mongabay.com%2F2022%2F05%2Fchinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc%2F&amp;via=MongabayOrg" target="_blank" data-wpel-link="external" rel="external"><svg class="icon"><use xlink:href="#twitter"></use></svg></a><a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fnews.mongabay.com%2F2022%2F05%2Fchinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc%2F&amp;title=Chinese%20companies%20linked%20to%20illegal%20logging%20and%20mining%20in%20northern%20DRC" target="_blank" data-wpel-link="external" rel="external"><svg class="icon"><use xlink:href="#linkedin"></use></svg></a>
+            <a class="whatsapp" href="whatsapp://send?text=https%3A%2F%2Fnews.mongabay.com%2F2022%2F05%2Fchinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc%2F&amp;title=Chinese%20companies%20linked%20to%20illegal%20logging%20and%20mining%20in%20northern%20DRC" target="_blank" data-wpel-link="internal"></a>
+            <a class="email" href="javascript:emailArticle()" data-wpel-link="internal"></a>
+            <a class="bookmark" id="bookmark" href="#" title="Chinese%20companies%20linked%20to%20illegal%20logging%20and%20mining%20in%20northern%20DRC" rel="sidebar"></a>
+            <script>
+                jQuery(function() {
+                  jQuery('#bookmark').click(function() {
+                    if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
+                      window.sidebar.addPanel(document.title, window.location.href, '');
+                    } else if (window.external && ('AddFavorite' in window.external)) { // IE Favorite
+                      window.external.AddFavorite(location.href, document.title);
+                    } else if (window.opera && window.print) { // Opera Hotlist
+                      this.title = document.title;
+                      return true;
+                    } else { // webkit - safari/chrome
+                      alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
+                    }
+                  });
+                });
+        
+                function emailArticle(){
+                    window.location.href="mailto:?subject="+document.title+"&body="+escape(window.location.href);
+                }
+            </script>
+        </div>
+        <div class="sharemobile hidden-sm-up">
+            <a class="sharethis"></a>
+        </div>
+    </header>
+
+    <div class="row no-gutters">
+        <div class="col-lg-12 parallax-section full-height article-cover" data-parallax="scroll" data-image-src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31164212/fodeco_congo_logs-1200x800.jpg">
+            <div class="featured-article-meta">
+                <h1 class="title">Chinese companies linked to illegal logging and mining in northern DRC</h1>
+                <span class="subtitle">
+Collusion with Congolese officials enables illicit global trade in endangered timber and minerals through irregular permits and export quotas </span>
+                <span class="featured-article-publish">
+by <a href="https://news.mongabay.com/by/gloria-pallares/" rel="tag" data-wpel-link="internal">Gloria Pallares</a> on 31 May 2022 </span>
+            </div>
+        </div>
         <div class="clearfix"></div>
-        <main role="main">
-            <div id="headline">
-                <div class="article-headline">
-                    <h1>Indonesian campaigns getting money from illegal logging, mining, watchdog says</h1>
-                </div>
-                <div class="single-article-meta">
-                    by <a href="https://news.mongabay.com/by/hans-nicholas-jong/" rel="tag" data-wpel-link="internal">Hans Nicholas Jong</a> on 21 March 2023
-                    <div class="social"><a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnews.mongabay.com%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F" target="_blank" data-wpel-link="external" rel="external"><svg class="icon"><use xlink:href="#facebook"></use></svg></a><a class="twitter" href="https://twitter.com/intent/tweet?text=Indonesian%20campaigns%20getting%20money%20from%20illegal%20logging,%20mining,%20watchdog%20says&amp;url=https%3A%2F%2Fnews.mongabay.com%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F&amp;via=MongabayOrg" target="_blank" data-wpel-link="external" rel="external"><svg class="icon"><use xlink:href="#twitter"></use></svg></a><a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fnews.mongabay.com%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F&amp;title=Indonesian%20campaigns%20getting%20money%20from%20illegal%20logging,%20mining,%20watchdog%20says" target="_blank" data-wpel-link="external" rel="external"><svg class="icon"><use xlink:href="#linkedin"></use></svg></a>
-                        <a class="whatsapp" href="whatsapp://send?text=https%3A%2F%2Fnews.mongabay.com%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F&amp;title=Indonesian%20campaigns%20getting%20money%20from%20illegal%20logging,%20mining,%20watchdog%20says" target="_blank" data-wpel-link="internal"></a>
-                        <a class="email" href="javascript:emailArticle()" data-wpel-link="internal"></a>
-                        <a class="bookmark" id="bookmark" href="#" title="Indonesian%20campaigns%20getting%20money%20from%20illegal%20logging,%20mining,%20watchdog%20says" rel="sidebar"></a>
-                        <script>
-                            jQuery(function() {
-                              jQuery('#bookmark').click(function() {
-                                if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
-                                  window.sidebar.addPanel(document.title, window.location.href, '');
-                                } else if (window.external && ('AddFavorite' in window.external)) { // IE Favorite
-                                  window.external.AddFavorite(location.href, document.title);
-                                } else if (window.opera && window.print) { // Opera Hotlist
-                                  this.title = document.title;
-                                  return true;
-                                } else { // webkit - safari/chrome
-                                  alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
-                                }
-                              });
-                            });
-                    
-                            function emailArticle(){
-                                window.location.href="mailto:?subject="+document.title+"&body="+escape(window.location.href);
-                            }
-                        </script>
-                    </div>
-                </div>
-            </div>
-            <div class="row article-cover-image no-gutters">
-                <div class="col-lg-12" style="background: url('https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/12/29135831/kalteng_0235.jpg');background-size: cover; background-position: center"></div>
-            </div>
-            <div class="row">
+    </div>
+
+    <main role="main">
+        <div class="container">
+            <div class="row justify-content-center">
                 <div id="main" class="col-lg-8 single">
 
-                    <article id="post-266658" class="post-266658 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-deforestation tag-environment tag-forest tag-illegal-logging tag-illegal-mining tag-rainforests tag-tropical-forests location-asia location-indonesia location-southeast-asia topic-corruption topic-deforestation topic-environment topic-environmental-politics topic-forests topic-illegal-logging topic-illegal-mining topic-politics topic-rainforests topic-tropical-forests byline-hans-nicholas-jong">
+                    <article id="post-256549" class="post-256549 post type-post status-publish format-aside has-post-thumbnail hentry category-uncategorized post_format-post-format-aside location-africa location-central-africa location-china location-democratic-republic-of-congo topic-conservation topic-deforestation topic-environment topic-featured topic-forestry topic-forests topic-logging topic-rainforest-conservation topic-rainforest-deforestation topic-rainforest-destruction topic-rainforests topic-threats-to-rainforests topic-tropical-forests byline-gloria-pallares">
                         <div class="bulletpoints">
                             <ul>
-                                <li><em>As Indonesia gears up for legislative and presidential elections in less than a year, authorities have warned of the pattern of dirty money from illegal logging, mining and fishing flowing into past campaigns.</em></li>
-                                <li><em>Experts say the practice of candidates taking this money from companies that exploit natural resources is common, given the high cost of running a campaign.</em></li>
-                                <li><em>This then perpetuates a tit-for-tat cycle that sees the winning candidate pay back their funders in the form of land concessions and favorable regulations.</em></li>
+                                <li><em>An investigation by EL PAÍS/Planeta Futuro finds evidence of illegal extraction of endangered tree species, precious minerals and strategic metals headed for global markets.</em></li>
+                                <li><em>The investigation reveals that Chinese-owned companies use ‘complaisance’ permits to log and export CITES II-listed Afrormosia, which international demand pushed to extinction in other African countries, and flags irregularities in the latest export quota. European countries will consider stricter measures on imports from the DRC.</em></li>
+                                <li><em>Military-protected concessionaires have been illegally mining gold, diamonds and rare metals with prospecting licenses for more than a year. They use mercury, a neurotoxic pollutant, in waters communities use to fish, bathe and drink.</em></li>
+                                <li><em>Mongabay has partnered with EL PAÍS/Planeta Futuro to publish this investigation in English. This story was produced with the support of the Rainforest Journalism Investigations Network (RIN) of the Pulitzer Center.</em></li>
                             </ul>
                         </div>
-                        <p>JAKARTA — Funds from illegal logging, mining and fishing are flowing into election campaigns in Indonesia, authorities have revealed.</p>
-                        <p>The announcement by the national anti-money-laundering watchdog, known as the PPATK, during a parliamentary hearing comes less than a year before the country is scheduled to hold legislative and presidential elections.</p>
-                        <p>PPATK head Ivan Yustiavandana said his agency had found indications that candidates in the 2014 and 2019 elections used money raised from the illegal extraction of natural resources to fund their campaigns. He did not identify the candidates, including whether they ran in the legislative or presidential elections those years.</p>
-                        <p>“We can’t disclose the amount here, but it’s huge,” Ivan <a href="https://www.kompas.id/baca/polhuk/2023/02/14/ppatk-endus-dana-ilegal-beredar-di-pemilu" data-wpel-link="external" target="_blank" rel="external">told lawmakers</a> in Jakarta on Feb. 14. “The original crime itself is trillions of rupiah [in amount], because it’s related to many crimes that are linked to natural resources, and this money goes into certain individuals who we suspect as political persons.”</p>
-                        <p>Official data <a href="https://nasional.kompas.com/read/2020/11/16/16164791/kpk-sebut-negara-rugi-rp-35-triliun-per-tahun-akibat-pembalakan-liar" data-wpel-link="external" target="_blank" rel="external">show</a> that illegal logging costs the country 35 trillion rupiah ($2.3 billion) in state losses each year, while illegal mining <a href="https://betahita.id/news/detail/8230/tambang-ilegal-bikin-negara-rugi-triliunan-rupiah.html?v=1670866464" data-wpel-link="external" target="_blank" rel="external">results</a> in 3.6 trillion rupiah ($233 million) in state losses.</p>
-                        <p>Ivan said the PPATK is working together with the country’s General Elections Commission, or KPU, and the Elections Supervisory Agency, or Bawaslu, in investigating the flow of money.</p>
-                        <p>Responding to the findings, lawmaker Arsul Sani from the PPP party called on the PPATK to provide a detailed report on its findings, including identifying the parties that benefited from these funds. This could then form the basis for filing a criminal complaint, he added.</p>
-                        <p>KPU chairman Hasyim Asy’ari and Bawaslu chairman Rahmat Bagja also <a href="https://news.detik.com/pemilu/d-6568900/ppatk-ungkap-indikasi-praktik-tppu-dalam-proses-pemilu-ini-respons-kpu" data-wpel-link="external" target="_blank" rel="external">urged</a> the PPATK to <a href="https://www.merdeka.com/peristiwa/bawaslu-dorong-ppatk-koordinasi-dengan-penegak-hukum-terkait-temuan-tppu-untuk-pemilu.html" data-wpel-link="external" target="_blank" rel="external">report the findings</a> to law enforcers, including the Corruption Eradication Commission, or KPK.</p>
-                        <p>KPK spokesman Ali Fikri <a href="https://www.jawapos.com/nasional/hukum-kriminal/15/02/2023/kpk-tunggu-laporan-ppatk-soal-dugaan-pencucian-uang-untuk-pemilu-2024/" data-wpel-link="external" target="_blank" rel="external">said</a> the commission would follow up on the PPATK’s finding once it received a formal report. However, he noted that the KPK’s scope of investigations only covers corruption and bribery, and that if the flows of money from illegal logging, mining and fishing don’t involve bribery, then the KPK can’t act.</p>
-                        <figure id="attachment_226306" class="wp-caption aligncenter"><img decoding="async" class="size-medium wp-image-226306" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2020/01/16052042/Penebangan-liar-di-Lamteuba-Kabupaten-Aceh-Besar-6-768x512.jpg" alt="" width="768" height="512" srcset="https://imgs.mongabay.com/wp-content/uploads/sites/20/2020/01/16052042/Penebangan-liar-di-Lamteuba-Kabupaten-Aceh-Besar-6-768x512.jpg 768w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2020/01/16052042/Penebangan-liar-di-Lamteuba-Kabupaten-Aceh-Besar-6-610x407.jpg 610w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2020/01/16052042/Penebangan-liar-di-Lamteuba-Kabupaten-Aceh-Besar-6.jpg 900w" sizes="(max-width: 768px) 100vw, 768px">
-                            <figcaption class="wp-caption-text">Illegal logging is still rampant in Aceh’s forests and sometimes the perpetrators use weapons to fight back law enforcers. Image by Junaidi Hanafiah/Mongabay-Indonesia.</figcaption>
-                        </figure>
-                        <p>Edward Aspinall, an expert in Indonesian politics at Australian National University (ANU), said the use of illicit money to fund political campaigns is to be expected because the cost or running for public office is very high.</p>
-                        <p>Candidates have to raise massive amounts of money for things like campaign events and handouts to voters, even if running for a city council seat. In many cases, they get funding from businesses in the natural resources industry, like mining and plantations, or are sometimes business owners themselves, Aspinall said.</p>
-                        <p>“It’s common in rural districts in Indonesia [that] plantation companies’ owners, mining companies’ owners are the major investors in the campaign of political candidates,” Aspinall said during a recent online event.</p>
-                        <p>Should the candidates win office, they’re expected to pay back the businesspeople who funded their campaigns. This often comes in the form of favors such as land concessions or regulatory changes that benefit the companies, Aspinall said.</p>
-                        <p>He cited the case of an unnamed major nickel operation on the island of Sulawesi that’s funding all of the leading candidates running in local elections there. This model, Aspinall said, has become the pattern in Indonesia.</p>
-                        <p>“So we see a political system that generates few dynamics, few checks on natural resource exploitation and deforestation, but provides incentives to political and economic elites to perpetuate deforestation,” he said.</p>
-                        <p>This practice is illegal and violates existing campaign finance regulations, he said, but is largely going unreported to the authorities. This is because a large chunk of the election funding goes toward more illegal activities — typically vote buying, he said.</p>
-                        <p>“The fundamental problem here is that there’s very little enforcement of existing campaign finance regulations,” Aspinall said.</p>
+                        <p>BASOKO, Congo — In Yaliwasa, northern DRC, logs from 200-year-old hardwood trees lie rotting deep into the world’s second largest rainforest. They were cut in a hurry to be exported to global processing hubs in Asia, then redistributed to luxury markets in China and beyond. Instead, the precious wood is sprouting orange fungi and crumbles to the touch.</p>
+                        <p>Some of the logs are unmarked, but they all belong to Fodeco, a Chinese-owned company without industrial logging experience that <a href="https://drive.google.com/file/d/17ancO6mQYjtb4ogtLHXP8X6yBBSGSiOA/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">was handed a concession three times</a> the size of New York city in 2015. The company soon came into conflict with local communities over compensation, and they have since boycotted the removal of the timber.</p>
+                        <p>“Other [Chinese] companies I’ve worked for pay policemen or the military to protect their interests, but we don’t have the money because we can’t get the wood to markets,” said concession manager Liga Guo. He is referring to <a href="https://drive.google.com/file/d/1qux2PKG5HVehApuCrwN_9eZQAD1eZARw/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">Maniema Union</a>, the holder of logging concessions illegally traded by a <a href="https://www.globalwitness.org/en/press-releases/congolese-general-sanctioned-by-us-and-eu-for-human-rights-abuses-is-trading-in-illegal-logging-permits-over-drcs-climate-critical-forests-global-witness-reveals/" data-wpel-link="external" target="_blank" rel="external">Congolese army general</a>, General Gabriel Amisi Kumba, who was sanctioned by the US and the EU for human rights abuses in 2019.</p>
+                        <p>“All I want is to extract the logs, ship the timber, get the hell out of here. But it is impossible to work like this. I left China to make a living, but this job is killing me,” he said, carrying a bag full of antiparasitic and antimalarial pills to his container home next to the Congo river.</p>
+                        <p>Fodeco holds one of the 18 contracts successive ministers awarded in violation of the country’s 20-year moratorium on new industrial logging ”an outright sale of forestry concessions,” according to an <a href="https://medd.gouv.cd/rapport-de-mission-relatif-au-controle-de-la-legalite-des-allocations-et-cessions-des-concessions-forestieres-et-des-droits-dus-au-tresor-public-par-les-exploitants-forestiers-formels/" data-wpel-link="external" target="_blank" rel="external">audit</a> by Congolese finance inspectors that was recently published following months of <a href="https://news.mongabay.com/by/gloria-pallares/#:~:text=Revealed%3A%20Timber%20giant%20quietly%20converts%20Congo%20logging%20sites%20to%20carbon%20schemes" data-wpel-link="internal">pressure</a> by international NGOs and media.</p>
+                        <p>Downstream, a subsidiary of the <a href="https://opencorporates.com/companies/hk/2715654" data-wpel-link="external" target="_blank" rel="external">Hong Kong-registered Booming Group</a>, is also harvesting hardwood in breach of DRC law, while nearby Xiang Jiang Mining is illegally dredging for precious and strategic minerals.</p>
+                        <p>An investigation by EL PAÍS/Planeta Futuro has obtained evidence showing how Chinese-owned companies in northern DRC are illegally extracting natural resources using permits that amount to blank checks. The companies are extracting and exporting endangered tree species and minerals in breach of DRC law, and violating labor and human rights in collusion with officials.</p>
                         <p>&nbsp;</p>
-                        <p><em>Banner image: Illegal logging operation in Borneo, 2013. Image by Rhett A. Butler/Mongabay.</em></p>
-                        <p><em>Also by this reporter:&nbsp;</em></p>
-                        <blockquote class="wp-embedded-content" data-secret="2Y2xXBwjEa" style="display: none;">
-                            <p><a href="https://news.mongabay.com/2023/03/indonesia-aims-to-use-gas-in-foreign-funded-energy-transition-critics-cry-foul/" data-wpel-link="internal">Indonesia aims to use gas in foreign-funded energy transition; critics cry foul</a></p>
-                        </blockquote>
-                        <iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="“Indonesia aims to use gas in foreign-funded energy transition; critics cry foul” — Conservation news" src="https://news.mongabay.com/2023/03/indonesia-aims-to-use-gas-in-foreign-funded-energy-transition-critics-cry-foul/embed/#?secret=9Q7mSCgKfI#?secret=2Y2xXBwjEa" data-secret="2Y2xXBwjEa" width="500" height="306" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-                        <p><b>FEEDBACK: Use&nbsp;<a href="https://form.jotform.com/72624901146150" target="_blank" rel="external noopener noreferrer" data-wpel-link="external">this form</a>&nbsp;to send a message to the author of this post. If you want to post a public comment, you can do that at the bottom of the page.</b></p>
+                        <h2>Logging permits ‘à la carte’</h2>
+                        <p>The EU, the UK, Norway and another nine donors are keeping an eye on the DRC following a pledge of <a href="https://www.cafi.org/countries/democratic-republic-congo/decisive-usd-500-m-agreement-cop26-protect-dr-congos-forest" data-wpel-link="external" target="_blank" rel="external">$500 million for Congo forest conservation at COP26</a>. The publication of the financial audit on logging titles marked the first milestone of the arrangement and the DRC’s environment minister, Ève Bazaiba, committed to suspending the companies listed in the report until further notice.</p>
+                        <p>Nearly a year after the <a href="https://drive.google.com/file/d/168e7nRvg0yz0Dy3cCNWUebipome5C6Ot/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">completion of the audit</a>, the suspension order was finally issued, but <a href="https://medd.gouv.cd/arrete-ministeriel-n015-cab-vpm-min-edd-tsb-pdk-02-2022-du-05-avril-2022-dexploitation-et-de-conservation-illegalement-octroyees/" data-wpel-link="external" target="_blank" rel="external">Fodeco was not on the list</a>.</p>
+                        <p>In January 2020, <a href="https://drive.google.com/file/d/1odGJvhifaCBdf95m6XNRyAzO5yBkDYk3/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">unpublished reports</a> accessed by this reporter were already flagging Fodeco’s infractions. The company allegedly presented false quarterly logging declarations, destroyed seedlings, and failed to produce a mandatory management plan.</p>
+                        <figure id="attachment_256571" class="wp-caption aligncenter"><img decoding="async" class="size-full wp-image-256571" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161310/Fodeco-log-min-scaled.jpeg" alt="" width="2560" height="1920" srcset="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161310/Fodeco-log-min-scaled.jpeg 2560w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161310/Fodeco-log-min-768x576.jpeg 768w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161310/Fodeco-log-min-1536x1152.jpeg 1536w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161310/Fodeco-log-min-2048x1536.jpeg 2048w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161310/Fodeco-log-min-610x458.jpeg 610w" sizes="(max-width: 2560px) 100vw, 2560px">
+                            <figcaption class="wp-caption-text">A tree felled by Fodeco marked ‘ACC1’, logged using a permit based on a fictitious tree inventory. The company obtained its concession in violation of the DRC’s 20-year moratorium on new industrial logging. Credit: Gloria Pallares/El País</figcaption>
+                        </figure>
+                        <p>This investigation also obtained a December 2020 <a href="https://drive.google.com/file/d/1hS8HSObOPzgRhR_cKQUvbI6zQh7q2q8f/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">declaration</a> where the company admits arrangements to lower taxes and the failure to pay income and pollution taxes.</p>
+                        <p>Fodeco also applied for a <a href="https://drive.google.com/file/d/1mZwrR8KPLMr44-R7RbWNQccOHmWEE9Sx/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">logging permit</a> with <a href="https://drive.google.com/file/d/1odGJvhifaCBdf95m6XNRyAzO5yBkDYk3/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">‘imaginary’ tree inventories</a>, which were nevertheless approved by the environment minister at the time, Amy Ambatobe Nyongolo.</p>
+                        <p>“In the DRC, any document, any proof of legality can be bought; administrations are legalizing machines,” an international consultant based in Kinshasa, who spoke on condition of anonymity since he advises DRC authorities on forest governance, told us.</p>
+                        <p>Official <a href="https://drive.google.com/file/d/1odGJvhifaCBdf95m6XNRyAzO5yBkDYk3/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">documents</a> obtained by this investigation show that Fodeco was granted permission to harvest 2,885 Afrormosia (Pericopsis elata) trees between 2018 and 2019. Northeastern DRC has the world’s largest remaining pockets of this endangered species, a giant that can reach the height of a 15-story building which needs between 120 and 200 years to reach the harvesting diameter.</p>
+                        <p>International demand wiped out the prized indigenous hardwood species in several Western and Central African countries, and its exports are now strictly regulated by the Convention on International Trade of Endangered Species, or CITES, through a system of quotas and permits.</p>
+                        <p>Fodeco was authorized to harvest the tree, commonly known as African teak, based on an inventory it presented. But <a href="https://drive.google.com/file/d/1cECtnnQdZJ63bkQZ4_drUPFg3VIR9_S_/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">the trees did not exist</a> in the annual logging areas, so the company felled the trees wherever they could find them, including beyond the authorized limits of its permits and on the lands of forest-dependent communities.</p>
+                        <p>This investigation found they also resorted to acquiring sawn Afrormosia from artisanal, unlicensed loggers, and had <a href="https://drive.google.com/file/d/1hS8HSObOPzgRhR_cKQUvbI6zQh7q2q8f/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">500 pieces impounded</a>, according to the police.</p>
+                        <p>Samuel Ekomba – not his real name – is one of the informal loggers who harvested Afrormosia for Fodeco. He paid $20 per tree to customary forest owners, then sold it to the company 30% below the local price of $245 per cubic meter. In global markets, Afrormosia lumber sells for $1,200 to $2,000 per cubic meter and is used to make high-end fittings and furniture.</p>
+                        <p>“I have been working without an artisanal logging permit for a decade,” Ekomba said. “I hoped Fodeco would give me the money to apply for it, so I could eventually produce timber for them legally, but I’m right where I started.”</p>
+                        <p>Part of the wood he sold to the Chinese-owned company still sits in their premises, darkening inside an open shipping container.</p>
+                        <figure id="attachment_256592" class="wp-caption aligncenter"><img decoding="async" class="size-full wp-image-256592" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31165738/5_Afrormosia-acquired-from-informal-loggers-scaled.jpeg" alt="" width="2560" height="1920" srcset="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31165738/5_Afrormosia-acquired-from-informal-loggers-scaled.jpeg 2560w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31165738/5_Afrormosia-acquired-from-informal-loggers-768x576.jpeg 768w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31165738/5_Afrormosia-acquired-from-informal-loggers-1536x1152.jpeg 1536w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31165738/5_Afrormosia-acquired-from-informal-loggers-2048x1536.jpeg 2048w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31165738/5_Afrormosia-acquired-from-informal-loggers-610x458.jpeg 610w" sizes="(max-width: 2560px) 100vw, 2560px">
+                            <figcaption class="wp-caption-text">Timber bought from forest-dependant people sits in a shipping container in Fodeco’s concession. Credit: Gloria Pallares/El País</figcaption>
+                        </figure>
+                        <p>&nbsp;</p>
+                        <h2>Rich land, poor people</h2>
+                        <p>“These [Fodeco] people came here with no experience and no translator, so they can hardly communicate with anyone,” said a Congolese employee with years of experience in the industrial logging sector, speaking on condition of anonymity for fear of reprisals. “We wonder <a href="https://drive.google.com/file/d/17ancO6mQYjtb4ogtLHXP8X6yBBSGSiOA/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">how they ever got permission</a> to start this business,” he added, pointing at pyramids of decaying logs from century-old trees that once topped the canopy.</p>
+                        <p>He lost a finger logging in the forest, but never received any compensation or medical care beyond first aid. DRC <a href="http://www.leganet.cd/Legislation/Droit%20economique/Code%20Forestier/rdc-loiforets.pdf" data-wpel-link="external" target="_blank" rel="external">law requires companies to issue contracts to employees after three months</a>, but three years into the job, the man and his co-workers, who parted from their families in Kinshasa to join Fodeco, are still laborers earning as little as $3 per day.</p>
+                        <figure id="attachment_256594" class="wp-caption aligncenter"><img decoding="async" class="size-full wp-image-256594" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31170019/7_Workplace-accident-1-scaled.jpeg" alt="" width="2560" height="1920" srcset="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31170019/7_Workplace-accident-1-scaled.jpeg 2560w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31170019/7_Workplace-accident-1-768x576.jpeg 768w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31170019/7_Workplace-accident-1-1536x1152.jpeg 1536w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31170019/7_Workplace-accident-1-2048x1536.jpeg 2048w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31170019/7_Workplace-accident-1-610x458.jpeg 610w" sizes="(max-width: 2560px) 100vw, 2560px">
+                            <figcaption class="wp-caption-text">A logger who lost his finger in an industrial accident shows reporter’s his injury. Credit: Gloria Pallares/El País</figcaption>
+                        </figure>
+                        <p>In a remote forest at Yawinawina, community members who used to work for Fodeco retraced the steps towards a logging camp, pointing out the flimsy leaf shacks where they used to sleep. The <a href="http://www.leganet.cd/Legislation/Droit%20economique/Code%20Forestier/rdc-loiforets.pdf" data-wpel-link="external" target="_blank" rel="external">Forest Code</a> also requires companies to provide workers in the forest with adequate living quarters, drinking water and health facilities.</p>
+                        <p>“Half a cup of rice per day, sleeping on the floor, no mosquito nets, no contract, no nursing room…Are we beasts?,” Joseph Atuku said. “We had so hoped it would be good for us, good for the community.”</p>
+                        <p>The company operates in Basoko territory, a marshy area with five industrial logging concessions, one of the largest palm oil plantations in the region, and a mining venture operating around the clock.</p>
+                        <p>The region’s natural resources attracted investors from China, Europe, South Africa and the US, and involved investment vehicles in secrecy jurisdictions such as Lichtenstein, the Cayman Islands, Mauritius and Delaware. But that wealth is not reflected in the living standards of people in the area, where one in three children are chronically malnourished.</p>
+                        <p>Along river banks, boys with reddish-orange hair — a symptom of severe protein deficiency — unknowingly bathe beside diamond fields, under the shade of towering hardwood trees worth thousands of dollars in international markets.</p>
+                        <p>Jean Francis Ilinga Mokonzi is a customary and administrative leader with a leopard headdress, a 40-fang necklace — each piece representing a village — and a law degree. “Our ancestral forest is being plundered with the connivance of our own authorities. There’s all this talk about climate change, but the forestry administration is corrupt to the bone.”</p>
+                        <figure id="attachment_256563" class="wp-caption aligncenter"><img decoding="async" class="size-full wp-image-256563" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31160956/1_Chief-Francis_Yaliwasa-scaled.jpg" alt="" width="2560" height="1920" srcset="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31160956/1_Chief-Francis_Yaliwasa-scaled.jpg 2560w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31160956/1_Chief-Francis_Yaliwasa-768x576.jpg 768w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31160956/1_Chief-Francis_Yaliwasa-1536x1152.jpg 1536w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31160956/1_Chief-Francis_Yaliwasa-2048x1536.jpg 2048w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31160956/1_Chief-Francis_Yaliwasa-610x458.jpg 610w" sizes="(max-width: 2560px) 100vw, 2560px">
+                            <figcaption class="wp-caption-text">Jean Francis Ilinga Mokonzi is a customary and administrative leader in Yaliwasa, a remote forest-dependent community in Tshopo province affected by Fodeco’s logging concession. Credit: Gloria Pallares/El País</figcaption>
+                        </figure>
+                        <p>&nbsp;</p>
+                        <h2>International trade in endangered species</h2>
+                        <p>Across the river from Fodeco, Chinese-owned <a href="https://cod-data.forest-atlas.org/documents/275b8ce7ac9647bd808ceda47abaf577/explore" data-wpel-link="external" target="_blank" rel="external">Booming Green controls more than 1 million hectares of rainforest</a>. The logging giant, which also works in Liberia, acquired five concessions in 2017 in violation of DRC’s ban on new industrial felling. Congolese inspectors also accuse them of owing $2.59 million to the treasury in acquisition fees and area taxes, but their concession numbers do not feature on the <a href="https://medd.gouv.cd/arrete-ministeriel-n015-cab-vpm-min-edd-tsb-pdk-02-2022-du-05-avril-2022-dexploitation-et-de-conservation-illegalement-octroyees/" data-wpel-link="external" target="_blank" rel="external">suspension order</a>.</p>
+                        <p>This investigation obtained Booming Green’s latest <a href="https://drive.google.com/file/d/1XVSehDRPhBTP9rTkOZPqsJgQ9cetcL3s/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">logging permit</a>. It shows that, in January 2021, outgoing environment minister Claude Nyamugabo authorized them to harvest 91,455 cubic meters of Afrormosia, nearly twice the approved CITES export quota for the entire country in 2020. That volume also represents 93% of the quota for 2021,a figure that was only published towards the end of the year, and represents the highest quota to date.</p>
+                        <p>Most DRC timber reaches global markets the year after it has been logged. That means exports of Congolese Afrormosia are currently in the hands of a company that is operating in breach of a 20-year moratorium.</p>
+                        <p>The annual logging permit allows the company to log 1 million cubic meters of timber in one season — the DRC has never officially exported more than 400,000 cubic meters in a year, all species included. It lists a species that does not exist in the area, Moabi (Baillonella toxisperma), and the number of trees and corresponding volume of timber harvesting it allows do not match, including for an endangered species known as Mukulungu (Autranella congolensis).</p>
+                        <p>“Complaisance permits are sold at gold price,” the international consultant supporting DRC efforts to improve forest governance told us. “Concessionaires could potentially use them to launder timber bought anywhere in the country, to misdeclare species, and to fraudulently export endangered trees.”</p>
+                        <figure id="attachment_256572" class="wp-caption aligncenter"><img decoding="async" class="size-full wp-image-256572" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161545/Booming-Green_Afrormosia-logs.png" alt="" width="1174" height="1116" srcset="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161545/Booming-Green_Afrormosia-logs.png 1174w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161545/Booming-Green_Afrormosia-logs-768x730.png 768w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161545/Booming-Green_Afrormosia-logs-610x580.png 610w" sizes="(max-width: 1174px) 100vw, 1174px">
+                            <figcaption class="wp-caption-text">In a Linkedin post, Booming Green’s chairman promotes the company’s Afrormosia, an endangered species, that were readied for sale on international markets. The Chinese-owned company controls more than 1 million hectares of forest in breach of Congolese regulations. Credit: Gloria Pallares/El País</figcaption>
+                        </figure>
+                        <p>In the meantime, shiploads of Booming Green’s timber have been making their way from Matadi port to destinations such as Jinjiang in China, a global wood processing center.</p>
+                        <p>Neither Booming Green nor Fodeco responded to requests for comment sent by e-mail.</p>
+                        <p>&nbsp;</p>
+                        <h2>‘Stricter measures possible’ in the EU</h2>
+                        <p>How the DRC calculates the export quotas also raises questions. The latest available quota for Afrormosia, for example, is based on an EU-funded study coordinated by the DRC government, and conducted by Congolese researchers with the support of a CITES program. It was published in early 2022, nearly one year late, but it did not turn out as expected.</p>
+                        <p>The first question the research was supposed to answer was which volume of Afrormosia must enter a DRC sawmill to produce a volume — say, one cubic meter — of products such as planks and veneer. This is called the ‘conversion rate,’ and has been a contentious issue for years because the higher it is, the more trees industrial loggers can fell.</p>
+                        <p>However, the figure the DRC finally presented this year is not based on an independent study, as was originally intended, but on a dataset provided by logging companies.</p>
+                        <p>A second objective of the study was to verify the traceability of the timber from forest floor to shipping container. But according to sources consulted for this investigation, the CITES management authority in the DRC repeatedly failed to grant researchers access to export permits. They also did not facilitate their access to the seaport of Matadi to review customs data.</p>
+                        <p>The CITES management authority in Kinshasa did not respond to requests for comment sent by e-mail.</p>
+                        <figure id="attachment_256578" class="wp-caption aligncenter"><img decoding="async" class="size-full wp-image-256578" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162433/8_Tree-in-Fodecos-concession-min-scaled.jpeg" alt="" width="2560" height="1920" srcset="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162433/8_Tree-in-Fodecos-concession-min-scaled.jpeg 2560w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162433/8_Tree-in-Fodecos-concession-min-768x576.jpeg 768w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162433/8_Tree-in-Fodecos-concession-min-1536x1152.jpeg 1536w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162433/8_Tree-in-Fodecos-concession-min-2048x1536.jpeg 2048w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162433/8_Tree-in-Fodecos-concession-min-610x458.jpeg 610w" sizes="(max-width: 2560px) 100vw, 2560px">
+                            <figcaption class="wp-caption-text">A tree grows in in Tshopo Province, northeastern DRC. International demand has pushed some species in the area into oblivion in several West and Central African countries. Credit: Gloria Pallares/El Pais</figcaption>
+                        </figure>
+                        <p>This reporter shared the findings with Belgium — the <a href="https://trade.cites.org/en/cites_trade/download/view_results?filters%5Btime_range_start%5D=2018&amp;filters%5Btime_range_end%5D=2022&amp;filters%5Bexporters_ids%5D%5B%5D=130&amp;filters%5Bimporters_ids%5D%5B%5D=all_imp&amp;filters%5Bsources_ids%5D%5B%5D=all_sou&amp;filters%5Bpurposes_ids%5D%5B%5D=all_pur&amp;filters%5Bterms_ids%5D%5B%5D=all_ter&amp;filters%5Btaxon_concepts_ids%5D%5B%5D=18339&amp;filters%5Breset%5D=&amp;filters%5Bselection_taxon%5D=taxonomic_cascade&amp;web_disabled=&amp;filters[report_type]=comptab" data-wpel-link="external" target="_blank" rel="external">top EU importer of Afrormosia from the DRC</a> — and asked them to comment on the latest export quota “The high conversion rate and the audit by the DRC Ministry of Finance are indeed causes for concern,” said Belgium’s Federal Public Service for the environment.</p>
+                        <p>“We will suggest [the EU Scientific Review Group conduct] an official consultation with the DRC, requesting more information on their management system, the audit, the study and the rate,” they added. “The audit raises bigger discussions on the management issues in the DRC and will have to be discussed at EU level, with stricter measures being possible.”</p>
+                        <p>&nbsp;</p>
+                        <h2>Global markets exposed to high-risk timber</h2>
+                        <p>To reduce the danger of importing tainted timber, DRC’s trading partners could check both the authenticity of CITES export permits and the corresponding logging permits. Even so, markets with stringent regulations such as the EU and the US are at risk of importing products that were obtained in breach of DRC law, but which have all documentation in order according to the DRC authorities.</p>
+                        <p>“Unless there is an alert, we have to accept the documents issued by the country of origin,” Alfonso San Miguel, advisor to the Spanish CITES Authority, told us. The last word is with the Scientific Review Group, which convenes experts from each EU country to protect the common market from dubious imports.</p>
+                        <p>However, the risk increases significantly when countries import finished wood products such as furniture via global processing hubs in Asia. China and Vietnam have been the main importers of Congolese Afrormosia in the past four years, according to DRC-reported figures, while Belgium remains a top global market and the main port of entry of the hardwood to Europe, followed by Portugal, Italy and Spain. The US imported a small quantity in 2018.</p>
+                        <p>In the CITES Trade Database, the volumes reported by exporting and importing countries rarely match, adding to the difficulties of following Congolese timber from forest floor to consumer shelf. But under the trees, and underwater, lie riches that are even harder to trace.</p>
+                        <p>&nbsp;</p>
+                        <h2>Illegal gold and diamond mining</h2>
+                        <p>The world of Chinese companies in northern DRC is small. Fodecos’s operations manager joined them from the infamous Maniema Union to replace a man hired by Xian Jiang Mining. The company, which started operating in January 2021, controls two concessions in the territory of Basoko and third in Banalia, a total of more than 5,000 hectares (12,355 acres).</p>
+                        <p>Without speedboats, reaching the Basoko concessions from the provincial capital takes days of navigating down the Congo river; paddling dug-out canoes up a tributary; fixing off-road motorcycles in muddy forest footpaths and carrying them across marshes, wading through waist-deep water towards riverside villages where dredging noises can be heard 24/7.</p>
+                        <p>This investigation found that Xian Jiang Mining has been illegally extracting gold, diamonds and rare metals from the river bed for more than a year under cover of a ‘prospecting license’, promising communities to build them <a href="https://drive.google.com/file/d/1eipbg5KKiugXTzstrh-e1djVjw2UlaYV/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">schools and dispensaries</a> when they eventually started selling the goods. Their five dredgers used to be guarded by policemen, but the company ended up hiring Congolese military to fend off locals who opposed the operation.</p>
+                        <figure id="attachment_256574" class="wp-caption aligncenter"><img decoding="async" class="size-full wp-image-256574" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161850/1_Dredge_Xian-Jiang-Mining-scaled.jpeg" alt="" width="2560" height="1920" srcset="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161850/1_Dredge_Xian-Jiang-Mining-scaled.jpeg 2560w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161850/1_Dredge_Xian-Jiang-Mining-768x576.jpeg 768w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161850/1_Dredge_Xian-Jiang-Mining-1536x1152.jpeg 1536w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161850/1_Dredge_Xian-Jiang-Mining-2048x1536.jpeg 2048w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31161850/1_Dredge_Xian-Jiang-Mining-610x458.jpeg 610w" sizes="(max-width: 2560px) 100vw, 2560px">
+                            <figcaption class="wp-caption-text">One of the five dredgers illegally operated by Xian Jiang Mining in a hard-to-reach corner of Basoko territory, northeastern DRC. They extract gold, diamonds and rare metals from the Aruwimi river, and their concessions also cover the surrounding rainforest. Credit: Gloria Pallares/El País</figcaption>
+                        </figure>
+                        <p>Companies with a prospecting license are only <a href="https://mines-rdc.cd/fr/le-code-minier" data-wpel-link="external" target="_blank" rel="external">authorized</a> to search for mineral-rich areas. All of the samples they extract belong to the state, meaning they cannot be sold. There must be inspectors of the provincial mining division on each dredger to verify and collect the material. Instead, Xian Jiang Mining has been exploiting and selling the materials, without oversight, as administrations turned a blind eye.</p>
+                        <p>This reporter accessed unpublished mining registry data showing they are authorized to look for gold and diamonds, as well as niobium, tantalum, stannic oxide and wolfram, also known as tungsten. The rare metals are used to produce high-strength alloys steel for oil and gas pipelines, smoke detectors, components for missiles and nuclear power plants, as well as surgical implants.</p>
+                        <p>&nbsp;</p>
+                        <h2>Collusion with authorities</h2>
+                        <p>In 2020, the provincial minister of mines and the vice governor led <a href="https://drive.google.com/file/d/1AIKRmALlRWG99ZH4VmA5z1YsADI7uYqF/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">company-sponsored missions to the area</a> to pressure customary authorities and reluctant communities into supporting the Chinese investment. The concessions cover both the river and the surrounding rainforest.</p>
+                        <p>Upon receiving $1,700 and jobs from the company, even the youth leaders who had been blocking the first dredger for months caved in by the end of that year. “Kinshasa was with them. The province was with them. Even the military were with them,” Charles Kolo – not his real name – who previously opposed the project, told us. “What could we do?”</p>
+                        <p>In 2021, even the provincial assembly urged locals to “sensitize” the last strongholds of resistance, so that Xian Jiang Mining could start working in the second of its two concessions in the area, according to documents obtained by this reporter.</p>
+                        <p>The head of the mines division and provincial government representatives assured communities that the company was following the rules, insisted that prospecting studies would not affect water quality or local livelihoods, and said that compromises could be reached between the new investors and local, artisanal miners.</p>
+                        <p>“We used to resort to the Aruwimi river for all our needs, but now it is so murky we have to go into the forest to get drinking water,” said Jean Christophe Njanjale, the chief of the Bangelema-Mongandjo Sector. Fishermen were forced downstream, too. Canoes got stuck in sandbanks created by automated dredgers, nets were torn by speedboats, and the fish are all but gone. Riverbanks flanked by 45-meter trees have crumbled.</p>
+                        <p>Each of the company’s five dredgers extracts up to <a href="https://drive.google.com/file/d/1t5tvD2vKwZvviVzO0KY6j6kR0OvxZ5pq/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">75 tons of sand</a> from the river bed every day and they illegally use mercury to separate the gold from the ore, dumping residues with the neurotoxic metal overboard. Downstream, fishermen still drink from the water, children bathe in it, and women use it to wash dishes.</p>
+                        <p>The company buys the mercury at $5 per cubic centimeter from the same vendor to whom they sell the gold, in the center of the provincial capital Kisangani, a bustling mineral trading hub frequented by well-connected Chinese, Russian and Belgian traders.</p>
+                        <figure id="attachment_256575" class="wp-caption aligncenter"><img decoding="async" class="size-full wp-image-256575" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162138/5_Men-military-on-a-dredge-scaled.jpg" alt="" width="2560" height="1790" srcset="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162138/5_Men-military-on-a-dredge-scaled.jpg 2560w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162138/5_Men-military-on-a-dredge-768x537.jpg 768w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162138/5_Men-military-on-a-dredge-1536x1074.jpg 1536w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162138/5_Men-military-on-a-dredge-2048x1432.jpg 2048w, https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/05/31162138/5_Men-military-on-a-dredge-610x426.jpg 610w" sizes="(max-width: 2560px) 100vw, 2560px">
+                            <figcaption class="wp-caption-text">One of the dredgers of Xian Jian Mining, which is guarded by the Congolese military. Some Chinese employees have mining experience in conflict-torn provinces of Kivu and Katanga, across the border from Zambia. Credit: Gloria Pallares/El País</figcaption>
+                        </figure>
+                        <p>As former driver and aide to Xiang Jiang Mining’s manager in Kisangani, Joseph Dako – not real name – had rare access to the company’ s modus operandi. “I used to carry diamonds to the city by motorbike through a hellish dirt road. Those are sold abroad,” he said. “Others would transport gold twice a week on the boat that stocks up on fuel and food. On a good day, we could deposit $100,000 in the bank from gold sales.”</p>
+                        <p>The dredgers are clearly meant to exploit underground riches, not to obtain samples, and they cost much more than the $10,000 declared on the <a href="https://drive.google.com/file/d/1CoiLc6xFOb8waT4tOexOPLGkrC1PJEGM/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">formation papers</a> of the company, which we obtained. So why did provincial authorities allow, and advocate for, their deployment?</p>
+                        <p>Chinese investors control about 70 percent of the DRC’s mining sector, according to the Congolese Chamber of Mines. The DRC has significant deposits of untapped gold and was the third-largest producer of industrial diamonds in 2019, contributing around 21 percent of global production. It also has one of the world’s poorest populations, and is struggling to improve the governance of its extraordinary natural resources.</p>
+                        <p>Speaking within walking distance of the dredger assembling site in Kisangani, then chief of the mining division, Michel Liete, said he had not had a chance to see the machines or to speak with company representatives about reports of illegal exploitation, despite the fact they lived across the road.</p>
+                        <p>“I didn’t need to take a look at the dredge. I trust the word of the company,” he said. “And anyway, why all this interest in the Chinese?”</p>
+                        <p>On 3 September 2021, N’Samba ordered the temporary suspension of Xian Jiang Mining’s operations. However, on 13 December, <a href="https://drive.google.com/file/d/1t5tvD2vKwZvviVzO0KY6j6kR0OvxZ5pq/view?usp=sharing" data-wpel-link="external" target="_blank" rel="external">Bazaïba warned</a> they were still “illegally exploiting raw materials with very serious consequences,” and urged her to take all necessary measures to revoke the permit.</p>
+                        <p>The DRC ministries of mines and the environment did not respond to requests for comment sent by e-mail. Xian Jiang Mining did not respond to requests for comment.</p>
+                        <p>Today, Xian Jiang Mining continues operating in the area; Fodeco is still trying to export its timber; and Booming Green maintains control over more than 1 million hectares of rainforest.</p>
+                        <p>&nbsp;</p>
+                        <p><strong>This story was produced with the support of the Rainforest Journalism Investigations Network (RIN) of the Pulitzer Center.</strong></p>
+                        <p>Feedback: Use <a href="https://form.jotform.com/91615041527149" data-wpel-link="external" target="_blank" rel="external">this form</a> to send a message to the editor of this post. If you want to post a public comment, you can do that at the bottom of the page.</p>
+                        <p>Banner image: Decaying log sitting at the premises of Fodeco, a Chinese-owned logging company operating in Tshopo, DRC’s largest forest province. It is not profitable for them to ship the logs unless they manage to extract enough of them from the forest. Credit: Gloria Pallares/El País</p>
                         <div id="single-article-footer">
                             <div id="single-article-meta">
-                                <a href="https://mongabay.org/donate/?utm_source=mongabay.com&amp;utm_medium=bottom-of-news-post&amp;utm_campaign=support-our-journalism-2023&amp;__hstc=92495938.c86f9fa79b1997bfe770fbab16f7287e.1687181350419.1687181350419.1687181350419.1&amp;__hssc=92495938.1.1687181350419&amp;__hsfp=2109393862" style="display:block;margin-bottom:2rem;" data-wpel-link="external" target="_blank" rel="external"><img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/01/15035219/support-our-journalism.jpg" width="480" height="258"></a> <span>
-Article published by <a href="https://news.mongabay.com/author/philip-jacobson/" title="Posts by Philip Jacobson" rel="author" data-wpel-link="internal">Philip Jacobson</a></span>
+                                <span>Article published by Daniel</span>
                                 <span class="article-comments"><a href="" data-wpel-link="internal"></a></span>
                             </div>
                             <div id="single-article-tags">
-                                <a href="https://news.mongabay.com/list/corruption/" rel="tag" data-wpel-link="internal">Corruption</a>, <a href="https://news.mongabay.com/list/deforestation/" rel="tag" data-wpel-link="internal">Deforestation</a>, <a href="https://news.mongabay.com/list/environment/" rel="tag" data-wpel-link="internal">Environment</a>, <a href="https://news.mongabay.com/list/environmental-politics/" rel="tag" data-wpel-link="internal">Environmental Politics</a>, <a href="https://news.mongabay.com/list/forests/" rel="tag" data-wpel-link="internal">Forests</a>, <a href="https://news.mongabay.com/list/illegal-logging/" rel="tag" data-wpel-link="internal">Illegal Logging</a>, <a href="https://news.mongabay.com/list/illegal-mining/" rel="tag" data-wpel-link="internal">Illegal Mining</a>, <a href="https://news.mongabay.com/list/politics/" rel="tag" data-wpel-link="internal">Politics</a>, <a href="https://news.mongabay.com/list/rainforests/" rel="tag" data-wpel-link="internal">Rainforests</a>, <a href="https://news.mongabay.com/list/tropical-forests/" rel="tag" data-wpel-link="internal">Tropical Forests</a> </div>
-                            <a href="amp/?print" style="text-align:center;display:block;width: 45px;color: inherit;text-transform: uppercase;margin: 1em 0;font-size: 0.8em;" data-wpel-link="internal"><svg style="width:45px;height:35px;" class="icon" fill="#669a00"><use xlink:href="#print"></use></svg>Print</a>
+                                <a href="https://news.mongabay.com/list/conservation/" rel="tag" data-wpel-link="internal">Conservation</a>, <a href="https://news.mongabay.com/list/deforestation/" rel="tag" data-wpel-link="internal">Deforestation</a>, <a href="https://news.mongabay.com/list/environment/" rel="tag" data-wpel-link="internal">Environment</a>, <a href="https://news.mongabay.com/list/featured/" rel="tag" data-wpel-link="internal">Featured</a>, <a href="https://news.mongabay.com/list/forestry/" rel="tag" data-wpel-link="internal">Forestry</a>, <a href="https://news.mongabay.com/list/forests/" rel="tag" data-wpel-link="internal">Forests</a>, <a href="https://news.mongabay.com/list/logging/" rel="tag" data-wpel-link="internal">Logging</a>, <a href="https://news.mongabay.com/list/rainforest-conservation/" rel="tag" data-wpel-link="internal">Rainforest Conservation</a>, <a href="https://news.mongabay.com/list/rainforest-deforestation/" rel="tag" data-wpel-link="internal">Rainforest Deforestation</a>, <a href="https://news.mongabay.com/list/rainforest-destruction/" rel="tag" data-wpel-link="internal">Rainforest Destruction</a>, <a href="https://news.mongabay.com/list/rainforests/" rel="tag" data-wpel-link="internal">Rainforests</a>, <a href="https://news.mongabay.com/list/threats-to-rainforests/" rel="tag" data-wpel-link="internal">Threats To Rainforests</a>, <a href="https://news.mongabay.com/list/tropical-forests/" rel="tag" data-wpel-link="internal">Tropical Forests</a> </div>
+                            <span><br><a rel="nofollow" href="amp/?print" data-wpel-link="internal"><img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2021/05/07210716/print-194x200-1.jpg" width="49" height="50" alt="Print button"><br>PRINT</a></span>
                         </div>
                         <script async="" src="https://recirculation.spot.im/spot/sp_8TLFqmLV"></script>
                         <div data-spotim-module="recirculation" data-spot-id="sp_8TLFqmLV"></div>
-                        <script async="" data-spotim-module="spotim-launcher" src="https://launcher.spot.im/spot/sp_8TLFqmLV" data-post-id="266658"></script>
+                        <script async="" data-spotim-module="spotim-launcher" src="https://launcher.spot.im/spot/sp_8TLFqmLV" data-post-id="256549"></script>
                     </article>
 
                 </div>
-
-                <aside class="sidebar col-lg-4" role="complementary">
-                    <div class="sidebar-widget">
-                        <div id="block-5" class="widget_block">
-                            <h2 id="h-we-re-a-nonprofit">We're a nonprofit</h2>
-                            <script type="text/javascript" defer="" src="https://donorbox.org/install-popup-button.js"></script><a class="dbox-donation-button" style="background: #f8d62a;color: #000;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 18px;padding: 15px 38px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;box-shadow: 0 1px 0 0 #1f5a89;text-shadow: 0 1px rgba(0, 0, 0, 0.3);" href="https://donorbox.org/mongabay?default_interval=o&amp;amount=50&amp;hide_donation_meter=true" data-wpel-link="external" target="_blank" rel="external">Donate</a>
-                        </div>
-                        <div id="block-13" class="widget_block"><span class="hs-cta-wrapper" id="hs-cta-wrapper-d7c724ca-5576-4086-bbbb-bf06cc855de2"><span class="hs-cta-node hs-cta-d7c724ca-5576-4086-bbbb-bf06cc855de2" id="hs-cta-d7c724ca-5576-4086-bbbb-bf06cc855de2" style="visibility: visible;" data-hs-drop="true"><a id="cta_button_5981609_afb60500-405b-4f54-a9d0-2a4b9fda6d6a" class="cta_button" href="https://cta-service-cms2.hubspot.com/ctas/v2/public/cs/c/?cta_guid=afb60500-405b-4f54-a9d0-2a4b9fda6d6a&amp;signature=AAH58kFnrg0mbX2IkTv2qG4dSshcGXA1lA&amp;placement_guid=d7c724ca-5576-4086-bbbb-bf06cc855de2&amp;click=c7babb82-751f-44cd-b83f-2b373746073b&amp;hsutk=c86f9fa79b1997bfe770fbab16f7287e&amp;canon=https%3A%2F%2Fnews.mongabay.com%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F&amp;portal_id=5981609&amp;redirect_url=APefjpFS2___UioMnQ8z1YAnxyU3zg-GtUpZbsy7T-YA0rgrr_kQpc4FACKlpFdHKQIuJxIfYATQGX66i3xJsPPWRRegeFiAECqgq01parZwhBM2ivB5Mt4&amp;__hstc=92495938.c86f9fa79b1997bfe770fbab16f7287e.1687181350419.1687181350419.1687181350419.1&amp;__hssc=92495938.1.1687181350419&amp;__hsfp=2109393862&amp;contentType=blog-post" target="_blank" rel="noopener" cta_dest_link="https://earthhq.org/"><img id="hs-cta-img-d7c724ca-5576-4086-bbbb-bf06cc855de2" class="hs-cta-img " style="border-width: 0px; " mce_noresize="1" alt="New call-to-action" height="169" width="300" src="https://fs.hubspotusercontent00.net/hubfs/5981609/hub_generated/resized/b0f4d302-0132-4d56-9447-3b433cbed704.png"></a><img src="https://track.hubspot.com/__ptq.gif?k=12&amp;aij=%5B%22d7c724ca-5576-4086-bbbb-bf06cc855de2%22%2C%22afb60500-405b-4f54-a9d0-2a4b9fda6d6a%22%5D&amp;rfc=8&amp;sd=1280x800&amp;cd=24-bit&amp;cs=UTF-8&amp;ln=en-us&amp;bfp=2109393862&amp;v=1.1&amp;a=5981609&amp;ct=blog-post&amp;rcu=https%3A%2F%2Fnews.mongabay.com%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F&amp;pu=https%3A%2F%2Fnews.mongabay.com%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F&amp;t=Indonesian+campaigns+getting+money+from+illegal+logging%2C+mining%2C+watchdog+says&amp;cts=1687181350436&amp;vi=c86f9fa79b1997bfe770fbab16f7287e&amp;nc=true&amp;u=92495938.c86f9fa79b1997bfe770fbab16f7287e.1687181350419.1687181350419.1687181350419.1&amp;b=92495938.1.1687181350419&amp;cc=15" width="1" height="1" loading="lazy" id="pixel-d7c724ca-5576-4086-bbbb-bf06cc855de2-afb60500-405b-4f54-a9d0-2a4b9fda6d6a"></span>
-                            <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
-                            <script type="text/javascript">
-                                hbspt.cta.load(5981609, 'd7c724ca-5576-4086-bbbb-bf06cc855de2', {"region":"na1"});
-                            </script>
-                            </span>
-                        </div>
-                        <div id="recent-posts-2" class="widget_recent_entries">
-                            <h2>Recent Posts</h2>
-                            <ul>
-                                <li>
-                                    <div class="thumbnail">
-                                        <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2023/06/19083409/fisherman-with-hilsa-3-100x100.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="A fisherman carries a basketful of hilsa." decoding="async" loading="lazy"> </div>
-                                    <a href="https://news.mongabay.com/2023/06/climate-change-human-pressures-push-bangladeshs-national-fish-into-decline/" data-wpel-link="internal">Climate change, human pressures push Bangladesh’s ‘national fish’ into decline</a>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2023/06/19061735/green-crested-lizard-100x100-1.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="A green crested lizard in Borneo." decoding="async" loading="lazy"> </div>
-                                    <a href="https://news.mongabay.com/2023/06/tree-islands-boost-diversity-in-oil-palm-plantations-study-finds/" data-wpel-link="internal">‘Tree islands’ boost diversity in oil palm plantations, study finds</a>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2023/06/16141433/Borboroglu-and-penguin-100x100-1.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Pablo Borboroglu with a Magellanic penguin" decoding="async" loading="lazy"> </div>
-                                    <a href="https://news.mongabay.com/2023/06/penguins-enrich-our-lives-qa-with-pablo-borboroglu-protector-of-penguins/" data-wpel-link="internal">Penguins ‘enrich our lives’: Q&amp;A with Pablo Borboroglu, protector of penguins</a>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2023/06/16081143/dhaka-traffic-1-100x100.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="A traffic jam in Dhaka." decoding="async" loading="lazy"> </div>
-                                    <a href="https://news.mongabay.com/2023/06/not-so-fast-experts-warn-as-dhaka-tries-to-clear-the-air-with-car-tax-and-bus-ban/" data-wpel-link="internal">Not so fast, experts warn as Dhaka tries to clear the air with car tax and bus ban</a>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2023/06/16091959/Aguacate_portada-scaled-1-100x100.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" loading="lazy"> </div>
-                                    <a href="https://news.mongabay.com/2023/06/avocados-the-green-gold-that-wipes-western-mexicos-forests-from-the-map/" data-wpel-link="internal">Avocados: The green gold that wipes western Mexico’s forests from the map</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="text-22" class="widget_text">
-                            <h2>Recent videos</h2>
-                            <div class="textwidget">
-                                <p>
-                                    <a href="https://www.facebook.com/watch/mongabay" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2020/06/25110139/facebookvidlogo.jpg" alt="" width="300" height="171" class="aligncenter size-full wp-image-231845"></a>
-                                </p>
-                                <p>
-                                    <a href="https://www.youtube.com/channel/UCnrubbmyCz8krGnpsbhJRYg/videos" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2020/06/25105752/youtubevideologo.jpg" alt="" width="300" height="168" class="aligncenter size-full wp-image-231843"></a>
-                                </p>
-                            </div>
-                        </div>
-                        <div id="mongabay_topic_location-3" class="widget_mongabay_topic_location">
-                            <p>View targeted feeds</p>
-                            <ul class="nav nav-tabs">
-                                <li>
-                                    <a data-toggle="tab" href="#topic" class="active">
-                                        <h2>By topic</h2>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-toggle="tab" href="#location">
-                                        <h2>By location</h2>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="tab-content">
-                                <div id="topic" class="tab-pane fade in active show">
-                                    <a class="widget-term" href="https://news.mongabay.com/list/agriculture" data-wpel-link="internal">Agriculture</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/animals" data-wpel-link="internal">Animals</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/birds" data-wpel-link="internal">Birds</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/climate-change" data-wpel-link="internal">Climate Change</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/conservation" data-wpel-link="internal">Conservation</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/deforestation" data-wpel-link="internal">Deforestation</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/energy" data-wpel-link="internal">Energy</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/featured" data-wpel-link="internal">Featured</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/forests" data-wpel-link="internal">Forests</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/happy-upbeat-environmental" data-wpel-link="internal">Happy-upbeat Environmental</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/herps" data-wpel-link="internal">Herps</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/indigenous-peoples" data-wpel-link="internal">Indigenous Peoples</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/interviews" data-wpel-link="internal">Interviews</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/mammals" data-wpel-link="internal">Mammals</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/new-species" data-wpel-link="internal">New Species</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/oceans" data-wpel-link="internal">Oceans</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/palm-oil" data-wpel-link="internal">Palm Oil</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/rainforests" data-wpel-link="internal">Rainforests</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/technology" data-wpel-link="internal">Technology</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/wildlife" data-wpel-link="internal">Wildlife</a>
-                                    <a href="https://news.mongabay.com/topics" class="plus-link" data-wpel-link="internal">Many more topics</a>
-                                </div>
-                                <div id="location" class="tab-pane fade">
-                                    <a class="widget-term" href="https://news.mongabay.com/list/africa" data-wpel-link="internal">Africa</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/amazon" data-wpel-link="internal">Amazon</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/asia" data-wpel-link="internal">Asia</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/australia" data-wpel-link="internal">Australia</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/borneo" data-wpel-link="internal">Borneo</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/brazil" data-wpel-link="internal">Brazil</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/cameroon" data-wpel-link="internal">Cameroon</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/central-america" data-wpel-link="internal">Central America</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/china" data-wpel-link="internal">China</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/colombia" data-wpel-link="internal">Colombia</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/congo" data-wpel-link="internal">Congo</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/india" data-wpel-link="internal">India</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/indonesia" data-wpel-link="internal">Indonesia</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/latin-america" data-wpel-link="internal">Latin America</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/madagascar" data-wpel-link="internal">Madagascar</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/malaysia" data-wpel-link="internal">Malaysia</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/new-guinea" data-wpel-link="internal">New Guinea</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/peru" data-wpel-link="internal">Peru</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/sumatra" data-wpel-link="internal">Sumatra</a>
-                                    <a class="widget-term" href="https://news.mongabay.com/list/united-states" data-wpel-link="internal">United States</a>
-                                    <a href="https://news.mongabay.com/locations" class="plus-link" data-wpel-link="internal">Browse more locations</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="text-18" class="widget_text">
-                            <h2>Social channels</h2>
-                            <div class="textwidget">
-                                <div class="widget-inner">
-                                    <p class="widgetsocial">
-                                        <a href="https://www.instagram.com/mongabay/" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2017/08/03115942/logo_instagram.jpg" width="20" height="20">&nbsp;&nbsp;Instagram</a>
-                                    </p>
-                                    <p class="widgetsocial">
-                                        <a href="https://www.linkedin.com/company/mongabay.com/" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2017/08/03120020/logo_linkedin.jpg" width="20" height="20">&nbsp;&nbsp;LinkedIn</a>
-                                    </p>
-                                    <p class="widgetsocial">
-                                        <a href="https://www.youtube.com/channel/UCnrubbmyCz8krGnpsbhJRYg/videos" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2017/08/03120007/logo_youtube.jpg" width="48" height="20">&nbsp;&nbsp;YouTube</a>
-                                    </p>
-                                    <p>
-                                    </p>
-                                    <p class="widgetsocial">
-                                        <a href="https://mastodon.green/@mongabay" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/11/18003018/mastodon-20.jpg" width="20" height="20">&nbsp;&nbsp;Mastodon</a>
-                                    </p>
-                                    <p class="widgetsocial">
-                                        <a href="https://news.mongabay.com/feed/" data-wpel-link="internal"><img decoding="async" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2017/09/06145007/rss_icon.jpg" width="20" height="20">&nbsp;&nbsp;RSS / XML</a>
-                                    </p>
-                                    <p class="widgetsocial">
-                                        <a href="https://play.google.com/store/apps/details?id=com.newsmongabay&amp;hl=en" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://www.mongabay.com/wp-content/uploads/2019/12/android_18x20.jpg" width="20" height="20">&nbsp;&nbsp;Android mobile app</a>
-                                    </p>
-                                    <p class="widgetsocial">
-                                        <a href="https://apple.news/T7BxfNfp4QAiuOPNsUcn04Q/" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2021/07/03191112/Appicon_v6.png" width="20" height="20">&nbsp;&nbsp;Apple News</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="text-13" class="widget_text">
-                            <h2>Email updates</h2>
-                            <div class="textwidget">
-                                <p>
-                                    <a href="https://mongabay.us14.list-manage.com/subscribe?u=80161fe385606408293ae0e51&amp;id=940652e1f4" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2017/08/29211612/newsletterform_260x38px.jpg" width="260" height="38"></a>
-                                </p>
-                            </div>
-                        </div>
-                        <div id="text-16" class="widget_text">
-                            <h2>Podcast</h2>
-                            <div class="textwidget">
-                                <div class="widget-inner">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <a href="https://www.mongabay.com/podcast/" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" src="https://mongabay-images.s3.amazonaws.com/17/podcast_logo_new.jpg" width="150" height="60"></a>
-                                                </td>
-                                                <td><a href="https://www.mongabay.com/podcast/" data-wpel-link="external" target="_blank" rel="external">Our biweekly podcast delivering news &amp; inspiration from nature’s frontline.</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="monga-widget">
-                            <a data-bid="20" href="https://news.mongabay.com/linkout/233912" rel="nofollow" target="_blank" data-wpel-link="internal"><img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2020/08/16195110/indonesia-papua-river-east-pantai-ad.jpg" alt="" width="300" height="250"></a>
-                        </div>
-                        <div id="text-3" class="widget_text">
-                            <h2>Quick updates</h2>
-                            <div class="textwidget">
-                                <div class="widget-inner">Daily <a href="https://alerts.mongabay.com/" data-wpel-link="external" target="_blank" rel="external">topic-based news alerts</a><br>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="text-17" class="widget_text">
-                            <h2>Republish</h2>
-                            <div class="textwidget">
-                                <div class="widget-inner">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <a href="https://news.mongabay.com/copyright/creative-commons-by-nc-nd/"><img decoding="async" src="https://mongabay-images.s3.amazonaws.com/17/repub_cc.jpg" width="117" height="40"></a>
-                                                </td>
-                                                <td><a href="https://news.mongabay.com/copyright/creative-commons" data-wpel-link="internal">You may republish Mongabay content in your publication at no cost</a>.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-
             </div>
 
-            <div id="special-series">
+        </div>
+
+        <div id="special-series">
+            <div class="container">
                 <div class="row">
                     <h2>Special series</h2>
                     <div class="col-lg-3">
@@ -674,6 +566,9 @@ Article published by <a href="https://news.mongabay.com/author/philip-jacobson/"
                     <div class="col-lg-3">
                         <h4>Land rights and extractives</h4>
                         <ul>
+                            <li class="post-269943">
+                                <a href="https://news.mongabay.com/2023/06/over-a-third-of-conflicts-over-development-projects-affect-indigenous-people-study/" data-wpel-link="internal">Over a third of conflicts over development projects affect Indigenous people: Study</a>
+                            </li>
                             <li class="post-269819">
                                 <a href="https://news.mongabay.com/2023/06/a-powerful-political-family-from-new-hampshire-is-behind-a-copper-mine-in-the-colombian-rainforest/" data-wpel-link="internal">A powerful U.S. political family is behind a copper mine in the Colombian rainforest</a>
                             </li>
@@ -682,9 +577,6 @@ Article published by <a href="https://news.mongabay.com/author/philip-jacobson/"
                             </li>
                             <li class="post-269714">
                                 <a href="https://news.mongabay.com/2023/06/ethiopias-largest-community-conservation-area-brings-indigenous-communities-into-the-fold/" data-wpel-link="internal">Ethiopia’s largest community conservation area brings Indigenous communities into the fold</a>
-                            </li>
-                            <li class="post-268651">
-                                <a href="https://news.mongabay.com/2023/05/dams-and-plantations-upend-livelihoods-in-ethiopias-lower-omo-river-valley/" data-wpel-link="internal">Dams and plantations upend livelihoods in Ethiopia’s Lower Omo River Valley</a>
                             </li>
                         </ul>
                         <div class="thumbnail-series">
@@ -746,17 +638,17 @@ Article published by <a href="https://news.mongabay.com/author/philip-jacobson/"
                     <div class="col-lg-3">
                         <h4>Conservation Effectiveness</h4>
                         <ul>
+                            <li class="post-269957">
+                                <a href="https://news.mongabay.com/2023/06/indigenous-and-local-communities-see-big-gains-in-land-rights-study-shows/" data-wpel-link="internal">Indigenous and local communities see big gains in land rights, study shows</a>
+                            </li>
+                            <li class="post-269928">
+                                <a href="https://news.mongabay.com/2023/06/volunteers-first-nations-work-to-bring-back-a-disappearing-oak-prairie/" data-wpel-link="internal">Volunteers, First Nations work to bring back a disappearing oak prairie</a>
+                            </li>
                             <li class="post-269916">
                                 <a href="https://news.mongabay.com/2023/06/tree-islands-boost-diversity-in-oil-palm-plantations-study-finds/" data-wpel-link="internal">‘Tree islands’ boost diversity in oil palm plantations, study finds</a>
                             </li>
                             <li class="post-269507">
                                 <a href="https://news.mongabay.com/2023/06/learning-to-live-with-and-love-bears-and-eagles-in-colombias-cloud-forest/" data-wpel-link="internal">Learning to live with — and love — bears and eagles in Colombia’s cloud forest</a>
-                            </li>
-                            <li class="post-269493">
-                                <a href="https://news.mongabay.com/2023/06/africas-land-and-forest-restoration-initiative-gathers-pace-in-malawi/" data-wpel-link="internal">Africa’s land and forest restoration initiative gathers pace in Malawi</a>
-                            </li>
-                            <li class="post-269028">
-                                <a href="https://news.mongabay.com/2023/05/study-shows-kenyan-elephant-shrew-may-be-adapting-to-human-disturbance-drought/" data-wpel-link="internal">Study shows Kenyan elephant shrew may be adapting to human disturbance, drought</a>
                             </li>
                         </ul>
                         <div class="thumbnail-series">
@@ -791,9 +683,8 @@ Article published by <a href="https://news.mongabay.com/author/philip-jacobson/"
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
-
+        </div>
+    </main>
     <svg display="none">
 <defs>
 <g id="by">
@@ -845,7 +736,7 @@ Article published by <a href="https://news.mongabay.com/author/philip-jacobson/"
                         <div class="textwidget">
                             <p>Mongabay is a U.S.-based non-profit conservation and environmental science news platform. Our EIN or tax ID is 45-3714703.</p>
                             <p>
-                                <a href="https://www.mongabay.org/donate/?bottom_menu_link&amp;__hstc=92495938.c86f9fa79b1997bfe770fbab16f7287e.1687181350419.1687181350419.1687181350419.1&amp;__hssc=92495938.1.1687181350419&amp;__hsfp=2109393862" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" class="alignnone size-full wp-image-239807" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2021/02/19192125/Donate-Button-156x45-1.jpg" alt="" width="160" height="45"></a>
+                                <a href="https://www.mongabay.org/donate/?bottom_menu_link&amp;__hstc=92495938.b337defb3c02883583927b64eca4aec0.1687195251481.1687195251481.1687195251481.1&amp;__hssc=92495938.1.1687195251482&amp;__hsfp=2109393862" data-wpel-link="external" target="_blank" rel="external"><img decoding="async" class="alignnone size-full wp-image-239807" src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2021/02/19192125/Donate-Button-156x45-1.jpg" alt="" width="160" height="45"></a>
                             </p>
                         </div>
                     </div>
@@ -854,7 +745,7 @@ Article published by <a href="https://news.mongabay.com/author/philip-jacobson/"
                     <div id="nav_menu-2" class="widget_nav_menu">
                         <h4>Information</h4>
                         <ul id="menu-other-monagabay-sites" class="menu">
-                            <li id="menu-item-1638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1638"><a href="https://www.mongabay.org/?__hstc=92495938.c86f9fa79b1997bfe770fbab16f7287e.1687181350419.1687181350419.1687181350419.1&amp;__hssc=92495938.1.1687181350419&amp;__hsfp=2109393862" data-wpel-link="external" target="_blank" rel="external">Mongabay.org</a></li>
+                            <li id="menu-item-1638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1638"><a href="https://www.mongabay.org/?__hstc=92495938.b337defb3c02883583927b64eca4aec0.1687195251481.1687195251481.1687195251481.1&amp;__hssc=92495938.1.1687195251482&amp;__hsfp=2109393862" data-wpel-link="external" target="_blank" rel="external">Mongabay.org</a></li>
                             <li id="menu-item-1640" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1640"><a href="https://tropicalforestnetwork.org/" data-wpel-link="external" target="_blank" rel="external">Tropical Forest Network</a></li>
                             <li id="menu-item-1641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1641"><a href="https://www.wildmadagascar.org/" data-wpel-link="external" target="_blank" rel="external">Wild Madagascar</a></li>
                             <li id="menu-item-1642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1642"><a href="https://selvastropicales.org/" data-wpel-link="external" target="_blank" rel="external">Selva Tropicales</a></li>
@@ -896,7 +787,6 @@ Article published by <a href="https://news.mongabay.com/author/philip-jacobson/"
     <div class="offline-indicator offline-indicator--bottom" style="background-color: #000000">
         <p style="color:#ffffff">you're currently offline</p>
     </div>
-    <link rel="stylesheet" id="dropshadowboxes_css-css" href="https://news.mongabay.com/wp-content/plugins/drop-shadow-boxes/css/dropshadowboxes.css" media="all">
     <script type="text/javascript" src="https://news.mongabay.com/wp-content/themes/mongabay_v1/js/lib/jq.fittext.min.js" id="fittext-js"></script>
     <script type="text/javascript" src="https://news.mongabay.com/wp-content/themes/mongabay_v1/js/lib/util.min.js" id="bootstraputils-js"></script>
     <script type="text/javascript" src="https://news.mongabay.com/wp-content/themes/mongabay_v1/js/lib/tabs.min.js" id="bootstraptabs-js"></script>
@@ -910,6 +800,8 @@ Article published by <a href="https://news.mongabay.com/author/philip-jacobson/"
     <script type="text/javascript" src="https://js.hs-scripts.com/5981609.js?integration=WordPress&amp;ver=10.1.23" async="" defer="" id="hs-script-loader"></script>
     <script type="text/javascript" src="https://news.mongabay.com/wp-content/plugins/progressive-wp/assets/scripts/ui-offline.js" id="pwp-offline-script-js"></script>
     <script type="text/javascript" src="https://news.mongabay.com/wp-content/plugins/progressive-wp/assets/scripts/ui-installprompt.js" id="pwp-installprompt-script-js"></script>
+    <script type="text/javascript" src="https://news.mongabay.com/wp-content/themes/mongabay_v1/js/lib/parallax.min.js" id="parallax-js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.min.js" id="iframeresize-js"></script>
     <script type="text/javascript" id="advadsTrackingGAFront-js-extra">
         /* <![CDATA[ */
         var advadsGALocale = {"Impressions":"Impressions","Clicks":"Clicks"};
@@ -923,24 +815,18 @@ Article published by <a href="https://news.mongabay.com/author/philip-jacobson/"
     </script>
     <script type="text/javascript" src="https://news.mongabay.com/wp-content/plugins/advanced-ads-tracking/public/assets/js/script.js" id="advadsTrackingHandle-js"></script>
     <script type="text/javascript" src="https://news.mongabay.com/wp-content/plugins/bloom/core/admin/js/common.js" id="et-core-common-js"></script>
-    <script type="text/javascript" src="https://news.mongabay.com/wp-includes/js/wp-embed.min.js" id="wp-embed-js"></script>
     <script>
         !function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();
     </script>
     <script type="text/javascript">
         jQuery('.soliloquy-container').removeClass('no-js');
     </script>
-    <script type="text/javascript" async="" src="//in.getclicky.com/in.php?site_id=101413169&amp;type=pageview&amp;href=%2F2023%2F03%2Findonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says%2F&amp;title=Indonesian%20campaigns%20getting%20money%20from%20illegal%20logging%2C%20mining%2C%20watchdog%20says&amp;res=1280x800&amp;lang=en-US&amp;tz=America%2FNew_York&amp;tc=&amp;ck=1&amp;mime=js&amp;x=0.15774099108804585"></script>
     <script type="text/javascript">
         var advads_tracking_ads = {};var advads_tracking_urls = [];var advads_gatracking_uids = [];var advads_tracking_methods = [];var advads_tracking_parallel = [];var advads_tracking_linkbases = [];var advads_gatracking_allads = [];var advads_gatracking_anonym = true;
     </script>
-    <script type="text/javascript">
-        if ( undefined === advadsGATracking ) var advadsGATracking = {};
-        				advadsGATracking.adTargets = {"20":{"233912":"https:\/\/mongabay.org\/donate\/?indonesia-papua-river-east-pantai-ad"}};
-    </script>
-    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon="{&quot;rayId&quot;:&quot;7d9c1e83bb219aec&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;b&quot;:1,&quot;token&quot;:&quot;d6fea170b7564189b5ed260db1a6f2ef&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon="{&quot;rayId&quot;:&quot;7d9d71eae8cb2257&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;b&quot;:1,&quot;token&quot;:&quot;d6fea170b7564189b5ed260db1a6f2ef&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
 
-    <iframe owner="archetype" title="archetype" style="display: none; visibility: hidden;"></iframe></body>
+    <script type="text/javascript" async="" src="//in.getclicky.com/in.php?site_id=101413169&amp;type=pageview&amp;href=%2F2022%2F05%2Fchinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc%2F&amp;title=Chinese%20companies%20linked%20to%20illegal%20logging%20and%20mining%20in%20northern%20DRC&amp;res=1280x800&amp;lang=en-US&amp;tz=America%2FNew_York&amp;tc=&amp;ck=1&amp;mime=js&amp;x=0.460651907730087"></script><iframe owner="archetype" title="archetype" style="display: none; visibility: hidden;"></iframe></body>
 
 </html>
 '''
