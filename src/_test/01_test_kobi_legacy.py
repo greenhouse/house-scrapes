@@ -18,6 +18,14 @@ def print_js_file(file_path):
         print(f'len(lines): {len(lines)}\n\n')
         print('exit _ print_js_file')
         
+# aggregates all C2M combos in .js 'file_path'
+#   - parses & extracts C2M code combos (ie. C/en/M)
+#   - to generate https://visa.vfsglobal.com link logins
+#       ex: https://visa.vfsglobal.com/C/en/M/login
+#   - can then traverse through this list of link logins
+#       - gather valid 'authorize tokens'
+#   - then automate checking each C2M combo for available appointments
+#       - invoke POST | OPTIONS https://lift-api.vfsglobal.com/appointment/CheckIsSlotAvailable
 def filter_js_file_regex(file_path):
     print('enter _ filter_js_file_regex')
     
@@ -44,6 +52,13 @@ def filter_js_file_regex(file_path):
         unique_matches = [line for line in unique_matches if not line.endswith('/attend-centre')]
         unique_matches = [line for line in unique_matches if not line.endswith('/en')]
         
+        '''
+            NOTE_062023:
+                'unique_matches' is a list of 'https://visa.vfsglobal.com/x/y/z'
+                    x = country code
+                    y = language i guess (en)
+                    z = mission code
+        '''
         # print log
         print('unique_matches: ', *unique_matches, sep='\n')
         print(f'len(unique_matches): {len(unique_matches)}\n\n')
@@ -124,4 +139,5 @@ for i in lst_vacCode:
         
         print(f'\n\n *** sleep({sleep_sec}) *** \n\n')
         time.sleep(sleep_sec)
+
 
