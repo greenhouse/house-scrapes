@@ -168,7 +168,7 @@
                   "loginUser": "temp37373737@gmail.com"
                 }
             
-                request payload (ex 2)
+                request payload (ex 2) #ref: https://visa.vfsglobal.com/gbr/en/dnk/login
                 {
                     "countryCode":"gbr",
                     "missionCode":"dnk",
