@@ -34,28 +34,31 @@
         export: source (organisation/ publisher), date, heading, body text, image, and ideally some information from the body text, i.e. if a certain country or company has been mentionend in the article
         
 ### **DESIGN**
-    06.19.23 -> latest extracted key/vals (ref: 04_test_gun.py)
-        dt_pub
-        auth_name
-        auth_url
-        header
-        img_header_url
-        img_header_auth
-        body
-        lst_art_imgs
-        lst_art_img_auths
-        
+    06.20.23 -> latest extracted key/vals (ref: 04_test_gun.py)
+        # page_url (str)
+        # dt_pub (str)
+        # auth_name (str)
+        # auth_url (str)
+        # header (str)
+        # img_header_url (str)
+        # img_header_auth (str)
+        # body (str)
+        # lst_art_imgs (lst)
+        # lst_art_img_auths (lst)
+
         :- example prints of scraped elements
-        print(f'{s} publish date (text) {s}:\n{dt_pub}') # dt_pub
-        print(f'{s0} author name (text) {s}:\n{auth_name}') # auth_name
-        print(f'{s0} author profile (text) {s}:\n{auth_url}') # auth_url
-        print(f'{s0} header (text) {s}:\n{header}') # header
-        print(f'{s0} header img url (text) {s}:\n{img_header_url}') # img_header_url
-        print(f'{s0} header img author (text) {s}:\n{img_header_auth}') # img_header_auth
-        if DEBUG_HIDE: print(f'{s0} body (text) {s}:\n    -> DEBUG_HIDE={DEBUG_HIDE}') # body
-        else: print(f'{s0} body (text) {s}: -> DEBUG_HIDE={DEBUG_HIDE}\n{body}') # body
-        print(f'{s0} article imgs (list text x{len(lst_art_imgs)}) {s}:\n{json.dumps(lst_art_imgs, indent=4)}') # lst_art_imgs
-        print(f'{s0} article img authors (list text x{len(lst_art_img_auths)}) {s}:\n{json.dumps(lst_art_img_auths, indent=4)}') # lst_art_img_auths
+        print(f'\n{d}\n {page_url} \n{d}')                          # page_url (str)
+        print(f'{s} publish date (text) {s}:\n    {dt_pub}')        # dt_pub (str)
+        print(f'{s0} author name (text) {s}:\n    {auth_name}')     # auth_name (str)
+        print(f'{s0} author profile (text) {s}:\n    {auth_url}')   # auth_url (str)
+        print(f'{s0} header (text) {s}:\n    {header}')             # header (str)
+        print(f'{s0} header img url (text) {s}:\n    {img_header_url}')     # img_header_url (str)
+        print(f'{s0} header img author (text) {s}:\n    {img_header_auth}') # img_header_auth (str)
+        if DEBUG_HIDE: body = f"{body[:75]} ... {body[-75:]}"
+        print(f'{s0} body (text) {s}: -> DEBUG_HIDE={DEBUG_HIDE}\n    {body}') # body (str)
+        print(f'{s0} article imgs (list text x{len(lst_art_imgs)}) {s}:\n    {json.dumps(lst_art_imgs, indent=4)}') # lst_art_imgs (lst)
+        print(f'{s0} article img authors (list text x{len(lst_art_img_auths)}) {s}:\n    {json.dumps(lst_art_img_auths, indent=4)}') # lst_art_img_auths (lst)
+        print(f'{s0} body query (text, i.e. search article for country or company name) {s}:\n    n/a') # ?
         
     analysis
         ref: https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/

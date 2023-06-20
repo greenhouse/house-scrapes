@@ -9,12 +9,7 @@ print(f'GO {__filename} -> starting IMPORTs and globals decleration')
 #------------------------------------------------------------#
 #   IMPORTS                                                  #
 #------------------------------------------------------------#
-import sys, argparse, string, ctypes, os, re
-import json
-import time
-from datetime import datetime
-from lxml import html
-from bs4 import BeautifulSoup
+from gun_support import * # sys, os, re, json
 from selenium import webdriver # pip install -U selenium
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -36,14 +31,16 @@ WAIT_TIME = 10 # sec
 WR_HI = 0
 WR_LOW = -5
 #AUTO_CLICK_WAIT = False
-LOCAL_TEST = True
+LOCAL_TEST = False
 DEBUG_HIDE = True
+WRITE_CSV = False
 LST_PG_URLS = [ # GET https://news.mongabay.com/?s=illegal+logging
     "https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/", # OG
     "https://news.mongabay.com/2022/09/illegal-logging-and-trade-in-fine-wood-threaten-wampis-communities-in-the-peruvian-amazon/",
     "https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/", # ALT_1
     "https://news.mongabay.com/2022/03/a-community-in-mexico-reforests-its-land-against-the-advance-of-illegal-logging/"
 ]
+LST_CSV_EXPORT = []
 
 #------------------------------------------------------------#
 #   PROCEDURAL SUPPORT                                       #
@@ -54,7 +51,9 @@ def scrape_target_pg(driver, page_url : str):
     print(  f'\nGetting page_url content... w/ GLOBALS (',
             f'\n LOCAL_TEST: {LOCAL_TEST},',
             f'\n DEBUG_HIDE: {DEBUG_HIDE},',
-            f'\n WAIT_TIME: {WAIT_TIME} sec\n)\n', sep='')
+            f'\n WRITE_CSV: {WRITE_CSV},',
+            f'\n WAIT_TIME: {WAIT_TIME+WR_LOW} to {WAIT_TIME+WR_HI} sec',
+            f'\n)\n', sep='')
             
     if not LOCAL_TEST:
         # auto-click w/ 'immediate click'
@@ -153,18 +152,22 @@ def scrape_target_pg(driver, page_url : str):
     s0 = '\n'+s
     d  ='#---------------------------------------------------------------------------#'
     dd ='#===========================================================================#'
-    print(f'\n{d}\n {page_url} \n{d}')
-    print(f'{s} publish date (text) {s}:\n    {dt_pub}') # dt_pub
-    print(f'{s0} author name (text) {s}:\n    {auth_name}') # auth_name
-    print(f'{s0} author profile (text) {s}:\n    {auth_url}') # auth_url
-    print(f'{s0} header (text) {s}:\n    {header}') # header
-    print(f'{s0} header img url (text) {s}:\n    {img_header_url}') # img_header_url
-    print(f'{s0} header img author (text) {s}:\n    {img_header_auth}') # img_header_auth
+    print(f'\n{d}\n {page_url} \n{d}')                          # page_url (str)
+    print(f'{s} publish date (text) {s}:\n    {dt_pub}')        # dt_pub (str)
+    print(f'{s0} author name (text) {s}:\n    {auth_name}')     # auth_name (str)
+    print(f'{s0} author profile (text) {s}:\n    {auth_url}')   # auth_url (str)
+    print(f'{s0} header (text) {s}:\n    {header}')             # header (str)
+    print(f'{s0} header img url (text) {s}:\n    {img_header_url}')     # img_header_url (str)
+    print(f'{s0} header img author (text) {s}:\n    {img_header_auth}') # img_header_auth (str)
     if DEBUG_HIDE: body = f"{body[:75]} ... {body[-75:]}"
-    print(f'{s0} body (text) {s}: -> DEBUG_HIDE={DEBUG_HIDE}\n    {body}') # body
-    print(f'{s0} article imgs (list text x{len(lst_art_imgs)}) {s}:\n    {json.dumps(lst_art_imgs, indent=4)}') # lst_art_imgs
-    print(f'{s0} article img authors (list text x{len(lst_art_img_auths)}) {s}:\n    {json.dumps(lst_art_img_auths, indent=4)}') # lst_art_img_auths
+    print(f'{s0} body (text) {s}: -> DEBUG_HIDE={DEBUG_HIDE}\n    {body}') # body (str)
+    print(f'{s0} article imgs (list text x{len(lst_art_imgs)}) {s}:\n    {json.dumps(lst_art_imgs, indent=4)}') # lst_art_imgs (lst)
+    print(f'{s0} article img authors (list text x{len(lst_art_img_auths)}) {s}:\n    {json.dumps(lst_art_img_auths, indent=4)}') # lst_art_img_auths (lst)
     print(f'{s0} body query (text, i.e. search article for country or company name) {s}:\n    n/a') # ?
+    
+    
+    # RETURN SCRAPED DATA DICT
+    return {'page_url':page_url, 'dt_pub':dt_pub, 'auth_name':auth_name, 'auth_url':auth_url, 'header':header, 'img_header_url':img_header_url, 'img_header_auth':img_header_auth, 'body':body, 'lst_art_imgs':lst_art_imgs, 'lst_art_img_auths':lst_art_img_auths}
 
 def init_webdriver():
     ## Selenium: init webdrive ##
@@ -183,8 +186,11 @@ def exe_pg_scrape_loop(lst_pgs: list, wait_sec : float):
     for idx, pg_url in enumerate(lst_pgs):
         go_time_start = get_time_now()
         print(f'\n\npg# {idx+1}\n pg scrape start: {go_time_start}\n    url: {pg_url}')
-        scrape_target_pg(driver, pg_url)
+        d = scrape_target_pg(driver, pg_url)
         print(f'\n pg scrape start: {go_time_start}\n pg scrape end:   {get_time_now()}\n    url: {pg_url}\n\n')
+        
+        # append scraped page data to global list for export
+        if d: LST_CSV_EXPORT.append(d)
         
         # validate more pages (sleep between pgs)
         if idx < len(lst_pgs)-1:
@@ -192,7 +198,11 @@ def exe_pg_scrape_loop(lst_pgs: list, wait_sec : float):
             wait_sleep(r_sec)
         else:
             print('** NO MORE PAGES **')
+            
+    print(f'** QUITING WEBDRIVER & WRITING DATA TO CSV ({WRITE_CSV}) **')
     driver.quit()
+    if WRITE_CSV: write_lst_dict_to_csv(LST_CSV_EXPORT, 'TEST_GUN_OUTPUT.csv')
+    
 
 #------------------------------------------------------------#
 #   DEFAULT SUPPORT                                          #
@@ -210,23 +220,7 @@ def go_main():
     # loop through and scrape each url
     exe_pg_scrape_loop(LST_PG_URLS, WAIT_TIME)
     print(f'\n\nRUN_TIME_START: {run_time_start}\nRUN_TIME_END:   {get_time_now()}')
-
-def wait_sleep(wait_sec : int, b_print=True): # sleep 'wait_sec'
-    print(f'waiting... {wait_sec} sec')
-    for s in range(wait_sec, 0, -1):
-        if b_print: print('wait ', s, sep='', end='\n')
-        time.sleep(1)
-    print(f'waited... {wait_sec} sec')
-        
-def get_time_now():
-    return datetime.now().strftime("%H:%M:%S.%f")[0:-4]
     
-def read_cli_args():
-    print(f'\nread_cli_args...\n # of args: {len(sys.argv)}\n argv lst: {str(sys.argv)}')
-    for idx, val in enumerate(sys.argv): print(f' argv[{idx}]: {val}')
-    print('read_cli_args _ DONE\n')
-    return sys.argv
-
 if __name__ == "__main__":
     go_main()
 
