@@ -28,13 +28,13 @@ HTML_x = importlib.import_module('04_test_gun_html_2')
 # GET https://news.mongabay.com/?s=illegal+logging
 #------------------------------------------------------------#
 WAIT_TIME = 10 # sec
-WR_HI = 0
-WR_LOW = -5
+WR_HI = 0 # wait range
+WR_LOW = -5 # wait range
+
 #AUTO_CLICK_WAIT = False
 DEBUG_HIDE = True
 WRITE_CSV = True
 LOCAL_TEST = False
-if LOCAL_TEST: WAIT_TIME = WR_HI = WR_LOW = 0
 LST_PG_URLS = [ # GET https://news.mongabay.com/?s=illegal+logging
     "https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/", # OG
     "https://news.mongabay.com/2022/09/illegal-logging-and-trade-in-fine-wood-threaten-wampis-communities-in-the-peruvian-amazon/",
@@ -43,6 +43,9 @@ LST_PG_URLS = [ # GET https://news.mongabay.com/?s=illegal+logging
 ]
 LST_CSV_EXPORT = []
 
+# use 0 wait time for LOCAL_TEST
+if LOCAL_TEST: WAIT_TIME = WR_HI = WR_LOW = 0
+
 #------------------------------------------------------------#
 #   PROCEDURAL SUPPORT                                       #
 #------------------------------------------------------------#
@@ -50,9 +53,9 @@ def scrape_target_pg(driver, page_url : str):
     req_time_start = datetime.now().strftime("%H:%M:%S.%f")[0:-4]
     
     print(  f'\nGetting page_url content... w/ GLOBALS (',
-            f'\n LOCAL_TEST: {LOCAL_TEST},',
             f'\n DEBUG_HIDE: {DEBUG_HIDE},',
             f'\n WRITE_CSV: {WRITE_CSV},',
+            f'\n LOCAL_TEST: {LOCAL_TEST},',
             f'\n WAIT_TIME: {WAIT_TIME+WR_LOW} to {WAIT_TIME+WR_HI} sec',
             f'\n)\n', sep='')
             
