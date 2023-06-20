@@ -36,8 +36,8 @@ def write_lst_dict_to_csv(l : list, file_name : str ='output.csv'):
     with open(file_name, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(field_names)
-        for d in range(1, len(l)):
-            writer.writerow(list(d.values()))
+        for d in range(0, len(l)):
+            writer.writerow(list(l[d].values()))
         
 def write_lst_to_csv(l : list):
     #l = ['John', 'Doe', 'john.doe@example.com']

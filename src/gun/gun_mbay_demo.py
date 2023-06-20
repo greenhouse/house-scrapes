@@ -31,9 +31,10 @@ WAIT_TIME = 10 # sec
 WR_HI = 0
 WR_LOW = -5
 #AUTO_CLICK_WAIT = False
-LOCAL_TEST = False
 DEBUG_HIDE = True
-WRITE_CSV = False
+WRITE_CSV = True
+LOCAL_TEST = False
+if LOCAL_TEST: WAIT_TIME = WR_HI = WR_LOW = 0
 LST_PG_URLS = [ # GET https://news.mongabay.com/?s=illegal+logging
     "https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/", # OG
     "https://news.mongabay.com/2022/09/illegal-logging-and-trade-in-fine-wood-threaten-wampis-communities-in-the-peruvian-amazon/",
@@ -159,8 +160,8 @@ def scrape_target_pg(driver, page_url : str):
     print(f'{s0} header (text) {s}:\n    {header}')             # header (str)
     print(f'{s0} header img url (text) {s}:\n    {img_header_url}')     # img_header_url (str)
     print(f'{s0} header img author (text) {s}:\n    {img_header_auth}') # img_header_auth (str)
-    if DEBUG_HIDE: body = f"{body[:75]} ... {body[-75:]}"
-    print(f'{s0} body (text) {s}: -> DEBUG_HIDE={DEBUG_HIDE}\n    {body}') # body (str)
+    body_print = f"{body[:75]} ... {body[-75:]}" if DEBUG_HIDE else body
+    print(f'{s0} body (text) {s}: -> DEBUG_HIDE={DEBUG_HIDE}\n    {body_print}') # body (str)
     print(f'{s0} article imgs (list text x{len(lst_art_imgs)}) {s}:\n    {json.dumps(lst_art_imgs, indent=4)}') # lst_art_imgs (lst)
     print(f'{s0} article img authors (list text x{len(lst_art_img_auths)}) {s}:\n    {json.dumps(lst_art_img_auths, indent=4)}') # lst_art_img_auths (lst)
     print(f'{s0} body query (text, i.e. search article for country or company name) {s}:\n    n/a') # ?
@@ -223,8 +224,4 @@ def go_main():
     
 if __name__ == "__main__":
     go_main()
-
-
-
-
 
