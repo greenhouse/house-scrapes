@@ -32,7 +32,19 @@
     
     - elements to extract, per article (gunther example)
         export: source (organisation/ publisher), date, heading, body text, image, and ideally some information from the body text, i.e. if a certain country or company has been mentionend in the article
-        
+
+### demo log...
+    062023_1212: '480p_gun_mbay_demo_062023_1155.mov' & 'TEST_GUN_OUTPUT.csv' delivered via disc
+        hello, below you will find your scraping demo for ```news.mongabay.com -> 4 misc articles returned from 'illegal logging' search
+
+        1) .mov file: screen recording demo of the bot running and displaying the scraped data
+
+        2) .csv file: output containing this demo's scraped data``` ... please have a look and provide any feed back or questions when you get a chance... ```Demo notes:
+          - this demo represents about 75% of the scraping code base completed for a single site
+          - organization & cleanup is still needed, as well as design integrations for timing in staying under the radar 
+          - you will notice the image urls are effectively scraped, which makes it easy to save those images to an s3 bucket (if desired)
+          - the demo video is in 480p (easier to transfer across discord)... if its too blurry, i can send you the original HD version via email or something like that```
+          
 ### **DESIGN**
     06.20.23 -> latest extracted key/vals (ref: 04_test_gun.py)
         # page_url (str)
