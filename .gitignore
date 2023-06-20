@@ -35,6 +35,9 @@ _legacy/
 ## hide demos ##
 _demos/
 
+## hide generated spreadsheets ##
+*.csv
+
 #######################################
 #######################################
 # Byte-compiled / optimized / DLL files
