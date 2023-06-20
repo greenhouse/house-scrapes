@@ -65,9 +65,9 @@ def scrape_target_pg(driver, page_url : str):
         driver.quit()
     
     # print OG html version
-#    print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
-#    print('*** break point ***')
-#    while True: pass
+    #print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
+    #print('*** break point ***')
+    #while True: pass
     
     ## get source (organisation/ publisher) ##
     # source (organisation/ publisher) -> '© 2023 Copyright Conservation news': news.mongabay.com
@@ -96,6 +96,9 @@ def scrape_target_pg(driver, page_url : str):
 #        ## get auth_name & dt_pub -> "//div[@class='single-article-meta' and contains(text(), 'by')]"
 #        str_by = lst_by[0].text_content()
     
+        # misc DEBUG_HIDE support
+        lst_head = []
+        
         ## get auth_name & dt_pub -> "//div[@class='single-article-meta' and contains(text(), 'by')]"
         str_on = str_by[str_by.find('by')+2:str_by.find('jQuery')].strip()
         auth_name = str_on.split(' on ')[0].strip()
@@ -113,9 +116,9 @@ def scrape_target_pg(driver, page_url : str):
         s = hc.xpath("//div[@class='col-lg-12']/@style")[0]
         img_header_url = s[s.find("https"):s.find("');")]
         
-        # misc DEBUG_HIDE support
-        lst_head = []
-        
+        ## image author -> "//em[contains(text(), 'Banner image:')]" & "//figcaption[@class='wp-caption-text']"
+        img_header_auth = hc.xpath("//em[contains(text(), 'Banner image:')]")[0].text_content()
+
     else: # default to ALT_1 article code layout
 #        str_by = hc.xpath("//span[@class='featured-article-publish']//a/@href")[0].text_content()
 #        str_by = hc.xpath("//span[@class='featured-article-publish']//a/text()")
@@ -148,6 +151,10 @@ def scrape_target_pg(driver, page_url : str):
         #   <div class="col-lg-12" style="background: url('https://imgs.mongabay.com/.../kalteng_0235.jpg');background-size: cover; background-position: center">
         img_header_url = hc.xpath("//div[@class='col-lg-12 parallax-section full-height article-cover']/@data-image-src")[0]
         
+        ## get image author -> "//em[contains(text(), 'Banner image:')]" & "//figcaption[@class='wp-caption-text']"
+        img_header_auth = hc.xpath("//p[contains(text(), 'Banner image:')]")[0].text_content()
+        #img_header_auth = hc.xpath("//p[contains(text(), 'Banner image:')]/text()")[0]
+        
     if not DEBUG_HIDE:
         print(f'lst_head: {lst_head}')
         print(f'auth_name: {auth_name}')
@@ -155,6 +162,7 @@ def scrape_target_pg(driver, page_url : str):
         print(f'dt_pub: {dt_pub}')
         print(f'header: {header}')
         print(f'img_header_url: {img_header_url}')
+        print(f'img_header_auth: {img_header_auth}')
     
     ## get body text -> "string(//article)"
     body = hc.xpath("string(//article)").strip()
@@ -168,7 +176,7 @@ def scrape_target_pg(driver, page_url : str):
     ## image author -> "//em[contains(text(), 'Banner image:')]" & "//figcaption[@class='wp-caption-text']"
 #    lst_img_auths = [hc.xpath("//em[contains(text(), 'Banner image:')]")[0].text_content(),
 #                    hc.xpath("//figcaption[@class='wp-caption-text']")[0].text_content()]
-    img_header_auth = hc.xpath("//p[contains(text(), 'Banner image:')]")[0].text_content()
+#    img_header_auth = hc.xpath("//p[contains(text(), 'Banner image:')]")[0].text_content()
 #    img_header_auth = hc.xpath("//p[contains(text(), 'Banner image:')]/text()")[0]
     
     # body query (i.e. search article for country or company name) -> ?
