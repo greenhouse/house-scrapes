@@ -32,24 +32,17 @@ HTML_x = importlib.import_module('04_test_gun_html_2')
 #   GLOBALS                                                  #
 # GET https://news.mongabay.com/?s=illegal+logging
 #------------------------------------------------------------#
-#ref: https://www.coursesu.com/c/charcuterie-traiteur/charcuterie/jambon-blanc?page=2
-root_uri = 'https://www.coursesu.com'
-search_uri = '/c/charcuterie-traiteur/charcuterie/jambon-blanc'
-search_uri_p = root_uri + search_uri + '?page='
-curr_pg_num = '10'
-sleep_cnt = 0
-
 WAIT_TIME = 10 # sec
 WR_HI = 0
 WR_LOW = -5
 #AUTO_CLICK_WAIT = False
-LOCAL_TEST = True
+LOCAL_TEST = False
 DEBUG_HIDE = True
 LST_PG_URLS = [ # GET https://news.mongabay.com/?s=illegal+logging
     "https://news.mongabay.com/2023/03/indonesian-campaigns-getting-money-from-illegal-logging-mining-watchdog-says/", # OG
-#    "https://news.mongabay.com/2022/09/illegal-logging-and-trade-in-fine-wood-threaten-wampis-communities-in-the-peruvian-amazon/",
+    "https://news.mongabay.com/2022/09/illegal-logging-and-trade-in-fine-wood-threaten-wampis-communities-in-the-peruvian-amazon/",
     "https://news.mongabay.com/2022/05/chinese-companies-linked-to-illegal-logging-and-mining-in-northern-drc/", # ALT_1
-#    "https://news.mongabay.com/2022/03/a-community-in-mexico-reforests-its-land-against-the-advance-of-illegal-logging/"
+    "https://news.mongabay.com/2022/03/a-community-in-mexico-reforests-its-land-against-the-advance-of-illegal-logging/"
 ]
 
 #------------------------------------------------------------#
@@ -256,6 +249,7 @@ def go_main():
     print(f'\n\nRUN_TIME_START: {run_time_start}\nRUN_TIME_END:   {get_time_now()}')
 
 def wait_sleep(wait_sec : int, b_print=True): # sleep 'wait_sec'
+    print(f'waiting... {wait_sec} sec')
     for s in range(wait_sec, 0, -1):
         if b_print: print('wait ', s, sep='', end='\n')
         time.sleep(1)
