@@ -25,7 +25,6 @@ HTML_x = importlib.import_module('04_test_gun_html_2')
 
 #------------------------------------------------------------#
 #   GLOBALS                                                  #
-# GET https://news.mongabay.com/?s=illegal+logging
 #------------------------------------------------------------#
 WAIT_TIME = 10 # sec
 WR_HI = 0 # wait range
@@ -35,11 +34,11 @@ WR_LOW = -5 # wait range
 DEBUG_HIDE = True
 WRITE_CSV = True
 LOCAL_TEST = False
-LST_PG_URLS = [ # GET https://www.carenity.es/foro/asma-88  (provides list of comment links)
+LST_PG_URLS = [ # GET https://www.carenity.es/foro/asma-88  (results in list of posts links)
     "https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/tratamiento-de-las-crisis-de-asma-38588",
-    "https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/inhalador-preventivo-33724",
-    "https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/utilizas-ventolin-32459",
-    "https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/es-posible-curar-el-asma-con-tratamientos-natu-32457"
+#    "https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/inhalador-preventivo-33724",
+#    "https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/utilizas-ventolin-32459",
+#    "https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/es-posible-curar-el-asma-con-tratamientos-natu-32457"
 ]
 LST_CSV_EXPORT = []
 
@@ -67,14 +66,18 @@ def scrape_target_pg(driver, page_url : str):
         hc = html.fromstring(driver.page_source)
         html_cont_str = driver.page_source
     else:
-        hc = html.fromstring(HTML_x.TEST_HTML) # from 04_test_gun_html_1.py
+        hc = html.fromstring(HTML_x.TEST_HTML) # from 05_test_silk_html_1.py
         html_cont_str = HTML_x.TEST_HTML
         driver.quit()
     
+    # TODO: get elements for this page_url (ie. post_url)
+    #   post_user, post_text, post_dt, view_cnt, support_cnt, comment_cnt
+    #   list of post_comments: comment_user, comment_text, comment_dt
+    
     # print OG html version
-    #print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
-    #print('*** break point ***')
-    #while True: pass
+    print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
+    print('*** break point ***')
+    while True: pass
     
 #    ## PRINT SCRAPED DATA ##
 #    s  = '***'

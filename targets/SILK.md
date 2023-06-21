@@ -1,6 +1,6 @@
 # TARGETS (SILK)
 
-## silk -> https://www.carenity.es/foro/asma-88
+## silk -> carenity.es
 ### account log
     - https://www.carenity.es (note: also available -> https://www.carenity.us)
         (no account creation required, unless creating posts/comments)
@@ -15,10 +15,11 @@
             
 ### demo task
     - elements to extract (target)
-        post link (need date, text, user)
+        forum link (kinda like a posting boards i guess... displays list of post links)
             ref: https://www.carenity.es/foro/asma-88
+            ref: https://www.carenity.us/forum/asthma-88
 
-        post link comments (need date, text, user)
+        post links (need date, text, user, comments)
             https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/tratamiento-de-las-crisis-de-asma-38588
             https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/inhalador-preventivo-33724
             https://www.carenity.es/foro/asma/tu-opinion-sobre-los-tratamientos-del-asma/utilizas-ventolin-32459
