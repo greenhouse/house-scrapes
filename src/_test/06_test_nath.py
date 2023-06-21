@@ -9,7 +9,7 @@ print(f'GO {__filename} -> starting IMPORTs and globals decleration')
 #------------------------------------------------------------#
 #   IMPORTS                                                  #
 #------------------------------------------------------------#
-from gun_support import * # sys, os, re, json
+from _test_support import * # sys, os, re, json
 from selenium import webdriver # pip install -U selenium
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
