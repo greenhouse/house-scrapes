@@ -68,9 +68,8 @@ def scrape_target_pg(driver, page_url : str):
         html_cont_str = HTML_x.TEST_HTML
         driver.quit()
     
-    # TODO: get elements for this page_url (ie. post_url)
-    #   post_user, post_text, post_dt, view_cnt, support_cnt, comment_cnt
-    #   list of post_comments: comment_user, comment_text, comment_dt
+    # TODO: get elements for this page_url (ie. vendor_page)
+    #   name, city/state, phone, about, page_url
     
     # print OG html version
     print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
