@@ -20,12 +20,18 @@ from selenium.webdriver.chrome.options import Options
     #from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
     #from selenium.webdriver.firefox.options import Options
 import random
-import importlib
-HTML_x = importlib.import_module('06_test_nath_html_1')
+
+# note_062223: error when using HTML_x w/ nath target
+#   but can't use --headless anyway (hence, can't use LOCAL_TEST or HTML_x)
+#import importlib
+#HTML_x = importlib.import_module('06_test_nath_html_1')
+HTML_x = None
 
 #------------------------------------------------------------#
 #   GLOBALS                                                  #
 #------------------------------------------------------------#
+CSV_FILE_PATH = 'TEST_NATH_OUTPUT.csv'
+
 WAIT_TIME = 10 # sec
 WR_HI = 0 # wait range
 WR_LOW = -5 # wait range
@@ -35,8 +41,14 @@ DEBUG_HIDE = True
 WRITE_CSV = True
 LOCAL_TEST = False
 LST_PG_URLS = [ # GET https://www.theknot.com/marketplace  (manual search results in list of vendor links; need API still)
-    "https://www.theknot.com/marketplace/the-addison-boca-raton-fl-612010", # search by category & city/state
-    "https://www.theknot.com/marketplace/i-thee-wedd-clarksville-tn-2024860" # search by vendor name
+    #"https://www.theknot.com/marketplace/the-addison-boca-raton-fl-612010", # search by category & city/state
+    #"https://www.theknot.com/marketplace/i-thee-wedd-clarksville-tn-2024860" # search by vendor name
+    
+    # search by category & loc: https://www.theknot.com/marketplace/wedding-reception-venues-venice-ca?sort=featured
+    "https://www.theknot.com/marketplace/avensole-winery-temecula-ca-960271",
+    "https://www.theknot.com/marketplace/etage-venue-reseda-ca-2032873",
+    "https://www.theknot.com/marketplace/the-grand-long-beach-long-beach-ca-620906",
+    "https://www.theknot.com/marketplace/noor-pasadena-ca-447280"
 ]
 LST_CSV_EXPORT = []
 
@@ -71,31 +83,37 @@ def scrape_target_pg(driver, page_url : str):
     # TODO: get elements for this page_url (ie. vendor_page)
     #   name, city/state, phone, about, page_url
     
-    # print OG html version
-    print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
-    print('*** break point ***')
-    while True: pass
+    # get name -> <div id="navContact" ...><div><div><div><h3>
+    name = ''.join(hc.xpath("//div[@id='navContact']//div//div//div//h3/text()"))
     
-#    ## PRINT SCRAPED DATA ##
-#    s  = '***'
-#    s0 = '\n'+s
-#    d  ='#---------------------------------------------------------------------------#'
-#    dd ='#===========================================================================#'
-#    print(f'\n{d}\n {page_url} \n{d}')                          # page_url (str)
-#    print(f'{s} publish date (text) {s}:\n    {dt_pub}')        # dt_pub (str)
-#    print(f'{s0} author name (text) {s}:\n    {auth_name}')     # auth_name (str)
-#    print(f'{s0} author profile (text) {s}:\n    {auth_url}')   # auth_url (str)
-#    print(f'{s0} header (text) {s}:\n    {header}')             # header (str)
-#    print(f'{s0} header img url (text) {s}:\n    {img_header_url}')     # img_header_url (str)
-#    print(f'{s0} header img author (text) {s}:\n    {img_header_auth}') # img_header_auth (str)
-#    body_print = f"{body[:75]} ... {body[-75:]}" if DEBUG_HIDE else body
-#    print(f'{s0} body (text) {s}: -> DEBUG_HIDE={DEBUG_HIDE}\n    {body_print}') # body (str)
-#    print(f'{s0} article imgs (list text x{len(lst_art_imgs)}) {s}:\n    {json.dumps(lst_art_imgs, indent=4)}') # lst_art_imgs (lst)
-#    print(f'{s0} article img authors (list text x{len(lst_art_img_auths)}) {s}:\n    {json.dumps(lst_art_img_auths, indent=4)}') # lst_art_img_auths (lst)
-#    print(f'{s0} body query (text, i.e. search article for country or company name) {s}:\n    n/a') # ?
+    # get city/state
+    city_state = hc.xpath("//div[@id='navContact']//div//div//div//div//span/text()")[0]
+    
+    # get phone
+    phone = hc.xpath("//div[@id='navContact']//div//div//div//div//span//div//a//div//div/text()")[0]
+    
+    # get about
+    about = hc.xpath("//meta[@itemprop='description']/@content")[0]
+    
+    
+    # print OG html version
+    #print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
+    #print('*** break point ***')
+    #while True: pass
+    
+    ## PRINT SCRAPED DATA ##
+    s  = '***'
+    s0 = '\n'+s
+    d  ='#---------------------------------------------------------------------------#'
+    dd ='#===========================================================================#'
+    print(f'\n{d}\n {page_url} \n{d}')                          # page_url (str)
+    print(f'{s} name (text) {s}:\n    {name}')        # name (str)
+    print(f'{s0} city_state (text) {s}:\n    {city_state}')     # city_state (str)
+    print(f'{s0} phone (text) {s}:\n    {phone}')   # phone (str)
+    print(f'{s0} about (text) {s}:\n    {about}')             # about (str)
     
     # RETURN SCRAPED DATA DICT
-    #return {'page_url':page_url, 'dt_pub':dt_pub, 'auth_name':auth_name, 'auth_url':auth_url, 'header':header, 'img_header_url':img_header_url, 'img_header_auth':img_header_auth, 'body':body, 'lst_art_imgs':lst_art_imgs, 'lst_art_img_auths':lst_art_img_auths}
+    return {'page_url':page_url, 'name':name, 'city_state':city_state, 'phone':phone, 'about':about}
 
 def init_webdriver():
     ## Selenium: init webdrive ##
@@ -103,7 +121,9 @@ def init_webdriver():
 
     # Configure Selenium options
     options = Options()
-    options.add_argument("--headless")  # Run Chrome in headless mode
+    #options.add_argument("--headless")  # Run Chrome in headless mode
+        # note_062223: receive error (when using --headless)
+        #   06_test_nath_html_0_err.py -> 'Access Denied'
 
     # Create a new Selenium driver & get html_content
     return webdriver.Chrome(options=options)
@@ -129,7 +149,7 @@ def exe_pg_scrape_loop(lst_pgs: list, wait_sec : float):
             
     print(f'** QUITING WEBDRIVER & WRITING DATA TO CSV ({WRITE_CSV}) **')
     driver.quit()
-    if WRITE_CSV: write_lst_dict_to_csv(LST_CSV_EXPORT, 'TEST_SILK_OUTPUT.csv')
+    if WRITE_CSV: write_lst_dict_to_csv(LST_CSV_EXPORT, CSV_FILE_PATH)
     
 
 #------------------------------------------------------------#
