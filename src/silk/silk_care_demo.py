@@ -71,14 +71,7 @@ def scrape_target_pg(driver, page_url : str):
         html_cont_str = HTML_x.TEST_HTML
         driver.quit()
     
-    # TODO: get elements for this page_url (ie. post_url)
-    '''
-        user post elements:
-            post_view_cnt, post_support_cnt, post_comment_cnt
-            post_headline, post_usr_name, post_usr_img, post_dt, post_text
-        user comment data lists:
-            lst_comm_usr_names, lst_comm_usr_imgs, lst_comm_dts, lst_comm_texts
-        
+    ''' requirements...
         user post elements  user comment data lists
         post_view_cnt
         post_supp_cnt
@@ -90,47 +83,33 @@ def scrape_target_pg(driver, page_url : str):
         post_text           lst_comm_texts
     '''
     
-    ## get headline -> <h1 itemprop="headline" class="thread-title">
-    ## get headline -> "//h1[@itemprop='headline']"
+    ## get post_headline -> "//h1[@itemprop='headline']"
     post_headline = hc.xpath("//h1[@itemprop='headline']")[0].text_content()
     
-    # get post_usr_img_url -> <div class="contribs-item" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    #                           <p class="avatar-container " "="" onclick="haveToInscription(event); return false;">
-    # get post_usr_img_url -> "//div[@class='contribs-item']//p[@class='avatar-container ']//img/@src"
-    #   NOTE: this returns both post & comment user img urls
-    #           post_usr_img_url at idx = 0; comm_usr_img_urls at idx >= 1
-    post_usr_img_url = hc.xpath("//div[@class='contribs-item']//p[@class='avatar-container ']//img/@src")[0]
-    
-    ## get lst_comm_usr_img_urls -> "//div[@class='contribs-item']//p[@class='avatar-container ']//img/@src"
-    lst_comm_usr_img_urls = hc.xpath("//div[@class='contribs-item']//p[@class='avatar-container ']//img/@src")[1:]
+    # get post_usr_img_url & lst_comm_usr_img_urls -> "//div[@class='contribs-item']//p[@class='avatar-container ']//img/@src"
+    #   NOTE: returns both post & comment user img urls (post_usr_img_url at idx = 0; comm_usr_img_urls at idx >= 1)
+    lst_tags = post_usr_img_url = hc.xpath("//div[@class='contribs-item']//p[@class='avatar-container ']//img/@src")
+    post_usr_img_url = lst_tags[0]
+    lst_comm_usr_img_urls = lst_tags[1:]
 
-    ## get post_un & lst_comm_uns -> <p class="name" onclick="haveToInscription(event); return false;">
     ## get post_un & lst_comm_uns -> "//p[@onclick='haveToInscription(event); return false;']"
-    #   NOTE: this returns both post & comment user names
-    #           post_un at idx = 0; comm_uns at idx >= 1
+    #   NOTE: returns both post & comment user names (post_un at idx = 0; comm_uns at idx >= 1)
     lst_tags = hc.xpath("//p[@onclick='haveToInscription(event); return false;']")
     lst_uns = [tag.text_content() for tag in lst_tags if not tag.text_content().endswith('\n')]
     post_un = lst_uns[0]
     lst_comm_uns = lst_uns[1:]
     
     ## get post_dt -> <div class="date"> | "//div[@class='date']"
-    #   NOTE: this returns both post & comment datetime
-    #           post_dt at idx = 0; comm_dt at idx >= 1
-    post_dt = hc.xpath("//div[@class='date']")[0].text_content()
+    #   NOTE: returns both post & comment datetime (post_dt at idx = 0; comm_dt at idx >= 1)
+    lst_tags = hc.xpath("//div[@class='date']")
+    post_dt = lst_tags[0].text_content()
     post_dt = re.sub(r"\s+", " ", post_dt.strip())
+    lst_comm_dts = [tag.text_content().strip('\n').strip() for tag in lst_tags[1:]]
     
-    ## get lst_comm_dts -> <div class="date"> | "//div[@class='date']"
-    #lst_comm_dts = [tag.text_content() for tag in hc.xpath("//div[@class='date']")[1:]]
-    lst_tags = hc.xpath("//div[@class='date']")[1:]
-    lst_comm_dts = [tag.text_content().strip('\n').strip() for tag in lst_tags]
-    
-    ## get post_text -> <div itemprop="text"> | "//div[@itemprop='text']"
-    post_text = hc.xpath("//div[@itemprop='text']")[0].text_content().strip()
-    
-    ## get lst_comm_texts -> <div itemprop="text"> | "//div[@itemprop='text']"
-    lst_comm_texts = [re.sub(r"\s+", " ", tag.text_content().strip()) for tag in hc.xpath("//div[@itemprop='text']")[1:]]
-    #lst_tags = hc.xpath("//div[@itemprop='text']")[1:]
-    #lst_comm_texts = [re.sub(r"\s+", " ", tag.text_content().strip()) for tag in lst_tags]
+    ## get post_text & lst_comm_texts -> <div itemprop="text"> | "//div[@itemprop='text']"
+    lst_tags = hc.xpath("//div[@itemprop='text']")
+    post_text = lst_tags[0].text_content().strip()
+    lst_comm_texts = [re.sub(r"\s+", " ", tag.text_content().strip()) for tag in lst_tags[1:]]
     
     # get post_view_cnt, post_supp_cnt, post_comm_cnt -> <ul class="thread-stats"> | "//ul[@class='thread-stats']//li"
     lst_li_tags = hc.xpath("//ul[@class='thread-stats']//li")
@@ -138,10 +117,10 @@ def scrape_target_pg(driver, page_url : str):
     post_supp_cnt = lst_li_tags[1].text_content()
     post_comm_cnt = lst_li_tags[2].text_content()
 
-    # print OG html version
-#    print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
-#    print('*** break point ***')
-#    while True: pass
+    ## print OG html version ##
+    #print(f"\n\n _ html_cont (OG) _ \n{html_cont_str}")
+    #print('*** break point ***')
+    #while True: pass
     
     ## PRINT SCRAPED DATA ##
     s  = '***'
@@ -156,7 +135,6 @@ def scrape_target_pg(driver, page_url : str):
     print(f'{s0} post_usr_img_url (text) {s}:\n    {post_usr_img_url}') # post_usr_img_url (str)
     print(f'{s0} post_dt (text) {s}:\n    {post_dt}')                   # post_dt (str)
     print(f'{s0} post_text (text) {s}:\n    {post_text}')               # post_text (str)
-
     print(f'\n{d}\n COMMENT DATA LISTS \n{d}')
     print(  f'{s} lst_comm_uns (list text x{len(lst_comm_uns)}) {s}:',
             f'{json.dumps(lst_comm_uns, indent=4)}', sep='\n')          # lst_comm_uns (lst)
@@ -166,7 +144,6 @@ def scrape_target_pg(driver, page_url : str):
             f'{json.dumps(lst_comm_dts, indent=4)}', sep='\n')          # lst_comm_dts (lst)
     print(  f'{s0} lst_comm_texts (list text x{len(lst_comm_texts)}) {s}:',
             f'{json.dumps(lst_comm_texts, indent=4)}', sep='\n')        # lst_comm_texts (lst)
-            
     print(f'\n{d}\n POST META DATA \n{d}')
     print(f'{s} post_view_cnt (text) {s}:\n    {post_view_cnt}')       # post_view_cnt (str)
     print(f'{s0} post_supp_cnt (text) {s}:\n    {post_supp_cnt}')       # post_supp_cnt (str)
@@ -209,7 +186,6 @@ def exe_pg_scrape_loop(lst_pgs: list, wait_sec : float):
     driver.quit()
     if WRITE_CSV: write_lst_dict_to_csv(LST_CSV_EXPORT, 'TEST_SILK_OUTPUT.csv')
     
-
 #------------------------------------------------------------#
 #   DEFAULT SUPPORT                                          #
 #------------------------------------------------------------#
