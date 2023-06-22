@@ -26,9 +26,9 @@ HTML_x = importlib.import_module('05_test_silk_html_2')
 #------------------------------------------------------------#
 #   GLOBALS                                                  #
 #------------------------------------------------------------#
-WAIT_TIME = 10 # sec
+WAIT_TIME = 7 # sec
 WR_HI = 0 # wait range
-WR_LOW = -5 # wait range
+WR_LOW = -3 # wait range
 
 #AUTO_CLICK_WAIT = False
 DEBUG_HIDE = True
@@ -130,24 +130,24 @@ def scrape_target_pg(driver, page_url : str):
     print(f'\n{dd}\n {page_url} \n{dd}')                                # page_url (str)
     #print(f'\n{d}\n POST & COMMENT DATA \n{d}')
     print(f'\n{d}\n POST DATA \n{d}')
-    print(f'{s} post_headline (text) {s}:\n    {post_headline}')        # post_headline (str)
-    print(f'{s0} post_un (text) {s}:\n    {post_un}')                   # post_un (str)
-    print(f'{s0} post_usr_img_url (text) {s}:\n    {post_usr_img_url}') # post_usr_img_url (str)
-    print(f'{s0} post_dt (text) {s}:\n    {post_dt}')                   # post_dt (str)
-    print(f'{s0} post_text (text) {s}:\n    {post_text}')               # post_text (str)
+    print(f'{s} POST HEADLINE (text) {s}:\n    {post_headline}')        # post_headline (str)
+    print(f'{s0} POST USER (text) {s}:\n    {post_un}')                   # post_un (str)
+    print(f'{s0} USER IMAGE (text) {s}:\n    {post_usr_img_url}') # post_usr_img_url (str)
+    print(f'{s0} POST DATE (text) {s}:\n    {post_dt}')                   # post_dt (str)
+    print(f'{s0} POST (text) {s}:\n    {post_text}')               # post_text (str)
     print(f'\n{d}\n COMMENT DATA LISTS \n{d}')
-    print(  f'{s} lst_comm_uns (list text x{len(lst_comm_uns)}) {s}:',
+    print(  f'{s} LIST OF USERS THAT COMMENTED (list text x{len(lst_comm_uns)}) {s}:',
             f'{json.dumps(lst_comm_uns, indent=4)}', sep='\n')          # lst_comm_uns (lst)
-    print(  f'{s0} lst_comm_usr_img_urls (list text x{len(lst_comm_usr_img_urls)}) {s}:',
+    print(  f'{s0} LIST OR USER IMAGES THAT COMMENTED (list text x{len(lst_comm_usr_img_urls)}) {s}:',
             f'{json.dumps(lst_comm_usr_img_urls, indent=4)}', sep='\n') # lst_comm_usr_img_urls (lst)
-    print(  f'{s0} lst_comm_dts (list text x{len(lst_comm_dts)}) {s}:',
+    print(  f'{s0} LIST OF COMMENT DATES (list text x{len(lst_comm_dts)}) {s}:',
             f'{json.dumps(lst_comm_dts, indent=4)}', sep='\n')          # lst_comm_dts (lst)
-    print(  f'{s0} lst_comm_texts (list text x{len(lst_comm_texts)}) {s}:',
+    print(  f'{s0} LIST OF COMMENT TEXT (list text x{len(lst_comm_texts)}) {s}:',
             f'{json.dumps(lst_comm_texts, indent=4)}', sep='\n')        # lst_comm_texts (lst)
     print(f'\n{d}\n POST META DATA \n{d}')
-    print(f'{s} post_view_cnt (text) {s}:\n    {post_view_cnt}')       # post_view_cnt (str)
-    print(f'{s0} post_supp_cnt (text) {s}:\n    {post_supp_cnt}')       # post_supp_cnt (str)
-    print(f'{s0} post_comm_cnt (text) {s}:\n    {post_comm_cnt}')       # post_comm_cnt (str)
+    print(f'{s} # OF VIEWS (text) {s}:\n    {post_view_cnt}')       # post_view_cnt (str)
+    print(f'{s0} # OF SUPPORTS (text) {s}:\n    {post_supp_cnt}')       # post_supp_cnt (str)
+    print(f'{s0} # OF COMMENTS (text) {s}:\n    {post_comm_cnt}')       # post_comm_cnt (str)
     
     # RETURN SCRAPED DATA DICT
     return {'page_url':page_url, 'post_headline':post_headline, 'post_un':post_un, 'post_usr_img_url':post_usr_img_url, 'post_dt':post_dt, 'post_text':post_text, 'lst_comm_uns':lst_comm_uns, 'lst_comm_usr_img_urls':lst_comm_usr_img_urls, 'lst_comm_dts':lst_comm_dts, 'lst_comm_texts':lst_comm_texts, 'post_view_cnt':post_view_cnt, 'post_supp_cnt':post_supp_cnt, 'post_comm_cnt':post_comm_cnt}
